@@ -1,0 +1,1 @@
+$(document).ready(function(){var t=$(".popup").prompt21();$(".show-popup").on("click",function(){t.getData(function(t,n){$(".result").text(JSON.stringify(n,null,2))})}),$(".version").text($.fn.prompt21.version)});

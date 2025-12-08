@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+    Options +FollowSymLinks
+    RewriteEngine On
+
+    # Redirect to 404.html for non-existent pages
+    ErrorDocument 404 /index.html
+
+    # Your other rewrite rules go here
+
+</IfModule>

@@ -1,0 +1,90 @@
+<?php
+/**
+ * Plugin Name: Custom Rest API Plugin
+ * Plugin URI: https://hoopologytraining.com
+ * Description: Custom plugin for Rest API
+ * Version: 1.0
+ * Author: Dars Innovation
+ * Author URI: http://dars.ai/
+ */
+
+define("SITE_URL", get_site_url());
+
+/* Rest API for List the active category */
+add_action('rest_api_init', 'listCategory');
+function listCategory() {
+    register_rest_route('list', 'category', array(
+        'methods' => WP_REST_Server::READABLE,
+        'callback' => 'listActiveCategory',
+    ));
+}
+
+function listActiveCategory() {
+    $taxonomy       = 'product_cat';
+    $orderby        = 'term_id';
+    $show_count     = 0;        // 1 for yes, 0 for no
+    $pad_counts     = 0;        // 1 for yes, 0 for no
+    $hierarchical   = 1;        // 1 for yes, 0 for no
+    $title          = '';
+    $empty          = 0;
+
+    $args = array(
+        'taxonomy'      => $taxonomy,
+        'orderby'       => $orderby,
+        'show_count'    => $show_count,
+        'pad_counts'    => $pad_counts,
+        'hierarchical'  => $hierarchical,
+        'title_li'      => $title,
+        'hide_empty'    => $empty
+    );
+    $result = get_categories( $args );
+    //  $result['category'] = $all_categories;
+    $return = array("status" => "ok", "statusCode" => "200", "data" => $result);
+    return $return;
+}
+
+/* Rest API for Home Page Layout */
+add_action('rest_api_init', 'homeLayout');
+function homeLayout() {
+    register_rest_route('home', 'layout', array(
+        'methods' => WP_REST_Server::READABLE,
+        'callback' => 'showHomeLayout',
+    ));
+}
+
+function showHomeLayout() {
+    global $wpdb;
+    $taxonomy       = 'product_cat';
+    $orderby        = 'term_id';
+    $show_count     = 0;        // 1 for yes, 0 for no
+    $pad_counts     = 0;        // 1 for yes, 0 for no
+    $hierarchical   = 1;        // 1 for yes, 0 for no
+    $title          = '';
+    $empty          = 0;
+
+    $args = array(
+        'taxonomy'      => $taxonomy,
+        'orderby'       => $orderby,
+        'show_count'    => $show_count,
+        'pad_counts'    => $pad_counts,
+        'hierarchical'  => $hierarchical,
+        'title_li'      => $title,
+        'hide_empty'    => $empty
+    );
+    $all_categories = get_categories( $args );
+    $alias = 'home-slider';
+    $qr_slider = "SELECT slides.*, sliders.title, sliders.alias FROM wp_revslider_slides as slides INNER JOIN wp_revslider_sliders as sliders ON slides.slider_id=sliders.id AND sliders.alias='".$alias."' ORDER BY `slides`.`id` ASC";
+    $res_slider = $wpdb->get_results($qr_slider);
+    $slider = array();
+    if(count($res_slider)>0) {
+        for($a=0; $a<count($res_slider); $a++) {
+            $params = $res_slider[$a]->params;
+            $dec_params = json_decode($params, true);
+            $slider[] = $dec_params['bg']['image'];
+        }
+    }
+    $result['slider'] = $slider;
+    $result['category'] = $all_categories;
+    $return = array("status" => "ok", "statusCode" => "200", "data" => $result);
+    return $return;
+}

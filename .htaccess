@@ -1,0 +1,47 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
+
+    RewriteEngine On
+    
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+    RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+    RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+    RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+    RewriteRule ^ index.php [L]
+
+    # Option Method Enabled
+    <LimitExcept GET POST HEAD>
+        Deny from all
+    </LimitExcept>
+    Header always append X-Frame-Options "SAMEORIGIN"
+
+</IfModule>
+
+# Disable Directory listing
+Options -Indexes
+
+# block files which needs to be hidden // in here specify .example extension of the file
+<Files ~ "\.(env|json|config.js|md|gitignore|gitattributes|lock|example)$">
+    Order allow,deny
+    Deny from all
+</Files>
+
+# in here specify full file name sperator '|'
+<Files ~ "(artisan)$">
+    Order allow,deny
+    Deny from all
+</Files>
+#Order allow,deny
+
+#Allow from all
+
+

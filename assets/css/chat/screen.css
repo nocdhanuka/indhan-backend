@@ -1,0 +1,75 @@
+@charset "utf-8";
+/*
+ * CSS Document
+ * Written by Ryan Yonzon
+ * http://ryan.rawswift.com/
+ */
+ 
+html, body {
+	margin:0px; /* FF hack: or we'll have double scrollbar showing on the browser */
+	
+
+}
+body {
+    font-family: "Source Sans Pro",sans-serif;
+}
+#main_container {
+	width: 180px;
+background: #50b6bf; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, #50b6bf 0%, #3b8fa3 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#50b6bf), color-stop(100%,#3b8fa3)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover, #50b6bf 0%,#3b8fa3 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover, #50b6bf 0%,#3b8fa3 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover, #50b6bf 0%,#3b8fa3 100%); /* IE10+ */
+background: radial-gradient(ellipse at center, #50b6bf 0%,#3b8fa3 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#50b6bf', endColorstr='#3b8fa3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	overflow-x: hidden;
+	overflow-y: scroll hidden;
+	height:100%;	/* this will make sure that the height will extend at the bottom */
+	position:fixed; /* container div must be absolute, for our fixed bar to work */
+    filter:alpha(opacity=80);
+	padding-left:15px;
+	padding-right:15px;
+	right: 0;
+	top:0;
+	z-index:999;
+	transition: width 1s;
+}
+#main_container .searchlistchat{}
+#main_container > .searchlistchat:hover{display:block;}
+/*#main_container:hover{width: 220px;}*/
+/*Anisha css starts*/
+#main_container > .chatlistcontent> a{ display:block;color:#fff;text-decoration:none;width: 100%;float:left;margin-bottom:10px;margin-top:10px;}
+.headofchat{color:#fff;padding:15px 0;border-bottom: 1px solid #b0b0b0;}
+.headofchat li{list-style:none;display:inline-block;font-weight:bold;vertical-align: middle;font-size: 14px;margin: 0 auto;display: block;text-align:center;}
+.imagechat{height: 40px;width: 40px;vertical-align: middle;border-radius: 20px;}
+.searchlistchat{padding:0px;float:left;width:100%;bottom: 0; left: 0; position: absolute; margin-bottom:0px;margin-top:10px;background: #fff none repeat scroll 0 0;display: inline-flex;}
+.searchlistchat li{list-style:none;display:inline-block;}
+.chatlistcontent{float:left;width:100%;}
+.textarealist{background:#fff;padding: 5px 3px 5px 8px;margin-left: 3px;}
+.chatsearchfield{border:none;padding: 2px 3px 2px 7px;font-size: 12px;width: 100px;}
+
+.chatstatusdrpdw{background: #caffff none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: none;
+    margin-top: 0;
+    padding: 10px;
+    width: 170px;
+	right:0;
+	left: -134px;
+	margin-bottom:0px !important;}
+.chatstatusdrpdw li {
+    display: block;
+    margin: 1px 0;
+	float: left;
+	width: 100%;
+}
+.statuschatimg{float:right;}
+.statuschat{float:left;}
+.chatstatusdrpdw > li > a{float:left;width:100%;padding: 3px 10px;font-size:13px;color: #515151;}
+.statusdrpdwn .dropup.open{background: #caffff none repeat scroll 0 0;padding: 8px 8px 5px;}
+.statusdrpdwn .dropup{padding: 5px 8px;}
+.chatstatusdrpdw > li > a:hover{background-color: #43c7d7;}
+/*Anisha css ends*/
+

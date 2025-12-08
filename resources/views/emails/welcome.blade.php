@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--[if !mso]><!-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!--<![endif]-->
+        <title>emailer</title>
+        <style>
+            @media only screen and (max-width:600px) {
+                table { width:100%!important; height:auto!important; padding:0 0px; }
+                .header_img { width: 100%; height: auto !important;}
+                .new_table{ padding:0 10px;}
+            }
+        </style>
+        <!--[if (gte mso 9)|(IE)]>
+        <style type="text/css">
+            table {border-collapse: collapse;}
+        </style>
+        <![endif]-->
+    </head>
+    <body>
+        <table width="600" border="0" align="center" cellpadding="0" cellspacing="0" style="border:1px solid #eee;" >
+            <tr>
+                <td align="center" valign="bottom">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" >
+                        <tr>
+                            <td>
+                                <table width="519" border="0" align="center" cellpadding="0" cellspacing="0" class="new_table" style=" font:normal 15px Arial, Helvetica, sans-serif; color:#000000; text-align:left; line-height:30px;">
+                                    <tr>
+                                        <td width="477" height="40"></td>
+                                    </tr>
+                                    <tr>
+                                        <td height="42" align="center" ><img src="{{asset('assets/images/emaillogo.png')}}"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td style=" font:normal 22px Arial, Helvetica, sans-serif; color:#fd046b; text-align:center; line-height:22px;">Welcome to Guurso, find your perfect match with us</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td align="center" style="font:normal 22px Arial, Helvetica, sans-serif; color:#666">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" style="font:normal 16px Arial, Helvetica, sans-serif; color:#666">Please click on the below link to verify your account</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="79" align="center"><a href="{{URL::to('user/verifymail?user_key='.$user_key) }}"><img src="{{asset('assets/images/button.jpg')}}" border="0" ></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td height="79" align="center"></td>
+                                    </tr>
+                                </table>                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background:#141496; height:16px;"></td>
+                        </tr>
+                    </table>      
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

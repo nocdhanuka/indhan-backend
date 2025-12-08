@@ -1,0 +1,7 @@
+@import "http://fonts.googleapis.com/css?family=Inconsolata:700";
+.title{font-family:'Inconsolata',monospace;font-weight:700}header{padding:8em 0}header,footer{color:#fff;background:#D32F2F;background-image:url(background.png);box-shadow:0 0 10px rgba(0,0,0,0.51)}
+h1.title{font-size:4em;font-weight:700}header p{font-size:1.4em}footer{padding:50px 0;text-align:center;font-size:1.1em;margin-top:3em}footer a{color:#fff}
+footer a:hover{color:#fff}line{stroke-width:2px}.graph{background:#f0f0f0;border:1px solid #ccc;border-radius:4px;height:525px}
+.popup{position:fixed;z-index:999;background:rgba(9,79,98,0.58);left:0;top:0;right:0;bottom:0}
+.popup > form{background:#fff;margin:45px auto;width:620px;border-radius:6px;box-shadow:0 0 53px rgba(0,0,0,0.15)}legend{text-align:center;font-size:2em}
+.pop-hd{-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;background:#29bbe9;padding:15px 0;font-size:20px;border-bottom-right-radius:0;-moz-border-radius-bottomright:0;-webkit-border-bottom-right-radius:0;border-bottom-left-radius:0;-moz-border-radius-bottomleft:0;-webkit-border-bottom-left-radius:0;text-align:center;color:#fff}.popup-frm-mrgn{padding:40px 0 0;padding-left: 20px;padding-right:20px;}
