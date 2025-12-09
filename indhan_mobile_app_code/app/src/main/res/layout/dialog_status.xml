@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_250sdp"
+    android:layout_height="wrap_content"
+    android:background="@color/White"
+    android:orientation="vertical">
+
+    <com.dhanuka.indhan.Fonts.Medium
+        android:id="@+id/msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Status"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:textColor="@color/darkgray"
+        android:textSize="@dimen/_12sdp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/darkgray" />
+    <com.dhanuka.indhan.Fonts.Medium
+        android:id="@+id/follow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:text="Follow up"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp" />
+
+    <com.dhanuka.indhan.Fonts.Medium
+        android:id="@+id/closed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:text="Closed"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp" />
+
+
+
+</LinearLayout>

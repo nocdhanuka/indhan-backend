@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="130dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        card_view:cardBackgroundColor="#f0f2f5"
+        card_view:cardCornerRadius="@dimen/_10sdp"
+        card_view:cardElevation="16dp"
+        android:padding="@dimen/_8dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:id="@+id/rlBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/White"
+            android:elevation="@dimen/_10sdp">
+
+            <LinearLayout
+                android:id="@+id/llParentLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:weightSum="2">
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Crop Name"
+                        android:textSize="@dimen/_12sp"
+                        android:textColor="@color/charcoalGrey" />
+
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:id="@+id/tvCropData"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:textSize="@dimen/_12sp"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:weightSum="2">
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Product Name"
+                        android:textSize="@dimen/_12sp"
+                        android:textColor="@color/charcoalGrey" />
+
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:id="@+id/tvProductData"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:textSize="@dimen/_12sp"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llRequestedQty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:weightSum="2">
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/_12sp"
+                        android:text="Requested Quantity"
+                        android:textColor="@color/charcoalGrey" />
+
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:id="@+id/tvRequestedQtyData"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/_12sp"
+                        android:text="-"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llEstimatedDemo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:textSize="@dimen/_12sp"
+                    android:weightSum="2">
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Estimated Demo"
+                        android:textSize="@dimen/_12sp"
+                        android:textColor="@color/charcoalGrey" />
+
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:id="@+id/tvEstimatedDemoData"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:textSize="@dimen/_12sp"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llGoDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:weightSum="2">
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_12sp"
+                        android:layout_weight="1"
+                        android:text="GoDown / Branch"
+                        android:textColor="@color/charcoalGrey" />
+
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:id="@+id/tvGoDownData"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/_12sp"
+                        android:text="-"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llNeedBy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:weightSum="2">
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Needed By"
+                        android:textSize="@dimen/_12sp"
+                        android:textColor="@color/charcoalGrey" />
+
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:id="@+id/tvNeedByData"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/_12sp"
+                        android:text="-"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/labelStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llParentLinear"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@color/green_btn"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/_4dp"
+                android:textSize="@dimen/_12sp"
+                android:text="Yet to Dispatch"
+                android:textAlignment="center"
+                android:textColor="@color/White" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

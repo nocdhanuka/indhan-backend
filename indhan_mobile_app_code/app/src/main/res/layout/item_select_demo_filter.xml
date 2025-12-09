@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <com.dhanuka.indhan.Fonts.Medium
+        android:id="@+id/txtDdName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10dp"
+        android:layout_weight="1"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="junaid"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_16sp" />
+
+    <CheckBox
+        android:id="@+id/chbDdName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

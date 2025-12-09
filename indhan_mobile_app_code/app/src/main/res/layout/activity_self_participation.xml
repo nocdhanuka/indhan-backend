@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical"
+    android:weightSum="12">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:elevation="@dimen/_10sdp">
+
+            <LinearLayout
+                android:id="@+id/iCross"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                tools:ignore="DuplicateIds">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_arrow_back"
+                    android:padding="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/pd_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/iCross"
+                android:text="Self Participation"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_15sdp" />
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:text="Filter"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_12sdp" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <RelativeLayout
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/plan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Plan"
+                    android:textColor="@color/White" />
+
+
+                <View
+                    android:id="@+id/plan_participation_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_5sdp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ffffff"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/new_participation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Active Ticket"
+                    android:textColor="@color/White" />
+
+
+                <View
+                    android:id="@+id/new_participation_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_5sdp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ffffff"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/myAtp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="My ATP"
+                    android:textColor="@color/White" />
+
+
+                <View
+                    android:id="@+id/myAtp_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_5sdp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ffffff"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/history"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="History"
+                    android:textColor="@color/White" />
+
+                <View
+                    android:id="@+id/history_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_5sdp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ffffff"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/bdoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_20sdp"
+        android:paddingRight="@dimen/_20sdp">
+
+        <com.dhanuka.indhan.Fonts.Regular
+            android:id="@+id/spinnerbospinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:drawableRight="@drawable/downarrow"
+            android:text="Select BDO"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginRight="@dimen/_14sdp"
+            android:background="@color/darkgray" />
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/rcViewProdDes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9.3"
+        android:background="@color/bg_gray" />
+
+    <com.dhanuka.indhan.Fonts.Regular
+        android:id="@+id/mess"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:gravity="center"
+        android:text="No History Data Yet"
+        android:textSize="@dimen/_15sdp"
+        android:visibility="gone" />
+
+
+</LinearLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/White"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@color/colorPrimary">
+
+            <LinearLayout
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:paddingEnd="@dimen/_4sdp"
+                android:paddingRight="@dimen/_4sdp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_action_back"
+                    android:contentDescription="@string/add_image"
+                    android:padding="@dimen/_10sdp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ivAddNewDistributor"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/add"
+                    android:padding="@dimen/_10sdp" />
+            </LinearLayout>
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/ivBack"
+                android:layout_toRightOf="@+id/ivBack"
+                android:padding="@dimen/_6sdp"
+                android:text="Institution - Distributor"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/input_border"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="2dp"
+            android:src="@drawable/ic_search_black_36dp" />
+
+        <EditText
+            android:id="@+id/searchBox"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:hint="Search..."
+            android:background="@null"
+            android:textSize="@dimen/_12sdp"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <com.dhanuka.indhan.Fonts.Regular
+        android:id="@+id/txtFilterTeaEstate"
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/input_border"
+        android:drawableRight="@drawable/downarrow"
+        android:drawablePadding="@dimen/_5dp"
+        android:hint="Select Type"
+        android:maxLines="1"
+        android:minLines="1"
+        android:padding="@dimen/_5sdp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textColorHint="@color/darkgray"
+        android:textSize="@dimen/_12sdp"
+        android:textStyle="normal"
+        android:drawableEnd="@drawable/downarrow" />
+
+    <com.dhanuka.indhan.Fonts.Regular
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@drawable/button_selector"
+        android:padding="@dimen/_4sdp"
+        android:text="Reset"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llFilter" />
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+          android:id="@+id/swipeRefreshLayout"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+              <TextView
+                  android:id="@+id/tv_nodata"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  android:text="No Distributor or advisor found"
+                  android:textSize="@dimen/_16sdp"
+                  android:visibility="gone" />
+
+              <androidx.recyclerview.widget.RecyclerView
+                  android:id="@+id/rcvDistributorList"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_marginBottom="@dimen/_50dp"
+                  android:background="@color/bg_gray"
+                  android:visibility="visible"
+                  app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                  tools:itemCount="4"
+                  tools:listitem="@layout/item_distributor_data" />
+          </LinearLayout>
+
+      </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+      <com.google.android.material.appbar.AppBarLayout
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/_50dp"
+          android:layout_alignParentBottom="true"
+          android:id="@+id/layout_btn">
+
+          <com.dhanuka.indhan.Fonts.Regular
+              android:id="@+id/plan_atp"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_centerVertical="true"
+              android:gravity="center"
+              android:text="@string/offline_self_participation"
+              android:textColor="@android:color/white"
+              android:textSize="@dimen/_15sdp" />
+
+      </com.google.android.material.appbar.AppBarLayout>
+  </RelativeLayout>
+</LinearLayout>

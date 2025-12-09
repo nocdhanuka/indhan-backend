@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_margin="@dimen/_10dp"
+    android:elevation="2dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/llProductDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_25dp"
+        android:layout_marginRight="@dimen/_25dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_marginBottom="@dimen/_10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtDemoNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_16sp" />
+        <TextView
+            android:id="@+id/txtCropLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crop"
+            android:layout_marginTop="@dimen/_10dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sp" />
+        <TextView
+            android:id="@+id/txtCropName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Banana"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:text="Product"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sp" />
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:text="Fertilizer1"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:text="Farmer name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sp" />
+
+        <TextView
+            android:id="@+id/txtFarmerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:text="Jphnathan Doe"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:text="@string/created_date"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sp" />
+
+        <TextView
+            android:id="@+id/txtCreatedDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_16sp" />
+    </LinearLayout>
+
+</LinearLayout>

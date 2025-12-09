@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_gray"
+    android:minHeight="@dimen/_40sdp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/_40sdp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:gravity="center_vertical"
+            android:id="@+id/llayout"
+            android:minHeight="@dimen/_40sdp">
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_centerVertical="true"
+                card_view:srcCompat="@drawable/check_sel"
+                android:layout_height="@dimen/_20sdp"
+                android:visibility="gone"
+                android:id="@+id/selected"/>
+            <com.dhanuka.indhan.Fonts.Medium
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_60sdp"
+                android:focusable="true"
+                android:textSize="@dimen/_9sdp"
+                android:gravity="center_vertical"
+                android:text="No. of Days"
+                android:textColor="@color/darkgray" />
+            <View
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_alignParentBottom="true"
+                android:background="#BDCBBD"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_width="fill_parent"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

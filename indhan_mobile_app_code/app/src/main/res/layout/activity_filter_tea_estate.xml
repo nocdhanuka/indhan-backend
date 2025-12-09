@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="12">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:elevation="@dimen/_10sdp">
+
+            <LinearLayout
+                android:id="@+id/camera_ini"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:visibility="gone"
+                tools:ignore="DuplicateIds">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/camera_white"
+                    android:padding="@dimen/_10sdp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:paddingEnd="@dimen/_4sdp"
+                android:paddingRight="@dimen/_4sdp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_action_back"
+                    android:contentDescription="@string/add_image"
+                    android:padding="@dimen/_10sdp" />
+            </LinearLayout>
+
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/bdo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ivBack"
+                android:text="Filter TeaEstate"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_15sdp"
+                android:layout_toEndOf="@+id/ivBack" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlHeader"
+        android:layout_marginStart="@dimen/_10dp"
+        android:layout_marginEnd="@dimen/_10dp"
+        android:background="@color/White">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/spinnerEstateType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10dp"
+                android:background="@drawable/bg_edit"
+                android:drawableRight="@drawable/downarrow"
+                android:hint="Filter By Type"
+                android:padding="@dimen/_10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/spinnerState"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit"
+                android:drawableRight="@drawable/downarrow"
+                android:hint="Select State"
+                android:padding="@dimen/_10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/spinnerDistrict"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit"
+                android:drawableRight="@drawable/downarrow"
+                android:hint="Select District"
+                android:padding="@dimen/_10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_40dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <com.dhanuka.indhan.Fonts.RegularButton
+                    android:id="@+id/btnClear"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Clear"
+                    android:layout_marginEnd="@dimen/_5dp"
+                    android:layout_marginRight="@dimen/_5dp"
+                    android:background="@drawable/bg_clear_btn"
+                    android:textColor="@color/colorButton" />
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/_5dp"
+                    android:layout_marginStart="@dimen/_5dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Submit"
+                    android:background="@color/colorButton"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

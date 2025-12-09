@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:elevation="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <ImageView
+                android:id="@+id/imgFilter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/filter"
+                android:layout_alignParentEnd="true"
+                android:tint="@color/white"
+                android:layout_margin="@dimen/_10dp"
+                android:padding="@dimen/_5dp"
+                android:layout_alignParentRight="true" />
+
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/title_demo_request"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="3dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:padding="@dimen/_6sdp"
+                android:singleLine="true"
+                android:text="@string/my_leads"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_16sdp" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45dp"
+                app:tabGravity="fill"
+                android:layout_below="@+id/title_demo_request"
+                app:tabIndicatorColor="@color/White"
+                app:tabMaxWidth="0dp"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="@color/white"
+                app:tabTextAppearance="@style/LargeTabText"
+                app:tabTextColor="@color/white_opacity" />
+
+
+        </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPagerFeeds"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>

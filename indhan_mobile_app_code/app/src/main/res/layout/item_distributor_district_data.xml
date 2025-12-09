@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="@dimen/_5sdp">
+
+<LinearLayout
+    android:id="@+id/llRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.dhanuka.indhan.Fonts.Regular
+        android:id="@+id/tvDistrictName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:background="@color/header_district"
+        android:maxLines="2"
+        android:minLines="1"
+        android:padding="@dimen/_5sdp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp">
+
+            <ProgressBar
+                android:id="@+id/pgrIndicatorBar"
+                style="@style/ProgressBarHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:indeterminateDrawable="@drawable/progress"
+                android:max="100"
+                android:minHeight="10dp"
+                android:progress="0"
+                android:progressDrawable="@drawable/progress" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtLeftValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:textColor="@color/white"
+            android:text=""
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtRightValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"
+            android:text=""
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <com.dhanuka.indhan.Fonts.Regular
+        android:id="@+id/tvAddedCountName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:background="@color/footer_district"
+        android:maxLines="2"
+        android:minLines="1"
+        android:padding="@dimen/_5sdp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>

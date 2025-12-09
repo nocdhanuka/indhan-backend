@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/colorButton">
+
+        <com.dhanuka.indhan.Fonts.BoldTextView
+            android:id="@+id/pd_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:text="Reports"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_15sdp" />
+
+        <ImageView
+            android:id="@+id/imgFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_10dp"
+            android:tint="@color/white"
+            app:srcCompat="@drawable/filter" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rlSubHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_below="@+id/rlHeader"
+        android:background="@color/colorButton"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5dp"
+            android:layout_weight="1"
+            android:background="@color/colorButton">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Activities"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sp" />
+
+            <com.dhanuka.indhan.Fonts.BoldTextView
+                android:id="@+id/txtActivities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_25sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_20dp"
+                android:layout_marginBottom="@dimen/_5dp"
+                android:text=""
+                android:textColor="@color/white" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5dp"
+            android:layout_weight="1"
+            android:background="@color/colorButton">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:text="Village Meetings"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sp" />
+
+            <TextView
+                android:id="@+id/txtVillageMeetings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_20dp"
+                android:layout_marginBottom="@dimen/_5dp"
+                android:text=""
+                android:textSize="@dimen/_25sp"
+                android:textColor="@color/white" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5dp"
+            android:layout_weight="1"
+            android:background="@color/colorButton">
+
+
+            <TextView
+                android:id="@+id/txtTotalLead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Field Days"
+                android:textColor="@color/White"
+                android:textSize="@dimen/_12sp" />
+
+            <TextView
+                android:id="@+id/txtFieldDays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_20dp"
+                android:layout_marginBottom="@dimen/_5dp"
+                android:text=""
+                android:textSize="@dimen/_25sp"
+                android:textColor="@color/White" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5dp"
+            android:layout_weight="1"
+            android:background="@color/colorButton">
+
+            <TextView
+                android:id="@+id/txtTotalSold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Farmers"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sp" />
+
+            <TextView
+                android:id="@+id/txtFarmers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_25sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_20dp"
+                android:layout_marginBottom="@dimen/_5dp"
+                android:text=""
+                android:textColor="@color/white" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rlSubHeaderTwo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_below="@+id/rlSubHeader"
+        android:background="@color/colorButton"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5dp"
+            android:layout_weight="1"
+            android:background="@color/colorButton">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Avg activities/BD_FL"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sp" />
+
+            <com.dhanuka.indhan.Fonts.BoldTextView
+                android:id="@+id/txtActivitiesBDFL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_25sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_20dp"
+                android:layout_marginBottom="@dimen/_5dp"
+                android:text=""
+                android:textColor="@color/white" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5dp"
+            android:layout_weight="1"
+            android:background="@color/colorButton">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Avg activities/S_FL"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sp" />
+
+            <TextView
+                android:id="@+id/txtActivitiesSFL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_20dp"
+                android:layout_marginBottom="@dimen/_5dp"
+                android:text=""
+                android:textSize="@dimen/_25sp"
+                android:textColor="@color/white" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5dp"
+            android:layout_weight="1"
+            android:background="@color/colorButton">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Avg Farmer/activities"
+                android:textColor="@color/White"
+                android:textSize="@dimen/_12sp" />
+
+            <TextView
+                android:id="@+id/txtAvgFarmer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_20dp"
+                android:layout_marginBottom="@dimen/_5dp"
+                android:text=""
+                android:textSize="@dimen/_25sp"
+                android:textColor="@color/White" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5dp"
+            android:layout_weight="1"
+            android:background="@color/colorButton">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Demos"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sp" />
+
+            <TextView
+                android:id="@+id/txtDemos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_25sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_20dp"
+                android:layout_marginBottom="@dimen/_5dp"
+                android:text=""
+                android:textColor="@color/white" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/rlSubHeaderTwo"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:background="@color/colorButton"
+            >
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_10dp"
+        android:layout_below="@+id/rlSubHeaderTwo"
+        />
+
+
+
+
+
+</RelativeLayout>

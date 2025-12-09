@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical"
+    android:weightSum="12">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:elevation="@dimen/_10sdp">
+
+            <LinearLayout
+                android:id="@+id/iCross"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                tools:ignore="DuplicateIds">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_arrow_back"
+                    android:padding="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/bdo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/iCross"
+                android:text="Testimonial"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_15sdp" />
+
+
+            <LinearLayout
+                android:id="@+id/camera_ini"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:visibility="gone"
+                tools:ignore="DuplicateIds">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/camera_white"
+                    android:padding="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlHeader"
+        android:layout_marginBottom="@dimen/_40sdp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            android:padding="@dimen/_10sdp">
+
+            <com.dhanuka.indhan.Fonts.Medium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:focusable="true"
+                android:text="Select Testimonial"
+                android:textColor="@color/darkgray" />
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/spinner_testimonial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_14sdp"
+                android:drawableRight="@drawable/downarrow"
+                android:text="Select Testimonial"
+                android:textColor="@color/black" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginRight="@dimen/_14sdp"
+                android:background="@color/darkgray" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_other"
+                style="@style/TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:visibility="gone">
+
+                <com.dhanuka.indhan.Fonts.RegularEditText
+                    android:id="@+id/tvMeOther"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:backgroundTint="@color/darkgray"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:focusableInTouchMode="true"
+                    android:hint="Testimonial Name"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/darkgray"
+                    android:textSize="@dimen/_14sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.dhanuka.indhan.Fonts.Medium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:focusable="true"
+                android:text="Crop"
+                android:textColor="@color/darkgray" />
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/spinner_crop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_14sdp"
+                android:drawableRight="@drawable/downarrow"
+                android:text="Select Crop"
+                android:textColor="@color/black" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginRight="@dimen/_14sdp"
+                android:background="@color/darkgray" />
+
+            <com.dhanuka.indhan.Fonts.Medium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:focusable="true"
+                android:text="Product"
+                android:textColor="@color/darkgray" />
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/spinner_Product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_14sdp"
+                android:drawableRight="@drawable/downarrow"
+                android:text="Select Product"
+                android:textColor="@color/black" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginRight="@dimen/_14sdp"
+                android:background="@color/darkgray" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilFarmer"
+                android:visibility="gone"
+                style="@style/TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <com.dhanuka.indhan.Fonts.RegularEditText
+                    android:id="@+id/tvMefarmer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:backgroundTint="@color/darkgray"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:focusableInTouchMode="true"
+                    android:hint="Name"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:lines="4"
+                    android:maxLines="4"
+                    android:minLines="4"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/darkgray"
+                    android:textSize="@dimen/_14sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilMobile"
+                style="@style/TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <com.dhanuka.indhan.Fonts.RegularEditText
+                    android:id="@+id/tvMeMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:backgroundTint="@color/darkgray"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:focusableInTouchMode="true"
+                    android:hint="Mobile Number"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:lines="4"
+                    android:maxLength="10"
+                    android:maxLines="4"
+                    android:minLines="4"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/darkgray"
+                    android:textSize="@dimen/_14sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <!--<com.google.android.material.textfield.TextInputLayout-->
+            <!--android:id="@+id/tilUrl"-->
+            <!--style="@style/TextInputLayout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/_10sdp">-->
+
+            <!--<com.dhanuka.indhan.Fonts.RegularEditText-->
+            <!--android:id="@+id/tillUrl"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginLeft="@dimen/_2sdp"-->
+            <!--android:layout_marginRight="@dimen/_10sdp"-->
+            <!--android:layout_marginTop="@dimen/_10sdp"-->
+            <!--android:backgroundTint="@color/darkgray"-->
+            <!--android:drawablePadding="@dimen/_5sdp"-->
+            <!--android:focusableInTouchMode="true"-->
+            <!--android:hint="Attachment (Drop Box  Link Only)"-->
+            <!--android:imeOptions="actionDone"-->
+            <!--android:inputType="text"-->
+            <!--android:lines="4"-->
+            <!--android:maxLines="4"-->
+            <!--android:minLines="4"-->
+            <!--android:paddingBottom="@dimen/_10sdp"-->
+            <!--android:paddingRight="@dimen/_5sdp"-->
+            <!--android:paddingTop="@dimen/_5sdp"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textColorHint="@color/darkgray"-->
+            <!--android:textSize="@dimen/_14sdp" />-->
+            <!--</com.google.android.material.textfield.TextInputLayout>-->
+
+            <com.dhanuka.indhan.Fonts.Medium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:focusable="true"
+                android:text="Attachment"
+                android:textColor="@color/darkgray"
+                android:visibility="gone" />
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/tillUrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_14sdp"
+                android:text="Add DropBox Token"
+                android:textColor="@color/black"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginRight="@dimen/_14sdp"
+                android:background="@color/darkgray"
+                android:visibility="gone" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilVilage"
+                style="@style/TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <com.dhanuka.indhan.Fonts.RegularEditText
+                    android:id="@+id/tvMeDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:backgroundTint="@color/darkgray"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:focusableInTouchMode="true"
+                    android:hint="Description"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:lines="4"
+                    android:maxLines="4"
+                    android:minLines="4"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/darkgray"
+                    android:textSize="@dimen/_14sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlImgFarmer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/layout_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:background="@color/bg_gray"
+                    android:scaleType="centerCrop"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/imgView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    app:srcCompat="@drawable/camera_white" />
+
+
+                <TextView
+                    android:layout_below="@+id/layout_img"
+                    android:id="@+id/txtCaptureImage"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:layout_marginBottom="@dimen/_10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/click_here_to_capture_video"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentBottom="true">
+
+        <com.dhanuka.indhan.Fonts.Regular
+            android:id="@+id/activateTicketBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="Submit"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_15sdp" />
+    </com.google.android.material.appbar.AppBarLayout>
+</RelativeLayout>

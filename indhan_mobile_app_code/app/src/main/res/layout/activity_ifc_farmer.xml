@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:background="@color/White"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@color/colorPrimary"
+                android:elevation="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:id="@+id/ivBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/_8sdp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_action_back"
+                        android:padding="@dimen/_10sdp" />
+                </LinearLayout>
+
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_toRightOf="@+id/ivBack"
+                    android:padding="@dimen/_6sdp"
+                    android:text="@string/register_ifc_farmers"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp" />
+
+                <LinearLayout
+                    android:id="@+id/ivAddMnNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:padding="@dimen/_10sdp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/add"
+                        android:padding="@dimen/_10sdp" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_50sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_16sdp"
+                    android:orientation="vertical">
+
+                    <com.dhanuka.indhan.Fonts.Regular
+                        android:id="@+id/tvReTicketNoDisplay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="24sp" />
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:id="@+id/tvMeTicketTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:singleLine="true"
+                        android:textColor="@color/darkgray" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:background="@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_16sdp"
+                    android:text="@string/manually_added"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvManualAdded"
+                    android:nestedScrollingEnabled="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@color/White" />
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:weightSum="3">
+                  <com.dhanuka.indhan.Fonts.Medium
+                      android:id="@+id/tvTotalAddedFarmer"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="@dimen/_8sdp"
+                      android:layout_weight="1"
+                      android:textAlignment="center"
+                      android:textColor="@color/darkgray"
+                      android:textSize="16sp"
+                      android:gravity="center_horizontal" />
+
+                  <com.dhanuka.indhan.Fonts.Medium
+                      android:id="@+id/tvTotalPda"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:textAlignment="center"
+                      android:layout_margin="@dimen/_8sdp"
+                      android:textColor="@color/darkgray"
+                      android:textSize="16sp"
+                      android:gravity="center_horizontal" />
+
+                  <com.dhanuka.indhan.Fonts.Medium
+                      android:id="@+id/tvTotalDistance"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:layout_margin="@dimen/_8sdp"
+                      android:textAlignment="center"
+                      android:textColor="@color/darkgray"
+                      android:textSize="16sp"
+                      android:gravity="center_horizontal" />
+              </LinearLayout>
+
+                <com.dhanuka.indhan.Fonts.RegularButton
+                    android:id="@+id/btnRbSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:layout_marginLeft="@dimen/_60sdp"
+                    android:layout_marginRight="@dimen/_60sdp"
+                    android:layout_marginTop="@dimen/_32sdp"
+                    android:background="@drawable/login_button_selector"
+                    android:elevation="15dp"
+                    android:text="@string/btn_submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/White"
+                    android:visibility="gone"
+                    android:textSize="@dimen/_13sdp" />
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+    <com.dhanuka.indhan.Fonts.RegularButton
+        android:id="@+id/offlineData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:background="@drawable/login_button_selector"
+        android:elevation="15dp"
+        android:text="@string/offline_farmer_data"
+        android:textAllCaps="false"
+        android:textColor="@color/White"
+        android:textSize="@dimen/_13sdp" />
+
+</RelativeLayout>

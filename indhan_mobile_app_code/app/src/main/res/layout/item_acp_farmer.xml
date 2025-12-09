@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/llayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imgView"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_margin="@dimen/_5dp"
+            android:background="@drawable/def_user"
+            android:padding="@dimen/_2dp"
+            android:scaleType="center" />
+
+        <TextView
+            android:id="@+id/txtACPFarmerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imgView"
+            android:layout_toRightOf="@+id/imgView"
+            android:padding="@dimen/_2dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:text="Ashutosh"
+            android:textColor="@color/colorButton"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:id="@+id/txtVisitHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtACPFarmerName"
+            android:layout_toEndOf="@+id/imgView"
+            android:layout_toRightOf="@+id/imgView"
+            android:padding="@dimen/_2dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:text="Visit History"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp" />
+
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imgView"
+            android:layout_toRightOf="@+id/imgView"
+            android:padding="@dimen/_2dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/txtCrop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgView"
+            android:padding="@dimen/_5sdp"
+            android:text="Crop"
+            android:layout_marginStart="@dimen/_10dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginLeft="@dimen/_10dp" />
+
+        <TextView
+            android:id="@+id/txtCropNO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtCrop"
+            android:padding="@dimen/_5sdp"
+            android:text="123"
+            android:layout_marginStart="@dimen/_10dp"
+            android:textColor="@color/colorButton"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginLeft="@dimen/_10dp" />
+
+        <TextView
+            android:id="@+id/txtDD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgView"
+            android:layout_toEndOf="@+id/imgView"
+            android:padding="@dimen/_5sdp"
+            android:text="DD"
+            android:layout_marginStart="@dimen/_10dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_toRightOf="@+id/imgView" />
+
+        <TextView
+            android:id="@+id/txtDDNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDD"
+            android:layout_toEndOf="@+id/imgView"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_10dp"
+            android:textColor="@color/colorButton"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_toRightOf="@+id/imgView" />
+
+
+        <ImageView
+            android:id="@+id/imgCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/_10dp"
+            android:padding="@dimen/_5dp"
+            android:tint="@color/yello"
+            app:srcCompat="@drawable/call" />
+
+
+
+
+    </RelativeLayout>
+</layout>

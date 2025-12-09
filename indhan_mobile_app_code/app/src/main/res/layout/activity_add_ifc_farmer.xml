@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@color/colorPrimary"
+            android:elevation="@dimen/_10sdp">
+
+            <LinearLayout
+                android:id="@+id/ivCross"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cross"
+                    android:padding="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/ivCross"
+                android:padding="@dimen/_6sdp"
+                android:text="Add Farmer"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appBarLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvListIfcFarmer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@color/White"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/tvAddNewFarmer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:paddingRight="@dimen/_16sdp"
+                android:text="+ Add New"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <com.dhanuka.indhan.Fonts.RegularButton
+                android:id="@+id/ivSaveFarmers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_32sdp"
+                android:background="@drawable/login_button_square"
+                android:elevation="15dp"
+                android:text="Submit"
+                android:textAllCaps="true"
+                android:textColor="@color/White"
+                android:textSize="@dimen/_13sdp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilMobileNumber"
+                style="@style/TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:visibility="gone">
+
+                <com.dhanuka.indhan.Fonts.RegularEditText
+                    android:id="@+id/etRetMobileNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:backgroundTint="@color/darkgray"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/mobile_number"
+                    android:imeOptions="actionDone"
+                    android:importantForAutofill="noExcludeDescendants"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/darkgray"
+                    android:textSize="@dimen/_14sdp"
+                    android:visibility="gone" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

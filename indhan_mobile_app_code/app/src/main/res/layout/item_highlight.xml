@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout        xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <LinearLayout
+        android:id="@+id/llayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:padding="@dimen/_5sdp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_2sdp"
+            android:text=""
+            android:textColor="@color/colorButton"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/txtDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:padding="@dimen/_2sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgTestimonial"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/play"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

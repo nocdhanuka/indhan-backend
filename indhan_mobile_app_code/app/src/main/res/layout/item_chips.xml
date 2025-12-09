@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/rlMain"
+        android:layout_margin="@dimen/_2sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorButton">
+
+        <TextView
+            android:id="@+id/txtVillageName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:text="Village"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+        <ImageView
+            android:id="@+id/imgCross"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/txtVillageName"
+            android:layout_toRightOf="@+id/txtVillageName"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/cross" />
+
+    </RelativeLayout>
+
+</layout>

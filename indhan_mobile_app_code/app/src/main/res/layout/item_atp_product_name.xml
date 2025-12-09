@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.dhanuka.indhan.Fonts.Medium
+        android:id="@+id/txtProductNameAtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@color/white"
+        android:text="sdklfj"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/black"/>
+</LinearLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    app:contentPaddingLeft="0dp"
+    app:contentPaddingRight="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/llViewValues"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.dhanuka.indhan.Fonts.Regular
+            android:id="@+id/textCategory"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.4"
+            android:textStyle="normal"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:hint="Select Category"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/darkgray"
+            android:textSize="@dimen/_9sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/llHeader" />
+
+        <com.dhanuka.indhan.Fonts.Regular
+            android:id="@+id/textSubCategory"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center_vertical"
+            android:textStyle="normal"
+            android:textAllCaps="false"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:hint="Select Crop"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/darkgray"
+            android:textSize="@dimen/_9sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/llHeader" />
+
+        <com.dhanuka.indhan.Fonts.Regular
+            android:id="@+id/txtAddVolume"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.4"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="put value in %"
+            android:inputType="numberDecimal"
+            android:maxLength="5"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/darkgray"
+            android:textSize="@dimen/_14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtMarketName" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.2"
+            android:visibility="gone"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/ivDelete"
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:layout_gravity="start|center"
+                android:background="@drawable/delete"
+                android:backgroundTint="@color/red" />
+
+
+            <ImageView
+                android:id="@+id/ivEdit"
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:background="@drawable/edit"
+                android:backgroundTint="@color/blue" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.dhanuka.indhan.Fonts.Medium
+        android:id="@+id/txtAddMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:visibility="gone"
+        android:text="Add More"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sp"
+        app:layout_constraintEnd_toEndOf="@+id/llViewValues"
+        app:layout_constraintTop_toBottomOf="@+id/llViewValues" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

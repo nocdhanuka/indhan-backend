@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_120dp"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <com.dhanuka.indhan.Fonts.Medium
+        android:id="@+id/txtUpcommingDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="24 june 2019"
+        android:layout_margin="@dimen/_10dp"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16sp"
+        />
+    <com.dhanuka.indhan.Fonts.Medium
+        android:id="@+id/txtNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dd_involved"
+        android:layout_margin="@dimen/_10dp"
+        android:textColor="@color/white"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:textSize="@dimen/_14sp"
+        />
+    <com.dhanuka.indhan.Fonts.Medium
+        android:id="@+id/txtDdName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Johnathan Doe"
+        android:layout_marginLeft="@dimen/_10dp"
+        android:layout_marginBottom="@dimen/_10dp"
+        android:textColor="@color/white"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:textSize="@dimen/_16sp"
+
+        />
+</LinearLayout>

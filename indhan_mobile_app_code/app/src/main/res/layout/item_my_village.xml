@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <LinearLayout
+        android:id="@+id/llayout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_height="wrap_content">
+
+
+
+
+        <TextView
+            android:id="@+id/txtVillageName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorButton"
+            android:textSize="@dimen/_15sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="Village name"
+            />
+        <TextView
+            android:id="@+id/txtNoOfFarmers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="No of farmers"
+            />
+        <TextView
+            android:id="@+id/txtAvgVisit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="41 visit/month/farmer"
+            />
+    </LinearLayout>
+</layout>

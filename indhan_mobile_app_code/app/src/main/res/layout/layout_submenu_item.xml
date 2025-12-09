@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_60sdp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="15dp"
+    android:id="@+id/cardContainer"
+    android:background="@color/bg_gray">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="@dimen/_25sdp"
+        android:minHeight="60dp"
+        card_view:cardElevation="2sp"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <com.dhanuka.indhan.Fonts.Medium
+                android:layout_alignParentLeft="true"
+                android:id="@+id/tvMeCategoryName"
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:layout_toLeftOf="@id/iconsWrapper"
+                android:textSize="@dimen/_13sdp" />
+            <LinearLayout
+                android:id="@+id/iconsWrapper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/filledIcon"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginRight="10dp"
+                    card_view:srcCompat="@drawable/checked" />
+
+                <ImageView
+                    android:id="@+id/mandatoryIcon"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginRight="10dp"
+                    card_view:srcCompat="@drawable/asterisk" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

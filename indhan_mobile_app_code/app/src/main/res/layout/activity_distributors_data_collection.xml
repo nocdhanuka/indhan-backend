@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/llHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/colorButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.dhanuka.indhan.Fonts.BoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:text="Channel Data Collection"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_15sdp" />
+
+    </RelativeLayout>
+
+    <com.dhanuka.indhan.Fonts.Regular
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llHeader" />
+
+    <com.dhanuka.indhan.Fonts.Regular
+        android:id="@+id/txtSelectTerritory"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:drawableRight="@drawable/downarrow"
+        android:drawablePadding="@dimen/_5dp"
+        android:hint="Select Territory Name"
+        android:padding="@dimen/_5sdp"
+        style="?android:listSeparatorTextViewStyle"
+        android:textAllCaps="false"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:textColorHint="@color/darkgray"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+    <com.dhanuka.indhan.Fonts.Regular
+        android:id="@+id/txtMarketName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_margin="@dimen/_10sdp"
+        style="?android:listSeparatorTextViewStyle"
+        android:textAllCaps="false"
+        android:textStyle="normal"
+        android:drawableRight="@drawable/downarrow"
+        android:drawablePadding="@dimen/_5dp"
+        android:hint="Select Market Name"
+        android:padding="@dimen/_5sdp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/darkgray"
+        android:textSize="@dimen/_12sdp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSelectTerritory" />
+
+    <com.dhanuka.indhan.Fonts.Regular
+        android:id="@+id/txtDistributorName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_margin="@dimen/_10sdp"
+        style="?android:listSeparatorTextViewStyle"
+        android:textStyle="normal"
+        android:drawableRight="@drawable/downarrow"
+        android:drawablePadding="@dimen/_5dp"
+        android:textAllCaps="false"
+        android:hint="Select Channel Name"
+        android:padding="@dimen/_5sdp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/darkgray"
+        android:textSize="@dimen/_12sdp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSubmit" />
+
+    <com.dhanuka.indhan.Fonts.Medium
+        android:id="@+id/txtSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="Add"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/txtAddMarket"
+        app:layout_constraintTop_toBottomOf="@+id/txtAddMarket" />
+
+
+    <com.dhanuka.indhan.Fonts.Medium
+        android:id="@+id/txtOr"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:drawablePadding="@dimen/_5dp"
+        android:gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:text="Or"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/_12sdp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMarketName" />
+
+    <com.dhanuka.indhan.Fonts.Medium
+        android:id="@+id/txtOrDistributor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:drawablePadding="@dimen/_5dp"
+        android:gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:text="Or"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/_12sdp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDistributorName" />
+
+
+    <com.dhanuka.indhan.Fonts.Medium
+        android:id="@+id/txtSubmitDistributor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_40sdp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="Add New Channel"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/txtOrDistributor"
+        app:layout_constraintStart_toStartOf="@+id/txtOrDistributor"
+        app:layout_constraintTop_toBottomOf="@+id/txtOrDistributor" />
+
+
+    <com.dhanuka.indhan.Fonts.RegularInputLayoutEditText
+        android:id="@+id/txtAddMarket"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/bg_edit"
+        android:drawablePadding="@dimen/_5dp"
+        android:hint="Add New Market Name (Postal Code Only)"
+        android:padding="@dimen/_5sdp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/darkgray"
+        android:inputType="phone"
+        android:textSize="@dimen/_14sp"
+        android:maxLength="6"
+        android:lines="1"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOr" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

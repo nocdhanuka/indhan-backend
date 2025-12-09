@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/llayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imgFarmer"
+            android:layout_width="@dimen/_80sdp"
+            android:scaleType="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_height="@dimen/_70sdp" />
+        <TextView
+            android:id="@+id/txtVillageName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imgFarmer"
+            android:layout_toRightOf="@+id/imgFarmer"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/colorButton"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtVillageName"
+            android:layout_toEndOf="@+id/imgFarmer"
+            android:layout_toRightOf="@+id/imgFarmer"
+            android:padding="@dimen/_5sdp"
+            android:visibility="gone"
+            android:text="Expected date of purchase"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp" />
+        <TextView
+            android:id="@+id/txtDateValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDate"
+            android:padding="@dimen/_5sdp"
+            android:layout_toEndOf="@+id/imgFarmer"
+            android:layout_toRightOf="@+id/imgFarmer"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+
+
+    </RelativeLayout>
+</layout>

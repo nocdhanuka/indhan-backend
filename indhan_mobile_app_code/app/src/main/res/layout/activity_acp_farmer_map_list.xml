@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".acpfarmers.AcpFarmerActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/icon_pin" />
+
+
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/colorButton">
+
+        <ImageView
+            android:id="@+id/imgSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingTop="@dimen/_10dp"
+            android:paddingBottom="@dimen/_10dp"
+            app:srcCompat="@drawable/ic_search_black_36dp"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/imgFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_10dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/filter"
+            app:tint="@color/white" />
+
+        <com.dhanuka.indhan.Fonts.BoldTextView
+            android:id="@+id/pd_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:text="ACP Farmers"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_15sdp" />
+
+        <com.dhanuka.indhan.Fonts.BoldTextView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/imgSearch"
+            android:layout_toLeftOf="@+id/imgSearch"
+            android:layout_toEndOf="@+id/pd_name"
+            android:layout_toRightOf="@+id/pd_name"
+            android:gravity="center|right"
+            android:text="@string/search_this_area"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_12sdp" />
+
+
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlHeader"
+        tools:context=".MapsActivity" />
+
+</RelativeLayout>

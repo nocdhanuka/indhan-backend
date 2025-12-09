@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:orientation="vertical">
+<LinearLayout
+    android:background="@color/White"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@color/colorPrimary"
+            android:elevation="@dimen/_10sdp">
+
+            <LinearLayout
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/_8sdp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_action_back"
+                    android:padding="@dimen/_10sdp" />
+            </LinearLayout>
+
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_toRightOf="@+id/ivBack"
+                android:padding="@dimen/_6sdp"
+                android:text="Manual Ticket Claim"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginRight="@dimen/_20dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:background="@drawable/round_corner_white"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilTicketNumber"
+            style="@style/TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.dhanuka.indhan.Fonts.RegularEditText
+                android:id="@+id/etTicketNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:drawablePadding="@dimen/_5sdp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="@string/ticket_no"
+                android:textAllCaps="true"
+                android:imeOptions="actionNext"
+                android:textSelectHandle="@drawable/edit_text_drawable_disable"
+                android:inputType="textPersonName"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/darkgray"
+                android:textSize="@dimen/_14sdp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilConfirmTicketNumber"
+            style="@style/TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.dhanuka.indhan.Fonts.RegularEditText
+                android:id="@+id/etConfirmTicketNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:drawablePadding="@dimen/_5sdp"
+                android:focusable="true"
+                android:textSelectHandle="@drawable/edit_text_drawable_disable"
+                android:textAllCaps="true"
+                android:focusableInTouchMode="true"
+                android:hint="@string/confirm_ticket_no"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/darkgray"
+                android:textSize="@dimen/_14sdp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RadioGroup
+            android:id="@+id/rGpSelection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20dp"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbArrival"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Arrival"/>
+
+
+            <RadioButton
+                android:id="@+id/rbDeparture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Departure"/>
+        </RadioGroup>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp">
+
+            <ImageView
+                android:id="@+id/imgClaimTicket"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_10dp"
+                android:background="@color/bg_gray"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/icPhoto"
+                android:layout_width="@dimen/_50dp"
+                android:layout_height="@dimen/_50dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/camera_white" />
+        </RelativeLayout>
+
+        <com.dhanuka.indhan.Fonts.Medium
+            android:id="@+id/txtUploadPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/capture_photo"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/edtFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_20dp"
+            android:visibility="gone"
+            android:paddingStart="@dimen/_4sdp"
+            android:paddingEnd="@dimen/_4sdp"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:layout_marginBottom="@dimen/_20dp"
+            android:background="@drawable/bg_edit" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.dhanuka.indhan.Fonts.Medium
+                android:id="@+id/txtSubmit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_20dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:padding="@dimen/_15dp"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+    <com.dhanuka.indhan.Fonts.RegularButton
+        android:id="@+id/offlineManualData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:background="@drawable/login_button_selector"
+        android:elevation="15dp"
+        android:text="Offline Claimed Tickets"
+        android:textAllCaps="false"
+        android:textColor="@color/White"
+        android:textSize="@dimen/_13sdp" />
+
+</RelativeLayout>

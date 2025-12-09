@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/district"
+        android:title="District Wise" />
+    <item
+        android:id="@+id/crop"
+        android:title="Crop Wise" />
+    <item
+        android:id="@+id/company"
+        android:title="Company Wise" />
+</menu>

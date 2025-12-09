@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_corner_white"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginRight="@dimen/_20dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/llPurchasedFrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_30dp"
+            android:layout_marginRight="@dimen/_30dp"
+            android:layout_marginTop="@dimen/_50dp"
+            android:background="@drawable/input_border"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.dhanuka.indhan.Fonts.Medium
+                android:id="@+id/txtPurchasedFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:gravity="center_vertical"
+                android:text="@string/purchased_from"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_20dp"
+                android:src="@drawable/downarrow" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llPurchasedArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_30dp"
+            android:layout_marginRight="@dimen/_30dp"
+            android:layout_marginTop="@dimen/_30dp"
+            android:background="@drawable/input_border"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.dhanuka.indhan.Fonts.Medium
+                android:id="@+id/txtPurchasedArea"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:gravity="center_vertical"
+                android:text="@string/purchased_area"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_20dp"
+                android:src="@drawable/downarrow" />
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="@dimen/_50dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.dhanuka.indhan.Fonts.Medium
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lead_sold"
+                android:textColor="@color/colorPrimary"
+                android:padding="@dimen/_15dp"
+                android:layout_weight="1"
+                android:textSize="@dimen/_14sp"
+                android:gravity="center"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"/>
+            <com.dhanuka.indhan.Fonts.Medium
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/not_intrested"
+                android:textColor="@color/red"
+                android:padding="@dimen/_15dp"
+                android:layout_weight="1"
+                android:textSize="@dimen/_14sp"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

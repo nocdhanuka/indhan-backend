@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/llVolumeFormulation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/tvDistrictName"
+        app:layout_constraintStart_toStartOf="@+id/tvDistrictName"
+        app:layout_constraintTop_toBottomOf="@+id/tvDistrictName">
+
+        <com.dhanuka.indhan.Fonts.Regular
+            android:id="@+id/tvFormulationName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:maxLines="2"
+            android:minLines="1"
+            android:visibility="gone"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9sdp"
+            android:text=""/>
+
+        <com.dhanuka.indhan.Fonts.BoldTextView
+            android:id="@+id/tvFormulationVolume"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_25sdp"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp" />
+
+
+        <com.dhanuka.indhan.Fonts.BoldTextView
+            android:id="@+id/tvFormulationTotal"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_25sdp"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp" />
+    </LinearLayout>
+
+    <com.dhanuka.indhan.Fonts.Regular
+        android:id="@+id/txtFilterChemical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        style="?android:listSeparatorTextViewStyle"
+        android:textStyle="normal"
+        android:textAllCaps="false"
+        android:drawableRight="@drawable/downarrow"
+        android:drawablePadding="@dimen/_5dp"
+        android:minLines="1"
+        android:maxLines="4"
+        android:hint="Filter Formulation wise"
+        android:padding="@dimen/_5sdp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/darkgray"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llVolumeFormulation" />
+
+    <LinearLayout
+        android:id="@+id/llViewValues"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:background="@color/AppWhite"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:weightSum="1.2"
+        app:layout_constraintTop_toBottomOf="@+id/txtFilterChemical">
+
+        <com.dhanuka.indhan.Fonts.Regular
+            android:id="@+id/textCategory"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/_1sdp"
+            android:layout_weight="0.4"
+            android:textStyle="normal"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:background="@color/white"
+            android:hint="Category"
+            android:textColor="@color/black"
+            android:textColorHint="@color/darkgray"
+            android:textSize="@dimen/_9sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/llHeader" />
+
+        <com.dhanuka.indhan.Fonts.Regular
+            android:id="@+id/textSubCategory"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/_1sdp"
+            android:textStyle="normal"
+            android:textAllCaps="false"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:hint="Crop"
+            android:background="@color/white"
+            android:textColorHint="@color/darkgray"
+            android:textSize="@dimen/_9sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/llHeader" />
+
+        <com.dhanuka.indhan.Fonts.Regular
+            android:id="@+id/txtAddVolume"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:hint="Value in %"
+            android:inputType="numberDecimal"
+            android:background="@color/white"
+            android:maxLength="4"
+            android:textColorHint="@color/darkgray"
+            android:textSize="@dimen/_14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtMarketName" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.2"
+            android:visibility="gone"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/ivDelete"
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:layout_gravity="start|center"
+                android:background="@drawable/delete"
+                android:backgroundTint="@color/red" />
+
+
+            <ImageView
+                android:id="@+id/ivEdit"
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:background="@drawable/edit"
+                android:backgroundTint="@color/blue" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.dhanuka.indhan.Fonts.Regular
+        android:id="@+id/tvFyUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_weight="1"
+        android:gravity="center_vertical|center"
+        android:text="FY(2021-2022)"
+        android:maxLines="2"
+        android:minLines="1"
+        android:padding="@dimen/_5sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_9sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llHeader" />
+
+    <com.dhanuka.indhan.Fonts.Regular
+        android:id="@+id/tvDistrictName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_weight="1"
+        android:gravity="start"
+        android:maxLines="2"
+        android:minLines="1"
+        android:padding="@dimen/_5sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_9sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFyUser" />
+
+    <RelativeLayout
+        android:id="@+id/llHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/colorButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/llHeaderText"
+            android:layout_toRightOf="@+id/llHeaderText"
+            android:padding="@dimen/_10dp"
+            android:tint="@color/white"
+            app:srcCompat="@drawable/filter" />
+
+
+        <com.dhanuka.indhan.Fonts.BoldTextView
+            android:id="@+id/llHeaderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:text="Chemical Data Collection - View Crop Wise"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_12sdp" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvCropViewItems"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvTotalValuePercentage"
+        app:layout_constraintEnd_toEndOf="@+id/llViewValues"
+        app:layout_constraintStart_toStartOf="@+id/llViewValues"
+        app:layout_constraintTop_toBottomOf="@+id/llViewValues" />
+
+
+    <com.dhanuka.indhan.Fonts.BoldTextView
+        android:id="@+id/txtChemicalSelectClass"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:drawablePadding="@dimen/_5dp"
+        android:text="Class name -"
+        android:padding="@dimen/_5sdp"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        android:textColorHint="@color/darkgray"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llHeader" />
+
+
+
+    <com.dhanuka.indhan.Fonts.Medium
+        android:id="@+id/tvTotalValuePercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:paddingRight="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@color/red"
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="Total %"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtSubmitChemicalCropWise"
+        app:layout_constraintEnd_toEndOf="@+id/txtSubmitChemicalCropWise" />
+
+    <com.dhanuka.indhan.Fonts.Medium
+        android:id="@+id/txtSubmitChemicalCropWise"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="Update"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:textSize="@dimen/_14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

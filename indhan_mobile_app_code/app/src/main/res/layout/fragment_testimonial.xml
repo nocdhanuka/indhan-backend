@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reports.supervisor_report.fragments.CustomerCareFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/bg_gray"
+        android:layout_height="match_parent">
+
+        <com.dhanuka.indhan.Fonts.BoldTextView
+            android:id="@+id/txtHeader"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/_5dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_10dp"
+            android:textColor="@color/colorButton"
+            android:text="Testimonials"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rlOne"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/txtHeader"
+            android:background="@color/white"
+            android:padding="@dimen/_10dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginStart="@dimen/_20dp"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:layout_height="wrap_content">
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:rating="5"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/txtFive"
+                android:layout_width="wrap_content"
+                android:text="45"
+                android:textSize="@dimen/_25sp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:textColor="@color/colorButton"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlTwo"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/rlOne"
+            android:background="@color/white"
+            android:padding="@dimen/_10dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginStart="@dimen/_20dp"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:layout_height="wrap_content">
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:rating="4"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/txtFour"
+                android:layout_width="wrap_content"
+                android:text="45"
+                android:textSize="@dimen/_25sp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:textColor="@color/colorButton"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlThree"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/rlTwo"
+            android:background="@color/white"
+            android:padding="@dimen/_10dp"
+            android:layout_marginStart="@dimen/_20dp"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_height="wrap_content">
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:rating="3"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/txtThree"
+                android:layout_width="wrap_content"
+                android:text="45"
+                android:textSize="@dimen/_25sp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:textColor="@color/colorButton"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlFour"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/rlThree"
+            android:background="@color/white"
+            android:padding="@dimen/_10dp"
+            android:layout_marginStart="@dimen/_20dp"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_height="wrap_content">
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:rating="2"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/txtTwo"
+                android:layout_width="wrap_content"
+                android:text="45"
+                android:textSize="@dimen/_25sp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:textColor="@color/colorButton"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlFive"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/rlFour"
+            android:background="@color/white"
+            android:padding="@dimen/_10dp"
+            android:layout_marginStart="@dimen/_20dp"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_height="wrap_content">
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:rating="1"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/txtOne"
+                android:layout_width="wrap_content"
+                android:text="45"
+                android:textSize="@dimen/_25sp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:textColor="@color/colorButton"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

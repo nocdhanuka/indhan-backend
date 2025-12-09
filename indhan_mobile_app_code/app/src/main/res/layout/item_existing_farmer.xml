@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/llayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/chbSelectFarmer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/_10dp" />
+
+        <ImageView
+            android:id="@+id/imgFarmer"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:scaleType="center" />
+
+        <TextView
+            android:id="@+id/txtFarmerNames"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtFarmerNameLebel"
+            android:layout_toEndOf="@+id/imgFarmer"
+            android:layout_toRightOf="@+id/imgFarmer"
+            android:padding="@dimen/_5sdp"
+            android:text="No of farmers"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/txtAvgVisit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imgFarmer"
+            android:layout_toRightOf="@+id/imgFarmer"
+            android:padding="@dimen/_5sdp"
+            android:text="41 visit/month/farmer"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/txtFarmerNameLebel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imgFarmer"
+            android:layout_toRightOf="@+id/imgFarmer"
+            android:padding="@dimen/_5sdp"
+            android:text="Farmer name"
+            android:textColor="@color/colorButton"
+            android:textSize="@dimen/_15sdp" />
+    </RelativeLayout>
+</layout>

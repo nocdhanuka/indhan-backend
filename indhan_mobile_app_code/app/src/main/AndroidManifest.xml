@@ -1,0 +1,858 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dhanuka.indhan">
+
+    <application
+        android:name=".App"
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/security_certificate"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup"
+        tools:targetApi="n">
+
+        <activity
+            android:name=".MarkVisits.MarkVisitOfflineActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.TicketDetailImageOffline.TicketDetailsOfflineActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SelfParticipartionOffline.SelfParticipationOfflineActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VideoPlayer.VideoPlayActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".support.view.SupportActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.DataCollection.distributor.DataCollectionActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.DataCollection.distributor.DistributorsDataCollectionActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".support.view.QaActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".support.view.CampaignActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ATPMenu.activity.supervisorAtp.HightLightActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ATPMenu.activity.supervisorAtp.SupervisorATPFilterActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ATPMenu.activity.supervisorAtp.SupervisorDetailsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ATPMenu.activity.supervisorAtp.SupervisorATPActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.DataCollection.distributor.AddExistingDistributor"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Reports.supervisor_report.SupervisorReportsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TestimonialList.supervisor.TestimonialSupervisorActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".acpfarmers.AcpFarmerDetailsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <!-- <receiver android:name=".DataSyncServices.ConnectivityChangeReceiver" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.net.conn.CONNECTIVITY_CHANGE" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <activity
+            android:name=".acpfarmers.AcpFarmerFilterActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ActivitiesActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlanATP.View.DDListActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".acpfarmers.AcpFarmerMapList"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".myteam.MyTeamDetailsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".acpfarmers.AcpFarmerActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".myteam.editdd.EditDDActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".farmerlist.OfflineFarmersListActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DemoRequestActivity.activity.DemoRequestsActivity.OfflineDemoRequestsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".myteam.MyTeamActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TestimonialList.filter.TestimonialFilterActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".activities.ActivitiesFilterActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".DemoRequestActivity.activity.DemoRequestsActivity.DemoFilterActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ACPVisitHistory.ACPVisitFilterActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ATPMenu.activity.activities.InvitedFarmerListActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ATPMenu.activity.activities.ATPDetailsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ATPMenu.activity.activities.ActivateAtpActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".teamsummary.activities.TeamSummaryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DemoRequestEvaluated.activities.DemoFilterEvaluteActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DemoRequestEvaluated.activities.RequestEvaluatedDetailsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DemoRequestEvaluated.activities.DemoRequestEvaluatedActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ATPMenu.activity.activities.RegisterFarmerActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ATPMenu.activity.activities.InviteFarmerActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AllAcres.AllAcresActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EarningFilter.EarningFilteringActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ACPVisitHistory.ACPVisitHistoryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AllEarnings.AllEarningsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".visithistory.VisitHistoryFarmerActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".validatefarmers.ValidateFarmersActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TestimonialList.WebViewActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TestimonialList.TestimonialListActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DemoRequestActivity.activity.CreateRequestActivity.SelectExistingFarmerActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FarmersDetails.FarmerDetailsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MarkVisits.MarkVisitActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".addfarmers.AddFarmersActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DemoRequestActivity.activity.CreateRequestActivity.CreateRequestActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ATPMenu.activity.AtpMenuActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyLeadMenu.activities.leaddetails.LeadDetailsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyLeadMenu.activities.myleadactivity.MyLeadActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DemoRequestActivity.activity.RequestDetailsActivity.RequestsDetailActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DemoRequestActivity.activity.DemoRequestsActivity.DemoRequestsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".farmerlist.FarmersListActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VillageDetails.VillageDetailsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyVillage.MyVillageActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Profile.ProfileActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PlanATP.View.CustomerCareActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlanATP.View.CustomerCareS1Activity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlanATP.View.CCQueryForS1DetailActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlanATP.View.CCQueryDetailActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SelfParticipationActivity.View.SPFilterActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CameraActivity.CameraActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Reports.View.FilterActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlanATP.testClassActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlanATP.View.ActiveTicketReasonActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MenuScreenActivity.View.DynamicMenuActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlanATP.View.TestimonialActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlanATP.View.ActivateTicketActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Reports.View.ReportActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlanATP.View.ATPActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlanATP.View.TicketDetailsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlanATP.View.SelfParticipationActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlanATP.View.SelfParticipationDetailsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlanATP.View.SelfParticipationReasonActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BDOPlanFilterActivity.View.BDOPlanFilterActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlanATP.View.BDOPlanFilterBDOListActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlanSyllabusForBdo.View.SyllabusHistoryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.TicketHistoryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ReportsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NewTicketActivity.NewTicketActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlanATP.View.PlanAtpActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.TicketDetailActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlanSyllabusForBdo.View.PlanSyllabusActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SyllabusHistory.View.SyllabusProductDescriptionActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.EditTicketActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MySyllabusBDO.View.MySyllabusActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SyllabusHistory.View.SyllabusBdoDescriptionActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlanATP.View.BDOPlanActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlanATP.View.BDOPlanDetailActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.AddNumberActivity"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SyllabusHistory.Dialog.AddProductDialogActivity"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme.customTheme2" />
+        <activity
+            android:name=".SyllabusHistory.Dialog.AddBDODialogActivity"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme.customTheme2" />
+        <activity
+            android:name=".RegisterFarmerScreen.normalFarmerRegistration.FarmerRegisterActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".teamsummary.activities.TeamSummaryFilterActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyLeadMenu.activities.myleadactivity.MyLeadFilterActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".teamsummary.activities.TeamSummaryUpcomingFilterActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.DataCollection.distributor.AddNewDistributor"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.DataCollection.chemical.ChemicalDataCollection"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.DataCollection.chemical.ChemicalAddDistrictWiseActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.DataCollection.chemical.ChemicalAddCropWiseActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.DataCollection.chemical.ChemicalAddCompanyWiseActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.DataCollection.chemical.ChemicalViewCompanyWiseActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.DataCollection.chemical.ChemicalViewCropWiseActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.DataCollection.chemical.ChemicalViewDistrictWiseActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.DataCollection.chemical.ChemicalAddCropSubActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.DataCollection.chemical.ChemicalAddCompanySubActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.DataCollection.distributor.DistributorDashBoard"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegisterFarmerScreen.ifcFarmerRegistration.AddIfcFarmerRegistrationActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".RegisterFarmerScreen.FarmerRegistrationMenuActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegisterFarmerScreen.ifcFarmerRegistration.IfcFarmerRegistrationActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegisterFarmerScreen.offlineFarmerData.OfflineDataIfcFarmer"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.offlineClaimTicket.ManualTicketClaim"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.offlineClaimTicket.ManualTicketDetailsOfflineActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.misAndReports.MisAndReportsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.misAndReports.MisReportsListActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.misAndReports.WebViewAnyDataActivity"
+            android:exported="true"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DemoRequestEvaluated.activities.DemoRequestMenuActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DemoRequestEvaluated.activities.DemoUtilizationSummaryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DemoRequestEvaluated.activities.MyDemoRequestActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DemoRequestEvaluated.activities.DemoRequestMaterialsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DemoRequestEvaluated.activities.RequestMaterialDetailActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".DemoRequestEvaluated.activities.ChatActivityForRequestedMaterial"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".DemoRequestEvaluated.activities.FilterDemoRequestActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".institutional.activity.InstitutionalActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".institutional.activity.teaEstate.TeaEstateMenuActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".institutional.activity.sugarMill.SugarMillListActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".institutional.activity.teaEstate.TeaEstateListActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".institutional.activity.TestimonialsListActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".institutional.activity.CircularsListActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".institutional.activity.teaEstate.TeaEstateAtpListActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".institutional.activity.teaEstate.TeaEstateVisitSummaryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".institutional.activity.teaEstate.AddTeaEstateStgBranchActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".institutional.activity.teaEstate.TeaEstateDetailActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".institutional.activity.teaEstate.PlanNewAtpActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".institutional.activity.teaEstate.TeaEstateAtpDetailActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".institutional.activity.teaEstate.TeaEstateSalesReportActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".institutional.activity.TeaEstateTestimonialFilterActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".institutional.activity.AddNewTestimonialActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".institutional.activity.teaEstate.AddMoreContactActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".institutional.activity.DistributorsConnectActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".institutional.activity.AddNewDistributorOrAdvisorActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".institutional.activity.AddCircularsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".institutional.activity.FilterCircularsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".institutional.activity.ViewDistributorsVisitsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".institutional.activity.teaEstate.OfflineArrivalDepartureTeaEstate"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".institutional.activity.teaEstate.OfflineTeaEstateData"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".institutional.activity.OfflineArrivalDepartureDistributor"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".institutional.activity.ViewVisitHistoryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".institutional.activity.sugarMill.SugarMillMenuActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".institutional.activity.influencers.InfluencersMenuActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".institutional.activity.sugarMill.AddSugarMillBranchActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".institutional.activity.sugarMill.OfflineSugarMillData"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".institutional.activity.sugarMill.SugarMillDetailActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".institutional.activity.sugarMill.SugarMillAtpListActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".institutional.activity.sugarMill.OfflineArrivalDepartureSugarMill"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".institutional.activity.sugarMill.SugarMillAtpDetailActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".institutional.activity.sugarMill.SugarMillPlanNewAtpActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".institutional.activity.sugarMill.SugarMillVisitSummaryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".institutional.activity.sugarMill.SugarMillSalesReportActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".institutional.activity.influencers.InfluencersAtpDetailActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".institutional.activity.influencers.AddMoreContactInfluencersActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".institutional.activity.influencers.AddInfluencersBranchActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".institutional.activity.influencers.InfluencersAtpListActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".institutional.activity.influencers.InfluencersListActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".institutional.activity.influencers.InfluencersDetailActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".institutional.activity.influencers.InfluencersPlanNewAtpActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".institutional.activity.influencers.OfflineArrivalDepartureInfluencers"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".institutional.activity.influencers.InfluencersVisitSummaryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".institutional.activity.influencers.InfluencersSalesReportActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".institutional.activity.influencers.OfflineInfluencersData"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".institutional.activity.teaEstate.TeaEstateFilterActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".institutional.activity.influencers.InfluencersTestimonialListActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity android:name=".institutional.activity.sugarMill.AddMoreContactSugarMillActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_app_key" />
+
+        <meta-data
+            android:name="firebase_performance_logcat_enabled"
+            android:value="true" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths_base" />
+        </provider>
+
+        <provider
+            android:name=".DataBase.DbStructure.DatabaseProvider"
+            android:authorities="com.dhanuka.indhan"
+            android:exported="false"
+            android:grantUriPermissions="true" />
+
+        <service android:name=".DataSyncServices.DataSyncServices"
+            android:exported="true"/>
+
+        <service android:name=".FCM.MyFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Testimonial.service.TestimonialService"
+            android:exported="true"/>
+        <service android:name=".Testimonial.service.TestimonialServiceTeaEstate"
+            android:exported="true"/>
+        <service
+            android:name=".Activity.ScheduledJobService"
+            android:exported="true"
+            android:label="Word service"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <service
+            android:name=".util.ImprovisedScheduleService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+    <queries>
+        <package android:name="com.google.android.apps.maps" />
+    </queries>
+
+    <queries>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+    </queries>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+</manifest>

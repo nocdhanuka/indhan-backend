@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical"
+    android:weightSum="12">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:elevation="@dimen/_10sdp">
+
+            <LinearLayout
+                android:id="@+id/iCross"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                tools:ignore="DuplicateIds">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_action_back"
+                    android:padding="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/iCross"
+                android:text="@string/plan_syllabus"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_15sdp" />
+
+            <LinearLayout
+                android:id="@+id/exportdb_btn"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/tick_white"
+                    android:padding="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF1F1F1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:text="BDO Details"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp">
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:focusable="true"
+                    android:text="BDO Name"
+                    android:textColor="@color/darkgray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.dhanuka.indhan.Fonts.Regular
+                        android:id="@+id/spinnerBDOName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_14sdp"
+                        android:drawableRight="@drawable/downarrow"
+                        android:text="Select BDO Name"
+                        android:textColor="@color/black" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_marginRight="@dimen/_14sdp"
+                        android:background="@color/darkgray" />
+                </LinearLayout>
+
+                <!-- <androidx.recyclerview.widget.RecyclerView
+                     android:layout_width="match_parent"
+                     android:visibility="gone"
+                     android:id="@+id/bdoname"
+                     android:layout_height="wrap_content"/>-->
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:focusable="true"
+                    android:text="Month"
+                    android:textColor="@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/spinnerMonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_14sdp"
+                    android:drawableRight="@drawable/downarrow"
+                    android:text="Select Month"
+                    android:textColor="@color/black" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_14sdp"
+                    android:background="@color/darkgray" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_10sdp"
+                android:background="#FFD9D9D9" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF1F1F1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:text="Product"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp">
+
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:focusable="true"
+                    android:text="Crop"
+                    android:textColor="@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/spinnerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_14sdp"
+                    android:drawableRight="@drawable/downarrow"
+                    android:text="Select Crop"
+                    android:textColor="@color/black" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_14sdp"
+                    android:background="@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:focusable="true"
+                    android:text="Product"
+                    android:textColor="@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/spinnerofProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_14sdp"
+                    android:drawableRight="@drawable/downarrow"
+                    android:text="Select Product"
+                    android:textColor="@color/black" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_14sdp"
+                    android:background="@color/darkgray" />
+
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:focusable="true"
+                    android:text="No. of Activities"
+                    android:textColor="@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/spinner_no_of_days"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_14sdp"
+                    android:drawableRight="@drawable/downarrow"
+                    android:text="Select No. of Activities"
+                    android:textColor="@color/black" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_14sdp"
+                    android:background="@color/darkgray" />
+
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:focusable="true"
+                    android:text="No. of DD"
+                    android:textColor="@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/spinner_no_of_dd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_14sdp"
+                    android:drawableRight="@drawable/downarrow"
+                    android:text="Select No. of DD"
+                    android:textColor="@color/black" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_14sdp"
+                    android:background="@color/darkgray" />
+            </LinearLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilMobileNumber"
+                style="@style/TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:visibility="gone">
+
+                <com.dhanuka.indhan.Fonts.RegularEditText
+                    android:id="@+id/etRetMobileNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:backgroundTint="@color/darkgray"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/mobile_number"
+                    android:imeOptions="actionDone"
+                    android:importantForAutofill="noExcludeDescendants"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/darkgray"
+                    android:textSize="@dimen/_14sdp"
+                    android:visibility="gone" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/tvReAddNewPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:paddingRight="@dimen/_16sdp"
+                android:text="+ Add New Product"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvListProductList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@color/White"
+                android:nestedScrollingEnabled="false" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.dhanuka.indhan.Fonts.Regular
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ivCross"
+            android:gravity="center"
+            android:text="Save"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_15sdp" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+</LinearLayout>

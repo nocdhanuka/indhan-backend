@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_gray"
+    android:minHeight="@dimen/_100sdp"
+    android:orientation="vertical">
+
+    <com.dhanuka.indhan.Fonts.Regular
+        android:id="@+id/date_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:text="testing"
+        android:textColor="@color/black"
+        android:visibility="gone" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:elevation="@dimen/_15sdp"
+        android:minHeight="@dimen/_90sdp"
+        android:paddingTop="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_10sdp">
+
+
+            <com.dhanuka.indhan.Fonts.Medium
+                android:id="@+id/ref_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:focusable="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <com.dhanuka.indhan.Fonts.Medium
+                android:id="@+id/status_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:paddingTop="@dimen/_4sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_2sdp"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="visible" />
+
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ref_no"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:textColor="@color/darkgray" />
+
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/prod_type_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/time_tv"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:textColor="@color/darkgray" />
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/remark_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/prod_type_tv"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:lines="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/darkgray" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

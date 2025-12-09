@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_4sdp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/tvRePhoneNumber"
+                android:layout_marginLeft="@dimen/_5sdp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="hbchbhcbdhbv"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+            <com.dhanuka.indhan.Fonts.Medium
+                android:id="@+id/tvMeDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:singleLine="true"
+                android:layout_marginRight="@dimen/_5sdp"
+
+                android:text="DELETE"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                />
+
+        </RelativeLayout>
+
+        <com.dhanuka.indhan.Fonts.Medium
+            android:id="@+id/tvCallNum"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:text="test"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/darkgray" />
+        <com.dhanuka.indhan.Fonts.Medium
+            android:id="@+id/tvMeCallTime"
+            android:text="test"
+            android:layout_marginLeft="@dimen/_5sdp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/darkgray" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/darkgray" />
+
+</LinearLayout>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical"
+    android:weightSum="12">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:elevation="@dimen/_10sdp">
+
+            <LinearLayout
+                android:id="@+id/iCross"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:paddingEnd="@dimen/_4sdp"
+                android:paddingRight="@dimen/_4sdp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_action_back"
+                    android:contentDescription="@string/add_image"
+                    android:padding="@dimen/_10sdp"/>
+
+            </LinearLayout>
+
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/pd_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/iCross"
+                android:layout_toRightOf="@+id/iCross"
+                android:text="Sugar Mill – Plan ATP"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_15sdp" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/llNestedScroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvMonth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAccent"
+                        android:padding="@dimen/_5sdp"
+                        android:text="month"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/_15sdp" />
+
+
+                    <noman.weekcalendar.WeekCalendar
+                        android:id="@+id/calendar"
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        app:dayNameLength="threeLetters"
+                        app:daysBackgroundColor="@color/AppWhite"
+                        app:daysTextColor="@color/black"
+                        app:numOfPages="80"
+                        app:todaysDateBgColor="@color/cardview_shadow_end_color"
+                        app:weekBackgroundColor="@color/AppWhite"
+                        app:weekTextColor="@color/black"
+                        app:weekTextSize="@dimen/_10sdp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingStart="@dimen/_10sdp">
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:focusable="true"
+                    android:text="FL Name"
+                    android:textColor="@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/spinner_dd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textColorHint="@color/black"
+                    android:drawableRight="@drawable/downarrow"
+                    android:hint="Select Fl"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:textColor="@color/black"
+                    android:drawableEnd="@drawable/downarrow"
+                    android:layout_marginEnd="@dimen/_14sdp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_14sdp"
+                    android:background="@color/darkgray"
+                    android:layout_marginEnd="@dimen/_14sdp" />
+
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:id="@+id/tvPresenterLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:focusable="true"
+                    android:text="Head Office / Branch Office"
+                    android:textColor="@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/spinner_estate_source"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:drawableRight="@drawable/downarrow"
+                    android:hint="Select Sugar Mill"
+                    android:textColor="@color/black"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:textColorHint="@color/black"
+                    android:layout_marginEnd="@dimen/_14sdp"
+                    android:drawableEnd="@drawable/downarrow" />
+
+                <View
+                    android:id="@+id/viewPresenter"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_14sdp"
+                    android:background="@color/darkgray"
+                    android:layout_marginEnd="@dimen/_14sdp" />
+
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:id="@+id/tvMonitorLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:focusable="true"
+                    android:text="Select Monitor"
+                    android:textColor="@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/spinner_monitor_source"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginRight="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:drawableRight="@drawable/downarrow"
+                    android:text="Select Monitor"
+                    android:textColor="@color/black" />
+
+                <View
+                    android:id="@+id/viewMonitor"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:visibility="gone"
+                    android:layout_marginRight="@dimen/_14sdp"
+                    android:background="@color/darkgray" />
+            </LinearLayout>
+
+          <LinearLayout
+              android:id="@+id/llCheckBox"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="@dimen/_5sdp"
+              android:orientation="horizontal"
+              android:layout_marginLeft="@dimen/_5sdp">
+
+              <CheckBox
+                  android:id="@+id/checkboxManager"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+
+              <com.dhanuka.indhan.Fonts.BoldTextView
+                  android:layout_width="match_parent"
+                  android:gravity="start"
+                  android:textSize="@dimen/_14sp"
+                  android:id="@+id/txtQuestionAssign"
+                  android:textColor="@color/black"
+                  android:text="Is FL is also going at atp."
+                  android:layout_height="wrap_content" />
+
+          </LinearLayout>
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/tvReAddNewActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingRight="@dimen/_16sdp"
+                android:text="Save &amp; Add new activity"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvListPlanAtpList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:background="@color/bg_gray"
+                android:nestedScrollingEnabled="false" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.dhanuka.indhan.Fonts.Regular
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="Submit"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_15sdp" />
+    </com.google.android.material.appbar.AppBarLayout>
+</LinearLayout>

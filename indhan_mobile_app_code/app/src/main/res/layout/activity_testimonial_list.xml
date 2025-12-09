@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray">
+
+
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/colorButton">
+
+        <com.dhanuka.indhan.Fonts.BoldTextView
+            android:id="@+id/pd_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:text="Testimonial"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_15sdp" />
+
+        <ImageView
+            android:id="@+id/imgFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:layout_marginRight="@dimen/_10dp"
+            android:padding="@dimen/_5dp"
+            app:srcCompat="@drawable/filter"
+            app:tint="@color/white" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lnrUploadingDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlHeader"
+        android:layout_marginTop="@dimen/_10dp"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/_10dp"
+        android:paddingEnd="@dimen/_10dp"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.dhanuka.indhan.Fonts.Medium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:text="File name"
+                android:textColor="@color/black"
+                android:id="@+id/txtFileName"
+                android:textSize="@dimen/_12sp"/>
+
+            <com.dhanuka.indhan.Fonts.Medium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:text="File name"
+                android:textColor="@color/black"
+                android:id="@+id/txtPercentage"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/_10sp"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lnrUploadingDetails"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_40sdp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewTestimonial"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:nestedScrollingEnabled="false"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <com.dhanuka.indhan.Fonts.BoldTextView
+        android:id="@+id/addTestimonial"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorButton"
+        android:gravity="center"
+        android:text="Add Testimonial"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_15sdp" />
+
+    <com.dhanuka.indhan.Fonts.Medium
+        android:id="@+id/txtEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/data_not_found"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

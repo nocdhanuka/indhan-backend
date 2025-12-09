@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reports.supervisor_report.fragments.DemosFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/bg_gray"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtDemos"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/_10dp"
+            android:textSize="@dimen/_20sp"
+            android:textStyle="bold"
+            android:text="Demos"
+            android:textColor="@color/colorButton"
+            android:layout_height="wrap_content"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@+id/txtDemos"
+            android:layout_margin="@dimen/_5dp"
+            android:layout_width="match_parent"
+            android:id="@+id/recyclerViewDemos"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+</FrameLayout>

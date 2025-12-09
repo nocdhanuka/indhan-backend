@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_100sdp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="15dp"
+    android:background="@color/bg_gray">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="@dimen/_25sdp"
+        android:minHeight="100dp"
+        card_view:cardElevation="2sp"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.dhanuka.indhan.Fonts.Medium
+                android:id="@+id/tvNotificationCounter"
+                android:layout_alignRight="@+id/IvImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:textColor="@color/red"
+                android:textSize="@dimen/_13sdp" />
+            <ImageView
+                android:id="@+id/IvImage"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_centerHorizontal="true" />
+
+            <com.dhanuka.indhan.Fonts.Medium
+                android:id="@+id/tvMeCategoryName"
+                android:layout_below="@+id/IvImage"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:maxLines="2"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical"
+    android:weightSum="12">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:elevation="@dimen/_10sdp">
+
+            <LinearLayout
+                android:id="@+id/iCross"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                tools:ignore="DuplicateIds">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_arrow_back"
+                    android:padding="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/pd_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/iCross"
+                android:text="Subject"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_15sdp" />
+
+            <ImageView
+                android:id="@+id/call_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:src="@drawable/call"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollX="0dp"
+        android:scrollY="0dp"
+
+        android:layout_weight="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_gray">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_weight="3">
+
+                    <TextView
+                        android:id="@+id/date_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/_20sdp"
+
+                        android:text="date"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/_9sdp" />
+
+                    <TextView
+                        android:id="@+id/ref_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/date_tv"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:text="Plan"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16sdp" />
+
+                    <TextView
+                        android:id="@+id/query_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ref_no"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:text="Query"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/_9sdp" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:background="@color/darkgray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/bg_gray">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <ImageView
+                        android:id="@+id/img"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:src="@drawable/user_clip" />
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_toRightOf="@+id/img"
+                        android:text="Name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16sdp" />
+
+
+                    <TextView
+                        android:id="@+id/address_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/name"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_toRightOf="@+id/img"
+                        android:text="address"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/_9sdp" />
+
+                    <TextView
+                        android:id="@+id/contact_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/address_tv"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_toRightOf="@+id/img"
+                        android:text="Contact"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/_9sdp" />
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:background="@color/darkgray" />
+
+            <com.dhanuka.indhan.Fonts.Medium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:focusable="true"
+                android:text="Description"
+                android:textColor="@color/darkgray" />
+
+            <TextView
+                android:id="@+id/description_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_20sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+
+                android:text="Contact"
+                android:textColor="#666666"
+                android:textSize="@dimen/_9sdp" />
+
+
+            <LinearLayout
+                android:id="@+id/bdoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_20sdp"
+                android:paddingRight="@dimen/_20sdp">
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:text="Assign to"
+                    android:textColor="@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/spinner_bdo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:drawableRight="@drawable/downarrow"
+                    android:text="Select BDO"
+                    android:textColor="@color/black" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_14sdp"
+                    android:background="@color/darkgray" />
+
+            </LinearLayout>
+
+
+            <!-- <androidx.recyclerview.widget.RecyclerView
+                 android:id="@+id/rcViewProdDes"
+                 android:layout_width="match_parent"
+                 android:layout_height="0dp"
+                 android:layout_weight="9"
+                 android:background="@color/bg_gray" />-->
+
+
+            <!--<com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/mess"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="9"
+                android:gravity="center"
+                android:text="No History Data Yet"
+                android:textSize="@dimen/_15sdp"
+                android:visibility="gone" />-->
+            <LinearLayout
+                android:id="@+id/prod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_20sdp"
+                android:paddingRight="@dimen/_20sdp"
+                android:visibility="gone">
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:text="Product"
+                    android:textColor="@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/spinner_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:drawableRight="@drawable/downarrow"
+                    android:text="Select Product"
+                    android:textColor="@color/black" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_14sdp"
+                    android:background="@color/darkgray" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilquantity"
+                    style="@style/TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <com.dhanuka.indhan.Fonts.RegularEditText
+                        android:id="@+id/quantity_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:backgroundTint="@color/darkgray"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:focusableInTouchMode="true"
+                        android:hint="Quantity"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        android:maxLines="1"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/darkgray"
+                        android:textSize="@dimen/_14sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:nestedScrollingEnabled="false"
+                android:id="@+id/history_View"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/submit_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:text="Submit"
+        android:textColor="@color/white" />
+</LinearLayout>

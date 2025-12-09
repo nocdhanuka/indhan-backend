@@ -1,0 +1,24 @@
+
+# Created by .ignore support plugin (hsz.mobi)
+.gradle/
+.idea/caches/
+.idea/misc.xml
+.idea/workspace.xml
+build/
+dhanukabdandroid.iml
+local.properties
+/.idea/
+/.idea/caches/
+/.idea/libraries/
+/.idea/runConfigurations.xml
+/.idea/modules.xml
+/.idea/dictionaries/
+/.idea/codeStyles/
+/.idea/compiler.xml
+/.idea/gradle.xml
+/.idea/misc.xml
+/.idea/vcs.xml
+/.idea/inspectionProfiles/
+/.idea/workspace.xml
+/.idea/encodings.xml
+/build/

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="12">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlHeader"
+        android:layout_marginStart="@dimen/_10dp"
+        android:layout_marginEnd="@dimen/_10dp"
+        android:background="@color/White"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10dp">
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/fromDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:layout_marginEnd="@dimen/_5dp"
+                    android:layout_marginRight="@dimen/_5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edit"
+                    android:drawableRight="@drawable/downarrow"
+                    android:padding="@dimen/_10dp"
+                    android:text="From"
+                    android:textColor="@color/black" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/toDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5dp"
+                    android:layout_marginLeft="@dimen/_5dp"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edit"
+                    android:drawableRight="@drawable/downarrow"
+                    android:padding="@dimen/_10dp"
+                    android:text="To"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llRSM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30dp"
+                android:background="@drawable/input_border"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_18dp"
+                    android:src="@drawable/downarrow" />
+
+                <TextView
+                    android:id="@+id/txtRSM"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:hint="Select RSM"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llASM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30dp"
+                android:background="@drawable/input_border"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_18dp"
+                    android:src="@drawable/downarrow" />
+
+                <TextView
+                    android:id="@+id/txtASM"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:hint="Select ASM"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5dp"
+                    android:layout_marginLeft="@dimen/_5dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorButton"
+                    android:gravity="center"
+                    android:text="Submit"
+                    android:textColor="@color/white" />
+
+                <com.dhanuka.indhan.Fonts.RegularButton
+                    android:id="@+id/btnClear"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_5dp"
+                    android:layout_marginRight="@dimen/_5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_clear_btn"
+                    android:gravity="center"
+                    android:text="Clear"
+                    android:textColor="@color/colorButton" />
+            </LinearLayout>
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/spinnerProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit"
+                android:drawableRight="@drawable/downarrow"
+                android:padding="@dimen/_10dp"
+                android:text="Select Product"
+                android:textColor="@color/black" />
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/spinnerFL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit"
+                android:drawableRight="@drawable/downarrow"
+                android:padding="@dimen/_10dp"
+                android:text="Select FL"
+                android:textColor="@color/black" />
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/spinnerDD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit"
+                android:drawableRight="@drawable/downarrow"
+                android:padding="@dimen/_10dp"
+                android:text="Select DD"
+                android:textColor="@color/black" />
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/spinnerDataSource"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit"
+                android:drawableRight="@drawable/downarrow"
+                android:padding="@dimen/_10dp"
+                android:text="Select Data source"
+                android:textColor="@color/black" />
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/SpinnerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20dp"
+                android:background="@drawable/bg_edit"
+                android:drawableRight="@drawable/downarrow"
+                android:padding="@dimen/_10dp"
+                android:text="Select Crop"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:elevation="@dimen/_10sdp">
+
+
+            <LinearLayout
+                android:id="@+id/camera_ini"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:visibility="gone"
+                tools:ignore="DuplicateIds">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/camera_white"
+                    android:padding="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/bdo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/iCross"
+                android:text="Filter Activities"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_15sdp" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+</RelativeLayout>

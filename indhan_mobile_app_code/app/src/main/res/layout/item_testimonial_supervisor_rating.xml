@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout        xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <RelativeLayout
+        android:id="@+id/llayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5dp"
+        android:padding="@dimen/_5dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatRatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            style="@style/itemRatingBar"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_below="@+id/ratingBar"
+            android:id="@+id/txtRatingName"
+            android:text="cjgusdivi"
+            android:layout_margin="@dimen/_5dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorButton"
+            android:textSize="@dimen/_12sp"
+
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</layout>

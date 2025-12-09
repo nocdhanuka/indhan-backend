@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@color/colorPrimary"
+            android:elevation="@dimen/_10sdp">
+
+            <LinearLayout
+                android:id="@+id/ivBack"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_action_back"
+                    android:padding="@dimen/_10sdp" />
+            </LinearLayout>
+
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_toRightOf="@+id/ivBack"
+                android:padding="@dimen/_6sdp"
+                android:text="@string/register_farmers"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:id="@+id/ivAddMnNumber"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/_12sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/add"
+                    android:padding="@dimen/_10sdp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_16sdp"
+                android:orientation="vertical">
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/tvReTicketNoDisplay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:id="@+id/tvMeTicketTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:singleLine="true"
+                    android:textColor="@color/darkgray" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@color/darkgray" />
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_16sdp"
+                android:text="@string/missed_calls"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp" />
+
+            <ListView
+                android:id="@+id/rvMissCall"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                tools:listitem="@layout/number_time_row" />
+
+            <com.dhanuka.indhan.Fonts.Medium
+                android:id="@+id/tvMeMissedHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_16sdp"
+                android:text="@string/missed_hint"
+                android:textColor="@color/darkgray"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/darkgray" />
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_16sdp"
+                android:text="@string/manually_added"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvManualAdded"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@color/White" />
+
+            <com.dhanuka.indhan.Fonts.Medium
+                android:id="@+id/tvMeManualHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_margin="@dimen/_16sdp"
+                android:text="@string/manually_added_hint"
+                android:textColor="@color/darkgray"
+                android:textSize="16sp" />
+
+            <com.dhanuka.indhan.Fonts.RegularButton
+                android:id="@+id/btnRbSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_60sdp"
+                android:layout_marginRight="@dimen/_60sdp"
+                android:layout_marginTop="@dimen/_32sdp"
+                android:background="@drawable/login_button_selector"
+                android:elevation="15dp"
+                android:text="@string/btn_submit"
+                android:textAllCaps="false"
+                android:textColor="@color/White"
+                android:textSize="@dimen/_13sdp" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.dhanuka.indhan.Fonts.Regular
+        android:id="@+id/tvDelete"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/bg_gray"
+        android:drawableRight="@drawable/delete"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/_16sdp"
+        android:paddingRight="@dimen/_16sdp"
+        android:text="Special Participant"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilParName"
+        style="@style/TextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp">
+
+        <com.dhanuka.indhan.Fonts.RegularEditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:backgroundTint="@color/darkgray"
+            android:drawablePadding="@dimen/_5sdp"
+            android:focusableInTouchMode="true"
+            android:hint="@string/name"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="noExcludeDescendants"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/darkgray"
+            android:textSize="@dimen/_14sdp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilParNum"
+        style="@style/TextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp">
+
+        <com.dhanuka.indhan.Fonts.RegularEditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:backgroundTint="@color/darkgray"
+            android:drawablePadding="@dimen/_5sdp"
+            android:focusableInTouchMode="true"
+            android:hint="@string/phone_number"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="noExcludeDescendants"
+            android:inputType="number"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/darkgray"
+            android:textSize="@dimen/_14sdp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</LinearLayout>

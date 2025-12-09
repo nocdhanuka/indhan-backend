@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="@dimen/_10dp"
+        android:layout_marginStart="@dimen/_20dp"
+        android:layout_marginEnd="@dimen/_20dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="@dimen/_5dp"
+                android:text="Submit Feedback"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_14sp" />
+
+            <ImageView
+                android:id="@+id/imgView"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/txtHeading"
+                android:layout_margin="@dimen/_20dp"
+                android:background="@color/bg_gray"
+                app:srcCompat="@drawable/ic_photo"
+                android:layout_height="@dimen/_100dp"/>
+
+            <RelativeLayout
+                android:id="@+id/rlClick"
+                android:layout_below="@+id/imgView"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txtCaptureImage"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/click_here_to_capture_image"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/edtFeedback"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_below="@+id/rlClick"
+                android:layout_marginStart="@dimen/_20dp"
+                android:layout_marginLeft="@dimen/_20dp"
+                android:layout_marginTop="@dimen/_20dp"
+                android:layout_marginEnd="@dimen/_20dp"
+                android:layout_marginRight="@dimen/_20dp"
+                android:layout_marginBottom="@dimen/_20dp"
+                android:background="@drawable/bg_edit" />
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40dp"
+                android:background="@color/colorButton"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:layout_below="@+id/edtFeedback"
+                android:layout_marginStart="@dimen/_20dp"
+                android:layout_marginBottom="@dimen/_20dp"
+                android:layout_marginEnd="@dimen/_20dp"/>
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</LinearLayout>

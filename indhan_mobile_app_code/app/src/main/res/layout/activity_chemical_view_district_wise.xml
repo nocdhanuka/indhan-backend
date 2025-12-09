@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/llHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/colorButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/llHeaderValue"
+            android:layout_toRightOf="@+id/llHeaderValue"
+            android:padding="@dimen/_10dp"
+            android:tint="@color/white"
+            app:srcCompat="@drawable/filter" />
+
+        <com.dhanuka.indhan.Fonts.BoldTextView
+            android:id="@+id/llHeaderValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical|start"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:text="Molecule Data Collection - View District Wise"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_12sdp" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvChemicalDistrictWise"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFilterChemical" />
+
+    <com.dhanuka.indhan.Fonts.Regular
+        android:id="@+id/tvDistrictName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_weight="1"
+        android:gravity="start"
+        android:maxLines="2"
+        android:minLines="1"
+        android:padding="@dimen/_5sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_9sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFyUser" />
+
+    <com.dhanuka.indhan.Fonts.Regular
+        android:id="@+id/tvFyUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_weight="1"
+        android:gravity="center_vertical|center"
+        android:text="FY(2021-2022)"
+        android:maxLines="2"
+        android:minLines="1"
+        android:padding="@dimen/_5sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_9sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llHeader" />
+
+
+
+    <com.dhanuka.indhan.Fonts.Regular
+        android:id="@+id/txtFilterChemical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        style="?android:listSeparatorTextViewStyle"
+        android:textStyle="normal"
+        android:textAllCaps="false"
+        android:drawableRight="@drawable/downarrow"
+        android:drawablePadding="@dimen/_5dp"
+        android:minLines="1"
+        android:maxLines="4"
+        android:hint="Filter Formulation wise"
+        android:padding="@dimen/_5sdp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/darkgray"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDistrictName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

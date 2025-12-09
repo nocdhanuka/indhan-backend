@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "91324362546",
+    "firebase_url": "https://indhan-a6c3d.firebaseio.com",
+    "project_id": "indhan-a6c3d",
+    "storage_bucket": "indhan-a6c3d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91324362546:android:7a0ab3627affb60f",
+        "android_client_info": {
+          "package_name": "com.dhanuka.indhan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91324362546-tju2ma7bhsa1dqh8m649kvlj8vmik1kb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dhanuka.indhan",
+            "certificate_hash": "1d61bec026563fdc1fe505f65818031d164147f1"
+          }
+        },
+        {
+          "client_id": "91324362546-ii3o6abge337cnps0r7jlnhcuu8avjsl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dhanuka.indhan",
+            "certificate_hash": "6c349de42a489ad19e14cc6647d7a9d23775c87c"
+          }
+        },
+        {
+          "client_id": "91324362546-cuffs52r5h7ov4978ij1dqgasjrf5k6o.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "91324362546-cuffs52r5h7ov4978ij1dqgasjrf5k6o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGwQv0z8m6iaDWvs8umg_E9QNnUTRIgWU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "91324362546-cuffs52r5h7ov4978ij1dqgasjrf5k6o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

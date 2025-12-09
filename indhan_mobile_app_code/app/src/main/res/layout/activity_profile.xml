@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:background="@color/colorButton"
+        android:layout_height="@dimen/_40sdp">
+
+        <com.dhanuka.indhan.Fonts.Medium
+            android:id="@+id/pd_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_summary"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_15sdp" />
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorButton"
+            android:layout_height="0dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/colorButton"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imgProfile"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_width="@dimen/_70sdp"
+                    android:src="@drawable/def_user"
+                    android:scaleType="center"
+                    android:layout_height="@dimen/_70sdp"
+                    />
+
+                <com.dhanuka.indhan.Fonts.BoldTextView
+                    android:id="@+id/txtUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/imgProfile"
+                    android:text="Johnathan"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_15sdp"
+                    android:padding="@dimen/_2sdp"
+                    android:layout_toRightOf="@+id/imgProfile" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/txtID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/imgProfile"
+                    android:text="DD12343XYZ"
+                    android:layout_below="@+id/txtUserName"
+                    android:padding="@dimen/_2sdp"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_toRightOf="@+id/imgProfile" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/txtPhoneNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+91 876543213"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_below="@+id/imgProfile"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:drawableLeft="@drawable/call"
+                    android:drawablePadding="@dimen/_5sdp"
+
+                    />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/txtAltPhoneNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+91 876543213"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/imgProfile"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:drawableLeft="@drawable/alt"
+                    android:drawablePadding="@dimen/_5sdp"
+
+                    />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/txtEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="test@text.com"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_below="@+id/txtPhoneNo"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:drawableLeft="@drawable/mail"
+                    android:drawablePadding="@dimen/_5sdp"
+
+                    />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/txtAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A-26,Sec-63,Noida"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_below="@+id/txtEmail"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:drawableLeft="@drawable/map"
+                    android:drawablePadding="@dimen/_5sdp"
+
+                    />
+
+                <com.dhanuka.indhan.Fonts.BoldTextView
+                    android:id="@+id/txtAverageFarmer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="45"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_below="@+id/txtAddress"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:drawablePadding="@dimen/_2sdp"
+
+                    />
+                <com.dhanuka.indhan.Fonts.BoldTextView
+                    android:id="@+id/txtAverageFarmerPerVillage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Average Farmers/Village"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_below="@+id/txtAverageFarmer"
+                    android:layout_centerInParent="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:drawablePadding="@dimen/_5sdp"
+
+                    />
+
+
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight=".8"
+            android:layout_height="0dp">
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight=".8"
+            android:layout_height="0dp">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_height="match_parent">
+
+
+            </androidx.viewpager.widget.ViewPager>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

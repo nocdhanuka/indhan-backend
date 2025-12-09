@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_70dp"
+        android:layout_marginRight="@dimen/_70dp"
+        android:background="@drawable/round_corner_white"
+        android:orientation="vertical">
+        <com.dhanuka.indhan.Fonts.Regular
+            android:id="@+id/txtNa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="N/A"
+            android:textSize="@dimen/_16sp"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:textColor="@color/black"
+            android:padding="5dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_5dp"
+            android:layout_marginBottom="@dimen/_5dp"
+            android:background="@color/bg_gray"/>
+
+        <com.dhanuka.indhan.Fonts.Regular
+            android:id="@+id/txtChooseDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose date"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sp"
+            android:padding="5dp"/>
+
+
+
+    </LinearLayout>
+</LinearLayout>

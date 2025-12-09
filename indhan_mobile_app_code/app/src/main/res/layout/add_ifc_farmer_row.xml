@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_4sdp">
+
+    <ImageView
+        android:id="@+id/ivDelete"
+        android:layout_width="@dimen/_13sdp"
+        android:layout_height="@dimen/_13sdp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/_4sdp"
+        android:layout_marginRight="@dimen/_4sdp"
+        android:layout_weight="0.1"
+        android:src="@drawable/delete"
+        app:tint="@color/red" />
+
+    <ImageView
+        android:id="@+id/ivFarmerImage"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_toRightOf="@+id/ivDelete"
+        android:background="@drawable/input_border_green"
+        android:padding="@dimen/_10sdp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/name"
+        android:layout_toEndOf="@+id/ivDelete" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilMobileNumber"
+        style="@style/TextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tilFarmerName"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_toEndOf="@+id/ivFarmerImage"
+        android:layout_toRightOf="@+id/ivFarmerImage">
+
+        <com.dhanuka.indhan.Fonts.RegularEditText
+            android:id="@+id/etRetMobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:backgroundTint="@color/darkgray"
+            android:digits="0123456789"
+            android:drawablePadding="@dimen/_5sdp"
+            android:hint="@string/mobile_number"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="noExcludeDescendants"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/darkgray"
+            android:textSize="@dimen/_14sdp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilAcers"
+        style="@style/TextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tilMobileNumber"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_toEndOf="@+id/ivFarmerImage"
+        android:layout_toRightOf="@+id/ivFarmerImage">
+
+        <com.dhanuka.indhan.Fonts.RegularEditText
+            android:id="@+id/etAcers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:backgroundTint="@color/darkgray"
+            android:drawablePadding="@dimen/_5sdp"
+            android:hint="@string/acerage"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="noExcludeDescendants"
+            android:inputType="numberDecimal|number"
+            android:maxLength="15"
+            android:maxLines="1"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/darkgray"
+            android:textSize="@dimen/_14sdp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilFarmerName"
+        style="@style/TextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_toEndOf="@+id/ivFarmerImage"
+        android:layout_toRightOf="@+id/ivFarmerImage">
+
+        <com.dhanuka.indhan.Fonts.RegularEditText
+            android:id="@+id/etFarmerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:backgroundTint="@color/darkgray"
+            android:drawablePadding="@dimen/_5sdp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="@string/farmer_name"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="noExcludeDescendants"
+            android:inputType="textPersonName"
+            android:maxLength="60"
+            android:maxLines="1"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/darkgray"
+            android:textSize="@dimen/_14sdp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</RelativeLayout>

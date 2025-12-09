@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/tools">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="130dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        card_view:cardBackgroundColor="#f0f2f5"
+        card_view:cardCornerRadius="@dimen/_10sdp"
+        card_view:cardElevation="16dp"
+        android:padding="@dimen/_8dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/llCompanyDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="vertical">
+
+            <com.dhanuka.indhan.Fonts.BoldTextView
+                android:id="@+id/tvLabelContactNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact 1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sp" />
+
+            <LinearLayout
+                android:id="@+id/llLevel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:weightSum="2">
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_12sp"
+                    android:text="Level"
+                    android:textColor="@color/charcoalGrey" />
+
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:id="@+id/tvLevelName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_12sp"
+                    android:text="-"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDesignation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:weightSum="2">
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_12sp"
+                    android:text="Designation"
+                    android:textColor="@color/charcoalGrey" />
+
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:id="@+id/tvDesignation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_12sp"
+                    android:text="-"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:weightSum="2">
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_12sp"
+                    android:text="Person Name"
+                    android:textColor="@color/charcoalGrey" />
+
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:id="@+id/tvPersonName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_12sp"
+                    android:text="-"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llWaNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:weightSum="2">
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_12sp"
+                    android:text="WhatsApp Number"
+                    android:textColor="@color/charcoalGrey" />
+
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:id="@+id/tvWaNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_12sp"
+                    android:text="-"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:weightSum="2">
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_12sp"
+                    android:text="Mobile Number"
+                    android:textColor="@color/charcoalGrey" />
+
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:id="@+id/tvMobileNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_12sp"
+                    android:text="-"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:weightSum="2">
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Email"
+                    android:textSize="@dimen/_12sp"
+                    android:textColor="@color/charcoalGrey" />
+
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:id="@+id/tvEmail"
+                    android:layout_width="0dp"
+                    android:textSize="@dimen/_12sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="-"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    
+</androidx.constraintlayout.widget.ConstraintLayout>

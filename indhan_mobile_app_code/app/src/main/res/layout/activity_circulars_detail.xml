@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray">
+
+    <LinearLayout
+        android:id="@+id/llCircularDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llHeader">
+
+        <LinearLayout
+            android:id="@+id/llLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            android:weightSum="2">
+
+            <com.dhanuka.indhan.Fonts.Medium
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Circular Name"
+                android:textColor="@color/charcoalGrey"
+                android:textSize="@dimen/_12sp" />
+
+            <com.dhanuka.indhan.Fonts.Medium
+                android:id="@+id/tvLevelName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llDesignation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            android:weightSum="2">
+
+            <com.dhanuka.indhan.Fonts.Medium
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Created Date"
+                android:textColor="@color/charcoalGrey"
+                android:textSize="@dimen/_12sp" />
+
+
+            <com.dhanuka.indhan.Fonts.Medium
+                android:id="@+id/tvDesignation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            android:weightSum="2">
+
+            <com.dhanuka.indhan.Fonts.Medium
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Publish Date"
+                android:textColor="@color/charcoalGrey"
+                android:textSize="@dimen/_12sp" />
+
+
+            <com.dhanuka.indhan.Fonts.Medium
+                android:id="@+id/tvPersonName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llWaNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            android:weightSum="2">
+
+            <com.dhanuka.indhan.Fonts.Medium
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Is Published"
+                android:textColor="@color/charcoalGrey"
+                android:textSize="@dimen/_12sp" />
+
+
+            <com.dhanuka.indhan.Fonts.Medium
+                android:id="@+id/tvWaNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/llHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/colorButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.dhanuka.indhan.Fonts.BoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:text="Circular Detail"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_15sdp" />
+
+    </RelativeLayout>
+
+    <com.dhanuka.indhan.Fonts.Medium
+        android:id="@+id/txtWhatsAppMessageLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_8sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="WhatsApp Message"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sp"
+        app:layout_constraintStart_toStartOf="@+id/llCircularDetails"
+        app:layout_constraintTop_toBottomOf="@+id/llCircularDetails" />
+
+    <com.dhanuka.indhan.Fonts.Medium
+        android:id="@+id/txtSentToLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_8sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="Sent To:"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sp"
+        app:layout_constraintStart_toStartOf="@+id/txtWhatsAppMessage"
+        app:layout_constraintTop_toBottomOf="@+id/txtWhatsAppMessage" />
+
+
+    <com.dhanuka.indhan.Fonts.Medium
+        android:id="@+id/txtAddMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="@dimen/_18sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingRight="@dimen/_18sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="Edit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.dhanuka.indhan.Fonts.Regular
+        android:id="@+id/txtSendToPersons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_8sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="-"
+        android:textColor="@color/charcoalGrey"
+        android:textSize="@dimen/_14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSentToLabel" />
+
+    <com.dhanuka.indhan.Fonts.Regular
+        android:id="@+id/txtWhatsAppMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_8sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="-"
+        android:textColor="@color/charcoalGrey"
+        android:textSize="@dimen/_14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtWhatsAppMessageLabel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

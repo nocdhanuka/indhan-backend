@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".acpfarmers.AcpFarmerActivity">
+
+    <LinearLayout
+        android:id="@+id/rlSubHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_below="@+id/rlHeader"
+        android:background="@color/colorButton"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_white_corner">
+
+            <TextView
+                android:id="@+id/txtTotalACPFarmers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/_5dp"
+                android:gravity="center"
+                android:text="Total ACP farmer"
+                android:textColor="@color/colorButton"
+                android:textSize="@dimen/_12sp" />
+
+            <TextView
+                android:id="@+id/txtTotalACP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_20dp"
+                android:layout_marginBottom="@dimen/_5dp"
+                android:text="0"
+                android:textColor="@color/colorButton" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_white_corner">
+
+            <TextView
+                android:id="@+id/txtTotalAcrerage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/_5dp"
+                android:gravity="center"
+                android:text="Total Acrerage"
+                android:textColor="@color/colorButton"
+                android:textSize="@dimen/_12sp" />
+
+            <TextView
+                android:id="@+id/txtTotalAcrerageValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_20dp"
+                android:layout_marginBottom="@dimen/_5dp"
+                android:text="0"
+                android:textColor="@color/colorButton" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_white_corner">
+
+
+            <TextView
+                android:id="@+id/txtTotalLead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/_5dp"
+                android:gravity="center"
+                android:text="Total Lead"
+                android:textColor="@color/colorButton"
+                android:textSize="@dimen/_12sp" />
+
+            <TextView
+                android:id="@+id/txtTotalLeadValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_20dp"
+                android:layout_marginBottom="@dimen/_5dp"
+                android:text="0"
+                android:textColor="@color/colorButton" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_white_corner">
+
+            <TextView
+                android:id="@+id/txtTotalSold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/_5dp"
+                android:gravity="center"
+                android:text="Total Sold acres"
+                android:textColor="@color/colorButton"
+                android:textSize="@dimen/_12sp" />
+
+            <TextView
+                android:id="@+id/txtTotalSoldValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_20dp"
+                android:layout_marginBottom="@dimen/_5dp"
+                android:text="0"
+                android:textColor="@color/colorButton" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/colorButton">
+
+        <ImageView
+            android:id="@+id/imgMAp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/imgFilter"
+            android:layout_toLeftOf="@+id/imgFilter"
+            android:padding="@dimen/_10dp"
+            android:tint="@color/white"
+            app:srcCompat="@drawable/map" />
+
+        <ImageView
+            android:id="@+id/imgFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_10dp"
+            android:tint="@color/white"
+            app:srcCompat="@drawable/filter" />
+
+        <com.dhanuka.indhan.Fonts.BoldTextView
+            android:id="@+id/pd_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:text="ACP Farmers"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_15sdp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlSubHeader">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewACPFarmer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <com.dhanuka.indhan.Fonts.Medium
+            android:id="@+id/txtEmpty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/data_not_found"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

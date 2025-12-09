@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginRight="@dimen/_20dp"
+        android:background="@drawable/round_corner_white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgCloseActiveAtp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_10dp"
+                android:background="@color/bg_gray"
+                android:scaleType="centerCrop" />
+            <ImageView
+                android:id="@+id/icPhoto"
+                android:layout_width="@dimen/_50dp"
+                android:layout_height="@dimen/_50dp"
+                app:srcCompat="@drawable/ic_photo"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+
+        <com.dhanuka.indhan.Fonts.Medium
+            android:id="@+id/txtUploadPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Upload photo"
+            android:textColor="@color/black" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.dhanuka.indhan.Fonts.Medium
+                android:id="@+id/txtSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_20dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:padding="@dimen/_15dp"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

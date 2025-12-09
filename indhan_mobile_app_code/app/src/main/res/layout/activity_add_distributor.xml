@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/llHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/colorButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.dhanuka.indhan.Fonts.BoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:text="Add New Channel"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_15sdp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llHeader">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.dhanuka.indhan.Fonts.BoldTextView
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:text="FL- Santosh Kumar"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.dhanuka.indhan.Fonts.BoldTextView
+                android:id="@+id/txtDistrictName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:text="FL selected district name1"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+            <com.dhanuka.indhan.Fonts.BoldTextView
+                android:id="@+id/txtTerritoryName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:text="FL selected Territory name1"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtDistrictName" />
+
+
+            <com.dhanuka.indhan.Fonts.BoldTextView
+                android:id="@+id/txtMarketName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:text="Selected district associated marker name1"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtTerritoryName" />
+
+            <com.dhanuka.indhan.Fonts.Medium
+                android:id="@+id/txtSubmitDistributor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_40sdp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_8sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingRight="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="Add New Channel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sp"
+                app:layout_constraintEnd_toEndOf="@+id/txtCropsWorking"
+                app:layout_constraintStart_toStartOf="@+id/txtCropsWorking"
+                app:layout_constraintTop_toBottomOf="@+id/txtCropsWorking" />
+
+            <com.dhanuka.indhan.Fonts.RegularInputLayoutEditText
+                android:id="@+id/txtAddProperitor"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/bg_edit"
+                android:drawablePadding="@dimen/_5dp"
+                android:hint="* Provide channel firm or Proprietor name"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/darkgray"
+                android:textSize="@dimen/_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtMarketName" />
+
+            <com.dhanuka.indhan.Fonts.RegularInputLayoutEditText
+                android:id="@+id/txtMobileFirst"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/bg_edit"
+                android:drawablePadding="@dimen/_5dp"
+                android:hint="* Mobile number 1"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/darkgray"
+                android:textSize="@dimen/_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtAddProperitor" />
+
+            <com.dhanuka.indhan.Fonts.RegularInputLayoutEditText
+                android:id="@+id/txtMobileSecond"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/bg_edit"
+                android:drawablePadding="@dimen/_5dp"
+                android:hint="Mobile Number 2"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/darkgray"
+                android:textSize="@dimen/_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtMobileFirst" />
+
+            <com.dhanuka.indhan.Fonts.RegularInputLayoutEditText
+                android:id="@+id/txtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/bg_edit"
+                android:drawablePadding="@dimen/_5dp"
+                android:hint="Address"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/darkgray"
+                android:textSize="@dimen/_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtMobileSecond" />
+
+            <com.dhanuka.indhan.Fonts.RegularInputLayoutEditText
+                android:id="@+id/txtPincode"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/bg_edit"
+                android:drawablePadding="@dimen/_5dp"
+                android:hint="Pin code"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/darkgray"
+                android:textSize="@dimen/_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtAddress" />
+
+            <com.dhanuka.indhan.Fonts.RegularInputLayoutEditText
+                android:id="@+id/txtTurnOver"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/bg_edit"
+                android:drawablePadding="@dimen/_5dp"
+                android:hint="Provide total party turnover in INR"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/darkgray"
+                android:textSize="@dimen/_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtPincode" />
+
+            <com.dhanuka.indhan.Fonts.RegularInputLayoutEditText
+                android:id="@+id/txtBrandWorking"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/bg_edit"
+                android:drawablePadding="@dimen/_5dp"
+                android:hint="Provide brand working with (comma seperated)"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/darkgray"
+                android:textSize="@dimen/_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtTurnOver" />
+
+            <com.dhanuka.indhan.Fonts.RegularInputLayoutEditText
+                android:id="@+id/txtCropsWorking"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/bg_edit"
+                android:drawableRight="@drawable/downarrow"
+                android:drawablePadding="@dimen/_5dp"
+                android:hint="Provide Crops working with (select multiple)"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/darkgray"
+                android:textSize="@dimen/_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtBrandWorking" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

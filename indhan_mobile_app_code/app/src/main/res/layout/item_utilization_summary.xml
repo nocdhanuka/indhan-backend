@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="130dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        card_view:cardBackgroundColor="#f0f2f5"
+        card_view:cardCornerRadius="@dimen/_10sdp"
+        card_view:cardElevation="16dp"
+        android:padding="@dimen/_8dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:id="@+id/rlBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_10sdp"
+            android:background="@color/White">
+
+            <LinearLayout
+                android:id="@+id/llParentLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2sdp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llRequestedBy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:weightSum="2">
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/_12sp"
+                        android:text="RequestedBy"
+                        android:textColor="@color/charcoalGrey" />
+
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:id="@+id/tvRequestedBy"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/_12sp"
+                        android:text="-"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:weightSum="2">
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/_12sp"
+                        android:text="Requested Crop Name"
+                        android:textColor="@color/charcoalGrey" />
+
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:id="@+id/tvCropData"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/_12sp"
+                        android:text="-"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:weightSum="2">
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/_12sp"
+                        android:text="Requested Product Name"
+                        android:textColor="@color/charcoalGrey" />
+
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:id="@+id/tvProductData"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/_12sp"
+                        android:text="-"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llDemoDone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:weightSum="2">
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Demo Done"
+                        android:textSize="@dimen/_12sp"
+                        android:textColor="@color/charcoalGrey" />
+
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:id="@+id/tvDemoDoneData"
+                        android:layout_width="0dp"
+                        android:textSize="@dimen/_12sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llReceivedMaterialQty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:weightSum="2">
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/_12sp"
+                        android:text="Overall Received Material"
+                        android:textColor="@color/charcoalGrey" />
+
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:id="@+id/tvReceivedMaterialData"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/_12sp"
+                        android:text="-"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llDemoApplied"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:weightSum="2">
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/_12sp"
+                        android:text="Total demo applied"
+                        android:textColor="@color/charcoalGrey" />
+
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:id="@+id/tvDemoAppliedData"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/_12sp"
+                        android:text="-"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llTentativeWaste"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:weightSum="2">
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/_12sp"
+                        android:text="Tentative Waste"
+                        android:textColor="@color/charcoalGrey" />
+
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:id="@+id/tvTentativeWasteData"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/_12sp"
+                        android:text="-"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

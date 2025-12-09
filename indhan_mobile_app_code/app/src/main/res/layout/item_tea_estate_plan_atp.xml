@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:background="@color/White">
+
+    <LinearLayout
+        android:id="@+id/top_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/_2dp"
+            android:minHeight="140dp"
+            card_view:cardBackgroundColor="#f0f2f5"
+            card_view:cardCornerRadius="@dimen/_4sdp"
+            card_view:cardElevation="6sp"
+            card_view:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:id="@+id/rlBackground"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/White"
+                android:elevation="@dimen/_2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_4sdp">
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:id="@+id/tvMeTicketNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_marginBottom="@dimen/_4sdp"
+                        android:textSize="@dimen/_18sdp" />
+
+                        <CheckBox
+                            android:id="@+id/chbExpiredDisabled"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:buttonTint="@color/red_demo"
+                            android:checked="true"
+                            android:enabled="false"
+                            tools:targetApi="lollipop" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_4sdp">
+
+                        <com.dhanuka.indhan.Fonts.Medium
+                            android:id="@+id/tvMeDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|center_horizontal"
+                            android:singleLine="true"
+                            android:textColor="#FF7C7474" />
+
+                        <ImageView
+                            android:id="@+id/ivArrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/_16sdp"
+                            android:layout_marginEnd="@dimen/_16sdp"
+                            android:layout_alignParentEnd="true"
+                            android:background="@drawable/rightarrow_grey" />
+
+                    </RelativeLayout>
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:id="@+id/tvEstateData"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_4sdp"
+                        android:layout_gravity="center|center_horizontal"
+                        android:singleLine="true"
+                        android:textColor="#FF7C7474" />
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:id="@+id/tvMeDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:singleLine="true"
+                        android:textColor="#FF837B7B" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_6sdp">
+
+                        <com.dhanuka.indhan.Fonts.BoldTextView
+                            android:id="@+id/total_farmer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_text"
+                            android:textColor="#FF837B7B" />
+
+                        <com.dhanuka.indhan.Fonts.BoldTextView
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:id="@+id/total_valid_farmers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:layout_weight="1"
+                            android:textColor="#FF837B7B" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp">
+
+                        <TextView
+                            android:id="@+id/txtMyATP"
+                            android:layout_width="wrap_content"
+                            android:text="My ATP"
+                            android:visibility="gone"
+                            android:padding="@dimen/_5dp"
+                            android:textColor="@color/colorButton"
+                            android:textSize="@dimen/_14sp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/txtArrival"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginStart="@dimen/_5dp"
+                            android:layout_marginLeft="@dimen/_5dp"
+                            android:layout_marginTop="@dimen/_5dp"
+                            android:layout_marginEnd="@dimen/_5dp"
+                            android:layout_marginRight="@dimen/_5dp"
+                            android:layout_marginBottom="@dimen/_5dp"
+                            android:background="@color/progess_green"
+                            android:gravity="center_horizontal"
+                            android:padding="@dimen/_5dp"
+                            android:text=" Arrival "
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14sp" />
+
+                        <TextView
+                            android:id="@+id/txtDeparture"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginStart="@dimen/_5dp"
+                            android:layout_marginLeft="@dimen/_5dp"
+                            android:layout_marginTop="@dimen/_5dp"
+                            android:layout_marginEnd="@dimen/_5dp"
+                            android:layout_marginRight="@dimen/_5dp"
+                            android:layout_marginBottom="@dimen/_5dp"
+                            android:background="@color/darkgray"
+                            android:gravity="center_horizontal"
+                            android:padding="@dimen/_5dp"
+                            android:text="Departure"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14sp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</RelativeLayout>

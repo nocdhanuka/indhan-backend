@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:elevation="@dimen/_10sdp">
+
+            <LinearLayout
+                android:id="@+id/camera_ini"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:visibility="gone"
+                tools:ignore="DuplicateIds">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/camera_white"
+                    android:padding="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:paddingEnd="@dimen/_4sdp"
+                android:paddingRight="@dimen/_4sdp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_action_back"
+                    android:contentDescription="@string/add_image"
+                    android:padding="@dimen/_10sdp"/>
+            </LinearLayout>
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/bdo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ivBack"
+                android:text="Sugar Mill – Sales Report"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_15sdp" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/llFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerSugarMill">
+
+        <com.dhanuka.indhan.Fonts.Regular
+            android:id="@+id/spinnerMonth"
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:background="@drawable/input_border_green"
+            android:drawableRight="@drawable/downarrow"
+            android:drawablePadding="@dimen/_5dp"
+            android:hint="Select Month"
+            android:maxLines="1"
+            android:minLines="1"
+            android:padding="@dimen/_5sdp"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textColorHint="@color/darkgray"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="normal" />
+
+        <com.dhanuka.indhan.Fonts.Regular
+            android:id="@+id/spinnerYear"
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:background="@drawable/input_border_green"
+            android:drawableRight="@drawable/downarrow"
+            android:drawablePadding="@dimen/_5dp"
+            android:hint="Select Year"
+            android:maxLines="1"
+            android:minLines="1"
+            android:padding="@dimen/_5sdp"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textColorHint="@color/darkgray"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <com.dhanuka.indhan.Fonts.Regular
+        android:id="@+id/spinnerSugarMill"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_weight="1"
+        android:background="@drawable/input_border_green"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:drawableRight="@drawable/downarrow"
+        android:hint="Select Sugar Mill Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="@dimen/_12sdp"
+        android:textColorHint="@color/darkgray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rlHeader"
+        android:padding="@dimen/_10dp"
+        android:textColor="@color/black" />
+
+    <com.dhanuka.indhan.Fonts.Regular
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@drawable/button_selector"
+        android:padding="@dimen/_4sdp"
+        android:text="Reset"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llFilter" />
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/_5sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnReset">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvSalesList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            tools:itemCount="2"
+            tools:listitem="@layout/item_sales_report"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <com.dhanuka.indhan.Fonts.Medium
+        android:id="@+id/tvNoData"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="No Sales Report Data."
+        android:textAlignment="center"
+        android:textColor="@color/progess_green"
+        android:textSize="@dimen/_16sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

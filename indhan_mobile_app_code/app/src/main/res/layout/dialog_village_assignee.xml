@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_10dp"
+        android:background="@color/white"
+        android:layout_margin="@dimen/_20dp"
+        android:layout_height="wrap_content">
+
+        <com.dhanuka.indhan.Fonts.Medium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:focusable="true"
+            android:text="State"
+
+            android:textColor="@color/darkgray" />
+
+        <com.dhanuka.indhan.Fonts.Regular
+            android:id="@+id/spinner_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:drawableRight="@drawable/downarrow"
+            android:text="Select State"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginRight="@dimen/_14sdp"
+            android:background="@color/darkgray" />
+
+        <com.dhanuka.indhan.Fonts.Medium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:focusable="true"
+            android:text="District"
+            android:textColor="@color/darkgray" />
+
+        <com.dhanuka.indhan.Fonts.Regular
+            android:id="@+id/spinner_district"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:drawableRight="@drawable/downarrow"
+            android:text="Select District"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginRight="@dimen/_14sdp"
+            android:background="@color/darkgray" />
+
+
+        <com.dhanuka.indhan.Fonts.Medium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:focusable="true"
+            android:text="Tehsil"
+            android:textColor="@color/darkgray" />
+
+        <com.dhanuka.indhan.Fonts.Regular
+            android:id="@+id/spinner_tehsil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:drawableRight="@drawable/downarrow"
+            android:text="Select Tehsil"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginRight="@dimen/_14sdp"
+            android:background="@color/darkgray" />
+
+
+        <com.dhanuka.indhan.Fonts.Medium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:focusable="true"
+            android:text="Village"
+            android:textColor="@color/darkgray" />
+
+        <com.dhanuka.indhan.Fonts.Regular
+            android:id="@+id/etRetVillage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_14sdp"
+            android:layout_marginLeft="@dimen/_5dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:drawableRight="@drawable/downarrow"
+            android:text="Select Village"
+            android:textColor="@color/black"
+            android:layout_marginEnd="@dimen/_14sdp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginRight="@dimen/_14sdp"
+            android:background="@color/darkgray" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:background="@color/colorButton"
+            android:layout_margin="@dimen/_20dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/llayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/_5dp"
+        android:paddingLeft="@dimen/_5dp">
+
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:padding="@dimen/_2dp"
+            android:text="Banana"
+            android:textColor="@color/colorButton"
+            android:textSize="@dimen/_14sp" />
+
+        <TextView
+            android:id="@+id/txtProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtName"
+            android:layout_marginTop="@dimen/_5dp"
+            android:padding="@dimen/_2dp"
+            android:text="Product"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sp" />
+
+
+        <TextView
+            android:id="@+id/txtProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtProduct"
+            android:padding="@dimen/_2dp"
+            android:text="jhgsdjfg jfgj"
+            android:textColor="@color/colorButton"
+            android:textSize="@dimen/_14sp" />
+
+        <TextView
+            android:id="@+id/txtFarmer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtProductName"
+            android:layout_marginTop="@dimen/_5dp"
+            android:padding="@dimen/_2dp"
+            android:text="Farmer"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sp" />
+
+        <TextView
+            android:id="@+id/txtFarmerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtFarmer"
+            android:padding="@dimen/_2dp"
+            android:text="123"
+            android:textColor="@color/colorButton"
+            android:textSize="@dimen/_14sp" />
+
+
+    </RelativeLayout>
+</layout>

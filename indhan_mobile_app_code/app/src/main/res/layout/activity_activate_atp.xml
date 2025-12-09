@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llChooseDemoInviteFarmer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/txtView"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_10dp"
+                android:background="@color/white" />
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/txtChooseDemoNo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="@string/choose_demo"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_14sdp" />
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/txtAddInvitedFarmers"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="@string/add_invited_farmers"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_14sdp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llRegisterFarmerCloseTicket"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_10dp"
+                android:background="@color/white" />
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/txtRegisterFarmer"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="@string/register_farmer"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_14sdp" />
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/txtCloseTicket"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="@string/close_ticket"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_14sdp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@color/colorPrimary"
+        android:elevation="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/title_demo_request"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="@dimen/_6sdp"
+                android:singleLine="true"
+                android:text="@string/active_atp"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_16sdp" />
+
+
+        </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_15dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10dp">
+
+                <TextView
+                    android:id="@+id/txtATPName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/atp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_14sp" />
+
+                <TextView
+                    android:id="@+id/txtStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/active"
+                    android:textColor="@color/black" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15dp"
+                android:layout_marginRight="@dimen/_15dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txtNotFound"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:text="@string/no_product_found" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvAtpList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10dp" />
+                </RelativeLayout>
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:id="@+id/txtCurrentMonthName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15dp"
+                    android:gravity="center"
+                    android:text="jul"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llInvitedFarmer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15dp"
+                android:layout_marginTop="@dimen/_15dp"
+                android:layout_marginRight="@dimen/_15dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:text="@string/no_product_found"
+                        android:visibility="gone" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvInvitedFarmerList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10dp" />
+                </RelativeLayout>
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:id="@+id/txtInvitedFarmer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15dp"
+                    android:gravity="center"
+                    android:text="Invited farmer"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_18sp" />
+            </LinearLayout>
+
+            <com.dhanuka.indhan.Fonts.Medium
+                android:id="@+id/txtCurrentStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15dp"
+                android:layout_marginTop="@dimen/_15dp"
+                android:layout_marginRight="@dimen/_15dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:padding="@dimen/_15dp"
+                android:text="@string/current_status"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sp" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

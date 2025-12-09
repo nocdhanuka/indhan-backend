@@ -1,0 +1,1163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android.support.design="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@color/colorPrimary"
+            android:elevation="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/ivBackTicket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:background="@drawable/ic_action_back"
+                android:padding="@dimen/_10sdp" />
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/tvReTicketNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_toRightOf="@+id/ivBackTicket"
+                android:padding="@dimen/_6sdp"
+                android:text="@string/ticket_no"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/_12sdp"
+                android:layout_toLeftOf="@+id/ivEditTicket"
+                android:padding="@dimen/_10sdp"
+                android.support.design:srcCompat="@drawable/camera_white" />
+
+            <ImageView
+                android:id="@+id/ivEditTicket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/_12sdp"
+                android:background="@drawable/edit"
+                android:padding="@dimen/_10sdp" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_above="@+id/layout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_16sdp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_src"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:visibility="gone" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/txtUploadBy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_12sp" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/location"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp" />
+
+                <LinearLayout
+                    android:id="@+id/llDd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:focusable="true"
+                        android:text="DD"
+                        android:textColor="@color/darkgray" />
+
+                    <com.dhanuka.indhan.Fonts.Regular
+                        android:id="@+id/tvDdName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_14sdp"
+                        android:background="@color/darkgray" />
+                </LinearLayout>
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:focusable="true"
+                    android:text="Data Source"
+                    android:textColor="@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/tvReDataSource"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_14sdp"
+                    android:background="@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:id="@+id/txtDemoRequestHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:focusable="true"
+                    android:text="Demo Request"
+                    android:textColor="@color/darkgray"
+                    android:visibility="gone" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/tvReDemoRequest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:visibility="gone" />
+
+                <View
+                    android:id="@+id/demoRequestView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_14sdp"
+                    android:background="@color/darkgray"
+                    android:visibility="gone" />
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:focusable="true"
+                    android:text="Language"
+                    android:textColor="@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/tvReLanguage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_14sdp"
+                    android:background="@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="State"
+                    android:textColor="@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/tvReState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_14sdp"
+                    android:background="@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="District"
+                    android:textColor="@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/tvReDistrict"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_14sdp"
+                    android:background="@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Territory"
+                    android:textColor="@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/tvReTerritory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_14sdp"
+                    android:background="@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Tehsil"
+                    android:textColor="@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/tvReTehsil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_14sdp"
+                    android:background="@color/darkgray" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilVillage"
+                    style="@style/TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <com.dhanuka.indhan.Fonts.RegularEditText
+                        android:id="@+id/etRetVillage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:backgroundTint="@color/darkgray"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/village"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/darkgray"
+                        android:textSize="@dimen/_14sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/darkgray" />
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_16sdp"
+                android:text="@string/product_details"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp" />
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@color/bg_gray"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/_16sdp"
+                android:text="Product &amp; Crop 1"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:orientation="vertical">
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:focusable="true"
+                    android:text="Product 1"
+                    android:textColor="@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/tvReProduct1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_14sdp"
+                    android:background="@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Crop 1"
+                    android:textColor="@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/tvReCrop1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_14sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@color/darkgray" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/tvReRemove1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@color/bg_gray"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/_16sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:text="Product &amp; Crop 2"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:orientation="vertical">
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Product 2"
+                        android:textColor="@color/darkgray" />
+
+                    <com.dhanuka.indhan.Fonts.Regular
+                        android:id="@+id/tvReProduct2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_14sdp"
+                        android:background="@color/darkgray" />
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Crop 2"
+                        android:textColor="@color/darkgray" />
+
+                    <com.dhanuka.indhan.Fonts.Regular
+                        android:id="@+id/tvReCrop2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_14sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@color/darkgray" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/tvReRemove2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@color/bg_gray"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/_16sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:text="Product &amp; Crop 3"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_16sdp"
+                    android:orientation="vertical">
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Product 3"
+                        android:textColor="@color/darkgray" />
+
+                    <com.dhanuka.indhan.Fonts.Regular
+                        android:id="@+id/tvReProduct3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_14sdp"
+                        android:background="@color/darkgray" />
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Crop 3"
+                        android:textColor="@color/darkgray" />
+
+                    <com.dhanuka.indhan.Fonts.Regular
+                        android:id="@+id/tvReCrop3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_14sdp"
+                        android:background="@color/darkgray" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/darkgray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_16sdp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/farmer_details"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilExpFarmer"
+                    style="@style/TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.dhanuka.indhan.Fonts.RegularEditText
+                        android:id="@+id/etRetExpFarmer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:backgroundTint="@color/darkgray"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/expected_farmer"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/darkgray"
+                        android:textSize="@dimen/_14sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilExpPDA"
+                    style="@style/TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.dhanuka.indhan.Fonts.RegularEditText
+                        android:id="@+id/etRetExpPDA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:backgroundTint="@color/darkgray"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/expected_pda"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/darkgray"
+                        android:textSize="@dimen/_14sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/darkgray" />
+
+            <LinearLayout
+                android:id="@+id/llSelfParticipation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_16sdp"
+                android:orientation="vertical">
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/special_participants"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilParName"
+                    style="@style/TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.dhanuka.indhan.Fonts.RegularEditText
+                        android:id="@+id/etRetParName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:backgroundTint="@color/darkgray"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/name"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/darkgray"
+                        android:textSize="@dimen/_14sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilParNum"
+                    style="@style/TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.dhanuka.indhan.Fonts.RegularEditText
+                        android:id="@+id/etRetParNum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:backgroundTint="@color/darkgray"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/phone_number"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/darkgray"
+                        android:textSize="@dimen/_14sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilParName2"
+                    style="@style/TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.dhanuka.indhan.Fonts.RegularEditText
+                        android:id="@+id/etRetParName2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:backgroundTint="@color/darkgray"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/name"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/darkgray"
+                        android:textSize="@dimen/_14sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilParNum2"
+                    style="@style/TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.dhanuka.indhan.Fonts.RegularEditText
+                        android:id="@+id/etRetParNum2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:backgroundTint="@color/darkgray"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/phone_number"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/darkgray"
+                        android:textSize="@dimen/_14sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilParName3"
+                    style="@style/TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.dhanuka.indhan.Fonts.RegularEditText
+                        android:id="@+id/etRetParName3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:backgroundTint="@color/darkgray"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/name"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/darkgray"
+                        android:textSize="@dimen/_14sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilParNum3"
+                    style="@style/TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.dhanuka.indhan.Fonts.RegularEditText
+                        android:id="@+id/etRetParNum3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:backgroundTint="@color/darkgray"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/phone_number"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/darkgray"
+                        android:textSize="@dimen/_14sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilParName4"
+                    style="@style/TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.dhanuka.indhan.Fonts.RegularEditText
+                        android:id="@+id/etRetParName4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:backgroundTint="@color/darkgray"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/name"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/darkgray"
+                        android:textSize="@dimen/_14sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilParNum4"
+                    style="@style/TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.dhanuka.indhan.Fonts.RegularEditText
+                        android:id="@+id/etRetParNum4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:backgroundTint="@color/darkgray"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/phone_number"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/darkgray"
+                        android:textSize="@dimen/_14sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilParName5"
+                    style="@style/TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.dhanuka.indhan.Fonts.RegularEditText
+                        android:id="@+id/etRetParName5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:backgroundTint="@color/darkgray"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/name"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/darkgray"
+                        android:textSize="@dimen/_14sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilParNum5"
+                    style="@style/TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.dhanuka.indhan.Fonts.RegularEditText
+                        android:id="@+id/etRetParNum5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:backgroundTint="@color/darkgray"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/phone_number"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/darkgray"
+                        android:textSize="@dimen/_14sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilParName6"
+                    style="@style/TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.dhanuka.indhan.Fonts.RegularEditText
+                        android:id="@+id/etRetParName6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:backgroundTint="@color/darkgray"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/name"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/darkgray"
+                        android:textSize="@dimen/_14sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilParNum6"
+                    style="@style/TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.dhanuka.indhan.Fonts.RegularEditText
+                        android:id="@+id/etRetParNum6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:backgroundTint="@color/darkgray"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/phone_number"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/darkgray"
+                        android:textSize="@dimen/_14sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDurationPDA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_4sdp"
+                android:paddingStart="@dimen/_2sdp"
+                android:paddingEnd="@dimen/_2sdp"
+                android:layout_marginLeft="@dimen/_14sdp"
+                android:layout_marginRight="@dimen/_14sdp"
+                android:visibility="gone"
+                android:background="@drawable/input_border_green"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llDuration"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:weightSum="2">
+
+                    <com.dhanuka.indhan.Fonts.BoldTextView
+                        android:layout_width="@dimen/_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/_18sp"
+                        android:layout_gravity="start"
+                        android:textColor="@color/red"
+                        android:text="Activity Duration"/>
+
+
+                    <com.dhanuka.indhan.Fonts.BoldTextView
+                        android:id="@+id/tvDuration"
+                        android:layout_width="@dimen/_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/_18sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="start" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@color/darkgray" />
+
+                <LinearLayout
+                    android:id="@+id/llTotalPDA"
+                    android:visibility="gone"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:weightSum="2">
+
+                    <com.dhanuka.indhan.Fonts.BoldTextView
+                        android:layout_width="@dimen/_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/_18sp"
+                        android:layout_gravity="start"
+                        android:textColor="@color/red"
+                        android:text="PDA"/>
+
+
+                    <com.dhanuka.indhan.Fonts.BoldTextView
+                        android:id="@+id/tvPDA"
+                        android:layout_width="@dimen/_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/_18sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="start" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@color/darkgray" />
+                <LinearLayout
+                    android:id="@+id/llTotalDistance"
+                    android:visibility="gone"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:weightSum="2">
+
+                    <com.dhanuka.indhan.Fonts.BoldTextView
+                        android:layout_width="@dimen/_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/_18sp"
+                        android:layout_gravity="start"
+                        android:textColor="@color/red"
+                        android:text="Distance covered"/>
+
+
+                    <com.dhanuka.indhan.Fonts.BoldTextView
+                        android:id="@+id/tvTotalDistance"
+                        android:layout_width="@dimen/_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/_18sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="start" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <com.dhanuka.indhan.Fonts.RegularButton
+                android:id="@+id/btnRbEndTicket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_60sdp"
+                android:layout_marginTop="@dimen/_32sdp"
+                android:paddingTop="@dimen/_4sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:layout_marginRight="@dimen/_60sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/login_button_selector"
+                android:elevation="15dp"
+                android:text="@string/btn_end_ticket"
+                android:textAllCaps="false"
+                android:textColor="@color/White"
+                android:textSize="@dimen/_13sdp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.dhanuka.indhan.Fonts.Regular
+        android:id="@+id/layout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="Offline Image"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_15sdp" />
+
+</RelativeLayout>

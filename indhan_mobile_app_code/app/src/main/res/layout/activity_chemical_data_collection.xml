@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/llHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/colorButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.dhanuka.indhan.Fonts.BoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:text="Molecule Data Collection"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_15sdp" />
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llHeader">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/llDistrictWise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:padding="@dimen/_5sdp"
+                android:background="@drawable/bg_edit"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:weightSum="3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtChemicalSelectDistrict"
+                app:layout_constraintWidth_percent="1">
+
+                <com.dhanuka.indhan.Fonts.BoldTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:text="Formulation Data"
+                    android:paddingLeft="@dimen/_4sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_weight="2.4">
+                    <org.eazegraph.lib.charts.PieChart
+                        android:id="@+id/piechart"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_200sdp"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/_20sdp" />
+
+                    <com.dhanuka.indhan.Fonts.BoldTextView
+                        android:id="@+id/tvFormulationTotalValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Total - 366"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold" />
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:layout_alignParentBottom="true"
+           android:layout_marginRight="@dimen/_10sdp"
+           android:orientation="vertical"
+           android:layout_marginBottom="10sp"
+           android:layout_alignParentEnd="true"
+           android:layout_marginEnd="@dimen/_10sdp">
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="@dimen/_20sdp"
+               android:layout_gravity="center_vertical">
+
+               <View
+                   android:layout_width="15dp"
+                   android:layout_height="15dp"
+                   android:background="#0CA160"/>
+
+               <com.dhanuka.indhan.Fonts.Regular
+                   android:id="@+id/tvCompletedValue"
+                   android:layout_width="@dimen/_20sdp"
+                   android:layout_height="wrap_content"
+                   android:gravity="start"
+                   android:textSize="@dimen/_9sdp"
+                   android:paddingLeft="5dp" />
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_vertical">
+
+               <!--View to display the red color icon-->
+               <View
+                   android:layout_width="15dp"
+                   android:layout_height="15dp"
+                   android:background="#EF5350"/>
+
+               <!--Text view to display C++ text -->
+               <com.dhanuka.indhan.Fonts.Regular
+                   android:id="@+id/tvInCompletedValue"
+                   android:layout_width="@dimen/_20sdp"
+                   android:layout_height="wrap_content"
+                   android:gravity="start"
+                   android:textSize="@dimen/_9sdp"
+                   android:layout_gravity="center_vertical"
+                   android:paddingLeft="5dp"/>
+
+           </LinearLayout>
+       </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:id="@+id/txtAddDistrictWise"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:layout_marginRight="@dimen/_2sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:layout_gravity="center_vertical"
+                        android:text="Add"
+                        android:paddingTop="@dimen/_2sdp"
+                        android:paddingBottom="@dimen/_2sdp"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sp" />
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:id="@+id/txtViewDistrictWise"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:paddingTop="@dimen/_2sdp"
+                        android:paddingBottom="@dimen/_2sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:text="View"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llCropWise"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/bg_edit"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/llDistrictWise"
+                app:layout_constraintWidth_percent="1">
+                <com.dhanuka.indhan.Fonts.BoldTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="Crop Wise Data"
+                    android:textColor="@color/black"
+                    android:paddingLeft="@dimen/_4sdp"
+                    android:gravity="center"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <org.eazegraph.lib.charts.PieChart
+                    android:id="@+id/piechart2"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:padding="6dp" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:id="@+id/txtAddCropWise"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:background="@color/colorPrimary"
+                        android:paddingLeft="@dimen/_8sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:text="Add"
+                        android:visibility="gone"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sp" />
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:id="@+id/txtViewCropWise"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:background="@color/colorPrimary"
+                        android:paddingLeft="@dimen/_8sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:text="View"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llCompanyWise"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/bg_edit"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/llCropWise"
+                app:layout_constraintWidth_percent="1">
+
+                <com.dhanuka.indhan.Fonts.BoldTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="Company Wise Data"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:paddingLeft="@dimen/_4sdp"
+                    android:gravity="center"
+                    android:textSize="@dimen/_12sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <org.eazegraph.lib.charts.PieChart
+                    android:id="@+id/piechart3"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:padding="6dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:id="@+id/txtAddCompanyWise"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:background="@color/colorPrimary"
+                        android:paddingLeft="@dimen/_8sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:text="Add"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sp" />
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:id="@+id/txtViewCompanyWise"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:background="@color/colorPrimary"
+                        android:paddingLeft="@dimen/_8sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:text="View"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/txtChemicalSelectDistrict"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                style="?android:listSeparatorTextViewStyle"
+                android:textStyle="normal"
+                android:textAllCaps="false"
+                android:drawableRight="@drawable/downarrow"
+                android:drawablePadding="@dimen/_5dp"
+                android:hint="Select District Name"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/darkgray"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtChemicalName" />
+
+            <com.dhanuka.indhan.Fonts.BoldTextView
+                android:id="@+id/txtChemicalName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

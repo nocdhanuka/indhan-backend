@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/colorButton">
+
+        <com.dhanuka.indhan.Fonts.Medium
+            android:id="@+id/pd_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:text="ACP Filter"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_15sdp" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:background="@color/white">
+
+        <com.dhanuka.indhan.Fonts.Regular
+            android:id="@+id/txtVillageList"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/bg_edit"
+            android:drawableRight="@drawable/downarrow"
+            android:hint="Village List"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/colorButton"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <com.dhanuka.indhan.Fonts.Regular
+            android:id="@+id/txtMonth"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@+id/txtVillageList"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/bg_edit"
+            android:drawableRight="@drawable/downarrow"
+            android:hint="Select Start Date"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/colorButton"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+        <com.dhanuka.indhan.Fonts.Regular
+            android:id="@+id/txtMonthOne"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@+id/txtMonth"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/bg_edit"
+            android:drawableRight="@drawable/downarrow"
+            android:hint="Select End Date"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/colorButton"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <com.dhanuka.indhan.Fonts.RegularButton
+            android:id="@+id/btnRbSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgFarmer"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:layout_marginRight="@dimen/_60sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/login_button_selector"
+            android:elevation="15dp"
+            android:text="@string/btn_submit"
+            android:textAllCaps="false"
+            android:textColor="@color/White"
+            android:textSize="@dimen/_13sdp" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

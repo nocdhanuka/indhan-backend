@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_margin="@dimen/_10dp"
+    android:elevation="2dp"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:id="@+id/llCloseLeadDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_25dp"
+        android:layout_marginRight="@dimen/_25dp"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_marginBottom="@dimen/_10dp"
+        android:orientation="vertical">
+        <com.dhanuka.indhan.Fonts.Medium
+            android:id="@+id/txtLeadId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_16sp"
+            android:textStyle="bold" />
+
+
+        <com.dhanuka.indhan.Fonts.Medium
+            android:id="@+id/txtTimeAndDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:text="Created date/time"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sp" />
+        <com.dhanuka.indhan.Fonts.Medium
+            android:id="@+id/txtPurchaseAcres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/colorButton"
+            android:textSize="@dimen/_14sp" />
+
+        <com.dhanuka.indhan.Fonts.Medium
+            android:id="@+id/txtCurrentStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="@dimen/_15dp"
+            android:text="@string/current_status_of_lead"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llCall"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_10dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/imgCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/call_green"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+        <com.dhanuka.indhan.Fonts.Medium
+            android:id="@+id/txtCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/call_now"
+            android:layout_marginTop="@dimen/_5dp"
+            android:textColor="@color/colorPrimary"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

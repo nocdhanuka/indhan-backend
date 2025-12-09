@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary">
+
+            <LinearLayout
+                android:id="@+id/iCross"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:paddingEnd="@dimen/_4sdp"
+                android:paddingRight="@dimen/_4sdp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_action_back"
+                    android:contentDescription="@string/add_image"
+                    android:padding="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/bdo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iCross"
+                android:text="Institutional – Add Testimonials"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_14sdp" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlHeader"
+        android:layout_marginStart="@dimen/_10dp"
+        android:layout_marginEnd="@dimen/_10dp"
+        android:background="@color/White">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
+
+
+            <com.dhanuka.indhan.Fonts.RegularEditText
+                android:id="@+id/etNameTestimonial"
+                style="?android:listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtCompanyType"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/bg_edit"
+                android:hint="Testimonial Name"
+                android:maxLines="1"
+                android:minLines="1"
+                android:padding="@dimen/_5sdp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textColorHint="@color/darkgray"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="normal" />
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/spinnerInstitutionalType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10dp"
+                android:background="@drawable/bg_edit"
+                android:drawableRight="@drawable/downarrow"
+                android:hint="Select Institution Type"
+                android:padding="@dimen/_10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/darkgray" />
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/spinnerTeaEstate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10dp"
+                android:background="@drawable/bg_edit"
+                android:drawableRight="@drawable/downarrow"
+                android:hint="Select Institution Name"
+                android:padding="@dimen/_10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/darkgray" />
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/spinnerPerson"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit"
+                android:drawableRight="@drawable/downarrow"
+                android:hint="Select Person"
+                android:padding="@dimen/_10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/darkgray" />
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/spinnerLanguage"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit"
+                android:drawableRight="@drawable/downarrow"
+                android:hint="Select Language"
+                android:padding="@dimen/_10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/darkgray" />
+
+            <com.dhanuka.indhan.Fonts.RegularEditText
+                android:id="@+id/etDescription"
+                style="?android:listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtCompanyType"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/bg_edit"
+                android:hint="Description"
+                android:maxLines="1"
+                android:minLines="1"
+                android:padding="@dimen/_5sdp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textColorHint="@color/darkgray"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_5sdp"
+                android:background="@drawable/bg_edit">
+
+                <com.dhanuka.indhan.Fonts.BoldTextView
+                    android:id="@+id/tvHeadBranch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Can be share"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16sp" />
+
+                <RadioGroup
+                    android:id="@+id/rgbIsShare"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/tvHeadBranch"
+                    android:weightSum="2">
+
+                    <RadioButton
+                        android:id="@+id/rbShare"
+                        android:layout_width="@dimen/_0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:layout_weight="1"/>
+
+                    <RadioButton
+                        android:id="@+id/rbNoShare"
+                        android:layout_width="@dimen/_0dp"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:layout_weight="1"/>
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlImgFarmer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/layout_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:background="@color/bg_gray"
+                    android:scaleType="centerCrop"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/imgView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    app:srcCompat="@drawable/camera_white" />
+
+
+                <TextView
+                    android:layout_below="@+id/layout_img"
+                    android:id="@+id/txtCaptureImage"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:layout_marginBottom="@dimen/_10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/click_here_to_capture_video"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_40dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/_60dp"
+                    android:layout_marginStart="@dimen/_60dp"
+                    android:layout_marginEnd="@dimen/_60sdp"
+                    android:layout_marginRight="@dimen/_60sdp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Submit"
+                    android:background="@color/colorButton"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

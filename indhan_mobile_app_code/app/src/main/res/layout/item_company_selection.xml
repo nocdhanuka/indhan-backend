@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/llViewValues"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.dhanuka.indhan.Fonts.Regular
+            android:id="@+id/textCategory"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_weight="0.5"
+            style="?android:listSeparatorTextViewStyle"
+            android:textStyle="normal"
+            android:textAllCaps="false"
+            android:drawableRight="@drawable/downarrow"
+            android:drawablePadding="@dimen/_5dp"
+            android:gravity="center_vertical"
+            android:hint="Select Company"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/darkgray"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/llHeader" />
+
+        <com.dhanuka.indhan.Fonts.RegularInputLayoutEditText
+            android:id="@+id/txtAddVolume"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.45"
+            android:background="@drawable/bg_edit"
+            android:drawablePadding="@dimen/_5dp"
+            android:gravity="center_vertical"
+            android:hint="put value in %"
+            android:inputType="numberDecimal"
+            android:maxLength="4"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/darkgray"
+            android:textSize="@dimen/_14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtMarketName" />
+
+        <com.dhanuka.indhan.Fonts.BoldTextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.05"
+            android:gravity="center_vertical"
+            android:text=" %"
+            android:textColor="@color/black"
+            android:textColorHint="@color/darkgray"
+            android:textSize="@dimen/_11sdp" />
+
+    </LinearLayout>
+
+    <com.dhanuka.indhan.Fonts.Medium
+        android:id="@+id/txtAddMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="Add More"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sp"
+        app:layout_constraintEnd_toEndOf="@+id/llViewValues"
+        app:layout_constraintTop_toBottomOf="@+id/llViewValues" />
+</androidx.constraintlayout.widget.ConstraintLayout>

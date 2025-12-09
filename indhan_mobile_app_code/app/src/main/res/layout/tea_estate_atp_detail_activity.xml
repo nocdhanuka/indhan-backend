@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@color/colorPrimary">
+
+            <LinearLayout
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:paddingEnd="@dimen/_4sdp"
+                android:paddingRight="@dimen/_4sdp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_action_back"
+                    android:contentDescription="@string/add_image"
+                    android:padding="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/tvLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/ivBack"
+                android:layout_toRightOf="@+id/ivBack"
+                android:padding="@dimen/_6sdp"
+                android:text="Tea Estate – ATP Detail"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@+id/appBar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/llArrivalDepartureTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/appBar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:padding="@dimen/_4sdp"
+                android:background="@color/bg_gray"
+                android:visibility="visible"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_weight="0.48"
+                    android:layout_marginEnd="0.5dp"
+                    android:orientation="vertical"
+                    android:layout_marginRight="0.5dp">
+
+                    <ImageView
+                        android:id="@+id/ivArrivalImage"
+                        android:layout_width="match_parent"
+                        android:src="@drawable/app_icon"
+                        android:visibility="visible"
+                        android:layout_height="@dimen/_150sdp" />
+
+                    <com.dhanuka.indhan.Fonts.Regular
+                        android:id="@+id/tvArrivalText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Arrival:- 29 sep 2021 4L35 pm"
+                        android:layout_marginTop="@dimen/_4dp"
+                        android:textSize="@dimen/_9sdp"
+                        android:gravity="center_horizontal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.48"
+                    android:layout_marginStart="0.5dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="0.5dp">
+
+                    <ImageView
+                        android:id="@+id/ivDepartureImage"
+                        android:layout_width="match_parent"
+                        android:visibility="visible"
+                        android:src="@drawable/app_icon"
+                        android:layout_height="@dimen/_150sdp" />
+
+                    <com.dhanuka.indhan.Fonts.Regular
+                        android:id="@+id/tvDepartureText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/_9sdp"
+                        android:text="Departure:- 29 sep 2021 4:35 pm"
+                        android:layout_marginTop="@dimen/_4dp"
+                        android:gravity="center_horizontal" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.dhanuka.indhan.Fonts.Medium
+                android:id="@+id/txtValid"
+                android:layout_width="match_parent"
+                android:padding="@dimen/_5dp"
+                android:textStyle="bold"
+                android:textSize="@dimen/_14sp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/input_border_green"
+                app:layout_constraintTop_toBottomOf="@+id/llArrivalDepartureTime"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_height="wrap_content"/>
+
+            <com.dhanuka.indhan.Fonts.Medium
+                android:id="@+id/txtValidDistance"
+                android:layout_width="match_parent"
+                android:padding="@dimen/_5dp"
+                android:textStyle="bold"
+                android:textSize="@dimen/_14sp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/input_border_green"
+                app:layout_constraintTop_toBottomOf="@+id/txtValid"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_height="wrap_content"/>
+
+            <com.dhanuka.indhan.Fonts.Medium
+                android:id="@+id/txtActivityDuration"
+                android:layout_width="match_parent"
+                android:padding="@dimen/_5dp"
+                android:textStyle="bold"
+                android:textSize="@dimen/_14sp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/input_border_green"
+                app:layout_constraintTop_toBottomOf="@+id/txtValidDistance"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:id="@+id/llTicketDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/txtActivityDuration"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@drawable/input_border_green"
+                android:padding="@dimen/_4sdp"
+                android:orientation="vertical">
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:id="@+id/tvMeTicketNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_18sdp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:id="@+id/tvMeDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|center_horizontal"
+                        android:singleLine="true"
+                        android:textColor="#FF7C7474" />
+
+                </RelativeLayout>
+
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:id="@+id/tvMeDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:textColor="#FF837B7B" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:layout_marginTop="@dimen/_6sdp">
+
+                    <com.dhanuka.indhan.Fonts.BoldTextView
+                        android:id="@+id/total_farmer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:background="@drawable/bg_text"
+                        android:textColor="#FF837B7B" />
+
+                    <com.dhanuka.indhan.Fonts.BoldTextView
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:id="@+id/total_valid_farmers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textColor="#FF837B7B" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llArrivalComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/llTicketDetail"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@drawable/input_border_green"
+                android:padding="@dimen/_4sdp"
+                android:orientation="vertical">
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Arrival Comment :- "
+                    android:layout_gravity="start"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:textColor="#FF837B7B" />
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:id="@+id/tvArrivalDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:maxLines="4"
+                    android:lines="4"
+                    android:minLines="1"
+                    android:textColor="#FF837B7B" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDepartureComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/llArrivalComment"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@drawable/input_border_green"
+                android:padding="@dimen/_4sdp"
+                android:orientation="vertical">
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Departure Comment :- "
+                    android:layout_gravity="start"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:textColor="#FF837B7B" />
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:id="@+id/tvDepartureDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:maxLines="4"
+                    android:lines="4"
+                    android:minLines="1"
+                    android:textColor="#FF837B7B" />
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

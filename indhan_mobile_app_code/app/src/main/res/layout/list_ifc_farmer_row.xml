@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_4sdp">
+
+    <ImageView
+        android:id="@+id/ivFarmerImage"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/input_border_green"
+        android:padding="@dimen/_10sdp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/name" />
+
+    <LinearLayout
+        android:id="@+id/llFarmerMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llFarmerName"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_toEndOf="@+id/ivFarmerImage"
+        android:layout_toRightOf="@+id/ivFarmerImage"
+        android:orientation="vertical">
+
+        <com.dhanuka.indhan.Fonts.BoldTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mobile_number" />
+
+        <com.dhanuka.indhan.Fonts.Regular
+            android:id="@+id/tvFarmerMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llFarmerAcers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llFarmerMobile"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_toEndOf="@+id/ivFarmerImage"
+        android:layout_toRightOf="@+id/ivFarmerImage"
+        android:orientation="vertical">
+
+        <com.dhanuka.indhan.Fonts.BoldTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/acerage" />
+
+        <com.dhanuka.indhan.Fonts.Regular
+            android:id="@+id/tvFarmerAcerage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llFarmerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_toEndOf="@+id/ivFarmerImage"
+        android:layout_toRightOf="@+id/ivFarmerImage"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:orientation="vertical">
+
+            <com.dhanuka.indhan.Fonts.BoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/farmer_name" />
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/tvFarmerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivDelete"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_13sdp"
+            android:layout_weight="0.1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/delete"
+            app:tint="@color/red" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/offlineTicket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Offline"
+        android:textColor="@color/orange_demo"
+        android:textSize="@dimen/_10sp"
+        android:layout_marginTop="-20dp"
+        android:layout_below="@+id/ivFarmerImage"
+        android:rotation="300"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_below="@+id/llFarmerAcers"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@color/darkgray" />
+
+</RelativeLayout>

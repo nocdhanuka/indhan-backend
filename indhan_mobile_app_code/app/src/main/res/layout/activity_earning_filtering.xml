@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorButton"
+        android:layout_height="@dimen/_40sdp">
+
+        <com.dhanuka.indhan.Fonts.Medium
+            android:id="@+id/pd_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Earning Filter"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_15sdp" />
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        >
+
+        <com.dhanuka.indhan.Fonts.Regular
+            android:id="@+id/txtVillageList"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_edit"
+            android:hint="Village List"
+            android:drawableRight="@drawable/downarrow"
+            android:textSize="@dimen/_12sdp"
+            android:padding="@dimen/_5sdp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/colorButton"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_height="@dimen/_30sdp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@+id/txtVillageList"
+            android:id="@+id/recyclerViewVillages"
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <com.dhanuka.indhan.Fonts.Regular
+            android:id="@+id/txtMonth"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_edit"
+            android:hint="Select Month"
+
+            android:drawableRight="@drawable/downarrow"
+            android:layout_below="@+id/recyclerViewVillages"
+            android:textSize="@dimen/_12sdp"
+            android:padding="@dimen/_5sdp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/colorButton"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_height="@dimen/_30sdp" />
+
+
+
+        <com.dhanuka.indhan.Fonts.RegularButton
+            android:id="@+id/btnRbSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:layout_marginRight="@dimen/_60sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/login_button_selector"
+            android:elevation="15dp"
+            android:layout_alignParentBottom="true"
+            android:text="@string/btn_submit"
+            android:textAllCaps="false"
+            android:textColor="@color/White"
+            android:textSize="@dimen/_13sdp" />
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

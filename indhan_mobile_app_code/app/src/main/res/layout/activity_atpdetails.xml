@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:background = "@color/White"
+    android:orientation = "vertical"
+    android:weightSum = "12" >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "0dp"
+        android:layout_weight = "1" >
+
+        <RelativeLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "match_parent"
+            android:background = "@color/colorPrimary"
+            android:elevation = "@dimen/_10sdp" >
+
+            <LinearLayout
+                android:id = "@+id/iCross"
+                android:layout_width = "@dimen/_50sdp"
+                android:layout_height = "match_parent"
+                android:layout_alignParentLeft = "true"
+                android:layout_centerInParent = "true"
+                android:gravity = "center"
+                tools:ignore = "DuplicateIds" >
+
+                <ImageView
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:background = "@drawable/ic_arrow_back"
+                    android:padding = "@dimen/_10sdp" />
+
+            </LinearLayout >
+
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/iCross"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_15sdp" />
+
+
+
+
+
+            <com.dhanuka.indhan.Fonts.BoldTextView
+                android:id = "@+id/txtInviteFarmerCount"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_centerVertical = "true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="@dimen/_10dp"
+                android:paddingLeft="@dimen/_5dp"
+                android:paddingRight="@dimen/_5dp"
+                android:paddingTop="@dimen/_5dp"
+                android:textStyle="bold"
+                android:layout_marginLeft = "@dimen/_10sdp"
+                android:textColor = "@android:color/white"
+                android:textSize = "@dimen/_20sp"
+                android:layout_alignParentRight="true" />
+            <View
+                android:id="@+id/view"
+                android:layout_below="@+id/txtInviteFarmerCount"
+                android:layout_width="@dimen/_25dp"
+                android:background="@color/white"
+                android:layout_alignParentEnd="true"
+                android:layout_height="@dimen/_2dp"
+                android:layout_marginRight="@dimen/_15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="@dimen/_15dp" />
+
+        </RelativeLayout >
+
+    </com.google.android.material.appbar.AppBarLayout >
+
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "0dp"
+        android:layout_weight = "10"
+        android:orientation = "vertical" >
+
+        <ScrollView
+            android:layout_width = "match_parent"
+            android:layout_height = "match_parent" >
+
+            <LinearLayout
+                android:id = "@+id/layout"
+                android:layout_width = "match_parent"
+                android:layout_height = "0dp"
+                android:layout_weight = "10"
+                android:orientation = "vertical"
+                android:padding = "@dimen/_10sdp" >
+
+                <RelativeLayout
+                    android:id="@+id/relMeetingData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:background="@drawable/input_border_green"
+                    android:padding="@dimen/_8sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvPresenterName"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <com.dhanuka.indhan.Fonts.Regular
+                            android:id="@+id/tvMonitorName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_4dp"
+                            android:layout_weight="1.5" />
+
+                        <ImageView
+                            android:id="@+id/ivShareMeetingDetail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_weight="0.5"
+                            android:src="@android:drawable/ic_menu_share"
+                            app:tint="@color/blue" />
+
+                    </LinearLayout>
+
+
+                    <com.dhanuka.indhan.Fonts.BoldTextView
+                        android:id="@+id/tvLabelMeetingDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Meeting Detail"
+                        android:textColor="@color/progess_green"
+                        android:textSize="@dimen/_16sp" />
+
+                    <com.dhanuka.indhan.Fonts.Regular
+                        android:id="@+id/tvMeetingDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvMeetingDateTime"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:autoLink="web"
+                        android:textSize="@dimen/_14sp" />
+
+                    <com.dhanuka.indhan.Fonts.Regular
+                        android:id="@+id/tvPresenterName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvMeetingDetail"
+                        android:layout_marginTop="@dimen/_4dp" />
+
+                    <com.dhanuka.indhan.Fonts.Regular
+                        android:id="@+id/tvMeetingDateTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvLabelMeetingDetail"
+                        android:layout_marginTop="@dimen/_4dp" />
+
+
+                </RelativeLayout>
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop = "@dimen/_10sdp"
+                    android:focusable = "true"
+                    android:text = "Created Date"
+                    android:textColor = "@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id = "@+id/txtCreatedDate"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop = "@dimen/_5sdp"
+                    android:textColor = "@color/black" />
+
+                <View
+                    android:layout_width = "match_parent"
+                    android:layout_height = "@dimen/_1sdp"
+                    android:layout_marginRight = "@dimen/_14sdp"
+                    android:background = "@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:id="@+id/txtDD"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop = "@dimen/_10sdp"
+                    android:focusable = "true"
+                    android:text = "DD"
+                    android:textColor = "@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id = "@+id/txtDDName"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop = "@dimen/_5sdp"
+                    android:textColor = "@color/black" />
+
+                <View
+                    android:id="@+id/viewDD"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "@dimen/_1sdp"
+                    android:layout_marginRight = "@dimen/_14sdp"
+                    android:background = "@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop = "@dimen/_10sdp"
+                    android:focusable = "true"
+                    android:text = "Product"
+                    android:textColor = "@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id = "@+id/tv_product"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop = "@dimen/_5sdp"
+                    android:text = "Select Month"
+                    android:textColor = "@color/black" />
+
+                <View
+                    android:layout_width = "match_parent"
+                    android:layout_height = "@dimen/_1sdp"
+                    android:layout_marginRight = "@dimen/_14sdp"
+                    android:background = "@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop = "@dimen/_10sdp"
+                    android:focusable = "true"
+                    android:text = "Crop"
+                    android:textColor = "@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id = "@+id/tv_crop"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop = "@dimen/_5sdp"
+                    android:text = "Select Month"
+                    android:textColor = "@color/black" />
+
+                <View
+                    android:layout_width = "match_parent"
+                    android:layout_height = "@dimen/_1sdp"
+                    android:layout_marginRight = "@dimen/_14sdp"
+                    android:background = "@color/darkgray" />
+
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop = "@dimen/_10sdp"
+                    android:focusable = "true"
+                    android:text = "Product Two"
+                    android:textColor = "@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id = "@+id/tv_product1"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop = "@dimen/_5sdp"
+                    android:text = "Select Month"
+                    android:textColor = "@color/black" />
+
+                <View
+                    android:layout_width = "match_parent"
+                    android:layout_height = "@dimen/_1sdp"
+                    android:layout_marginRight = "@dimen/_14sdp"
+                    android:background = "@color/darkgray" />
+
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop = "@dimen/_10sdp"
+                    android:focusable = "true"
+                    android:text = "Product Three"
+                    android:textColor = "@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id = "@+id/tv_product2"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop = "@dimen/_5sdp"
+                    android:text = "Select Month"
+                    android:textColor = "@color/black" />
+
+                <View
+                    android:layout_width = "match_parent"
+                    android:layout_height = "@dimen/_1sdp"
+                    android:layout_marginRight = "@dimen/_14sdp"
+                    android:background = "@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop = "@dimen/_10sdp"
+                    android:focusable = "true"
+                    android:text = "Type of Meeting"
+                    android:textColor = "@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id = "@+id/tv_ds"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop = "@dimen/_5sdp"
+                    android:text = "- -"
+                    android:textColor = "@color/black" />
+
+                <View
+                    android:layout_width = "match_parent"
+                    android:layout_height = "@dimen/_1sdp"
+                    android:layout_marginRight = "@dimen/_14sdp"
+                    android:background = "@color/darkgray" />
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop = "@dimen/_10sdp"
+                    android:focusable = "true"
+                    android:text = "Language"
+                    android:textColor = "@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id = "@+id/tv_language"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop = "@dimen/_5sdp"
+                    android:text = "- -"
+                    android:textColor = "@color/black" />
+
+                <View
+                    android:layout_width = "match_parent"
+                    android:layout_height = "@dimen/_1sdp"
+                    android:layout_marginRight = "@dimen/_14sdp"
+                    android:background = "@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop = "@dimen/_10sdp"
+                    android:focusable = "true"
+                    android:text = "State"
+                    android:textColor = "@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id = "@+id/tv_state"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop = "@dimen/_5sdp"
+                    android:text = "Select State"
+                    android:textColor = "@color/black" />
+
+                <View
+                    android:layout_width = "match_parent"
+                    android:layout_height = "@dimen/_1sdp"
+                    android:layout_marginRight = "@dimen/_14sdp"
+                    android:background = "@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop = "@dimen/_10sdp"
+                    android:focusable = "true"
+                    android:text = "District"
+                    android:textColor = "@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id = "@+id/tv_district"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop = "@dimen/_5sdp"
+                    android:text = "Select district"
+                    android:textColor = "@color/black" />
+
+                <View
+                    android:layout_width = "match_parent"
+                    android:layout_height = "@dimen/_1sdp"
+                    android:layout_marginRight = "@dimen/_14sdp"
+                    android:background = "@color/darkgray" />
+
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop = "@dimen/_10sdp"
+                    android:focusable = "true"
+                    android:text = "Territory"
+                    android:textColor = "@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id = "@+id/tv_territory"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop = "@dimen/_5sdp"
+                    android:text = "Select territory"
+                    android:textColor = "@color/black" />
+
+                <View
+                    android:layout_width = "match_parent"
+                    android:layout_height = "@dimen/_1sdp"
+                    android:layout_marginRight = "@dimen/_14sdp"
+                    android:background = "@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width="wrap_content"
+                    android:layout_height="23dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:focusable="true"
+                    android:text="Tehsil"
+                    android:textColor="@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id = "@+id/tv_tehsil"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop = "@dimen/_5sdp"
+                    android:text = "Select teshil"
+                    android:textColor = "@color/black" />
+
+                <View
+                    android:layout_width = "match_parent"
+                    android:layout_height = "@dimen/_1sdp"
+                    android:layout_marginRight = "@dimen/_14sdp"
+                    android:background = "@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop = "@dimen/_10sdp"
+                    android:focusable = "true"
+                    android:text = "Village"
+                    android:textColor = "@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id = "@+id/tv_village"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop = "@dimen/_5sdp"
+                    android:text = "Village"
+                    android:textColor = "@color/black" />
+
+                <View
+                    android:layout_width = "match_parent"
+                    android:layout_height = "@dimen/_1sdp"
+                    android:layout_marginRight = "@dimen/_14sdp"
+                    android:background = "@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop = "@dimen/_10sdp"
+                    android:focusable = "true"
+                    android:visibility="gone"
+                    android:text = "Farmers Expected"
+                    android:textColor = "@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id = "@+id/tv_farmer"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop = "@dimen/_5sdp"
+                    android:text = "Select Month"
+                    android:visibility="gone"
+                    android:textColor = "@color/black" />
+
+                <View
+                    android:layout_width = "match_parent"
+                    android:layout_height = "@dimen/_1sdp"
+                    android:layout_marginRight = "@dimen/_14sdp"
+                    android:background = "@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop = "@dimen/_10sdp"
+                    android:focusable = "true"
+                    android:text = "Farmers Registered"
+                    android:textColor = "@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id = "@+id/tv_register_farmer"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop = "@dimen/_5sdp"
+                    android:text = "Select Month"
+                    android:textColor = "@color/black" />
+
+                <View
+                    android:layout_width = "match_parent"
+                    android:layout_height = "@dimen/_1sdp"
+                    android:layout_marginRight = "@dimen/_14sdp"
+                    android:background = "@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop = "@dimen/_10sdp"
+                    android:focusable = "true"
+                    android:text = " Farmers Invited"
+                    android:textColor = "@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id = "@+id/tv_invited"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop = "@dimen/_5sdp"
+                    android:text = "Select Month"
+                    android:textColor = "@color/black" />
+
+                <View
+                    android:layout_width = "match_parent"
+                    android:layout_height = "@dimen/_1sdp"
+                    android:layout_marginRight = "@dimen/_14sdp"
+                    android:background = "@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop = "@dimen/_10sdp"
+                    android:focusable = "true"
+                    android:text = "PDA Expected"
+                    android:textColor = "@color/darkgray" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id = "@+id/tv_pda"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop = "@dimen/_5sdp"
+                    android:text = "Select Month"
+                    android:textColor = "@color/black" />
+
+                <View
+                    android:layout_width = "match_parent"
+                    android:layout_height = "@dimen/_1sdp"
+                    android:layout_marginRight = "@dimen/_14sdp"
+                    android:background = "@color/darkgray" />
+            </LinearLayout >
+        </ScrollView >
+    </LinearLayout >
+
+    <LinearLayout
+        android:id = "@+id/appBarBottom"
+        android:layout_width = "match_parent"
+        android:layout_height = "0dp"
+        android:layout_weight = "1" >
+        <com.dhanuka.indhan.Fonts.Regular
+            android:id = "@+id/txtInvitedFarmer"
+            android:layout_width = "0dp"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/_5dp"
+            android:layout_height = "match_parent"
+            android:gravity = "center"
+            android:text = "Invited Farmer"
+            android:background="@color/colorButton"
+            android:textColor = "@android:color/white"
+            android:textSize = "@dimen/_15sdp" />
+        <com.dhanuka.indhan.Fonts.Regular
+            android:id = "@+id/activateTicketBtn"
+            android:layout_width = "0dp"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/_5dp"
+            android:background="@color/colorButton"
+            android:layout_height = "match_parent"
+            android:layout_centerVertical = "true"
+            android:gravity = "center"
+            android:text = "Activate Ticket"
+            android:textColor = "@android:color/white"
+            android:textSize = "@dimen/_15sdp" />
+    </LinearLayout >
+</LinearLayout >

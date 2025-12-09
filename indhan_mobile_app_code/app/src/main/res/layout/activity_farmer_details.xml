@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorButton"
+        android:layout_height="@dimen/_40sdp">
+
+        <com.dhanuka.indhan.Fonts.Medium
+            android:id="@+id/pd_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Farmer Details"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_15sdp" />
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/colorButton"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/imgProfile"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_width="@dimen/_60sdp"
+                    android:src="@drawable/def_user"
+                    android:layout_height="@dimen/_60sdp"
+                    />
+
+                <com.dhanuka.indhan.Fonts.BoldTextView
+                    android:id="@+id/txtUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/imgProfile"
+                    android:text="Johnathan"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_15sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_toRightOf="@+id/imgProfile" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/txtID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/imgProfile"
+                    android:text="DD12343XYZ"
+                    android:layout_below="@+id/txtUserName"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_toRightOf="@+id/imgProfile" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/txtPhoneNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+91 876543213"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_below="@+id/imgProfile"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:drawableLeft="@drawable/call"
+                    android:drawablePadding="@dimen/_5sdp"
+
+                    />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/txtCallNow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Call Now"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/imgProfile"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:drawableLeft="@drawable/call"
+                    android:drawablePadding="@dimen/_5sdp"
+
+                    />
+
+                <com.dhanuka.indhan.Fonts.BoldTextView
+                    android:id="@+id/txtNoFarmer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="45"
+                    android:layout_below="@+id/txtPhoneNo"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_20sdp"
+                    android:layout_marginLeft="@dimen/_60sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:drawablePadding="@dimen/_5sdp"
+
+                    />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/txtFarmers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Acers Crops Area"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_below="@+id/txtNoFarmer"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:drawablePadding="@dimen/_5sdp"
+
+                    />
+
+                <com.dhanuka.indhan.Fonts.BoldTextView
+                    android:id="@+id/txtNoOfAvgVisit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="45"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/txtPhoneNo"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_20sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_60sdp"
+                    android:drawablePadding="@dimen/_5sdp"
+
+                    />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/txtAvgVisit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ACP Visit"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_below="@+id/txtNoFarmer"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_40sdp"
+                    android:drawablePadding="@dimen/_5sdp"
+
+                    />
+
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_40sdp"
+                    android:background="@color/transparent"
+                    app:cardCornerRadius="@dimen/_5sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:layout_height="match_parent">
+
+                        <com.dhanuka.indhan.Fonts.BoldTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Address"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sp"
+                            />
+                        <com.dhanuka.indhan.Fonts.BoldTextView
+                            android:id="@+id/txtAddress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="NA"
+                            android:textColor="@color/colorButton"
+                            android:textSize="@dimen/_15sp"
+                            />
+
+                        <com.dhanuka.indhan.Fonts.BoldTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="State"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sp"
+                            />
+                        <com.dhanuka.indhan.Fonts.BoldTextView
+                            android:id="@+id/txtState"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="A-26, Sector-63"
+                            android:textColor="@color/colorButton"
+                            android:textSize="@dimen/_15sp"
+                            />
+
+                        <com.dhanuka.indhan.Fonts.BoldTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="District"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sp"
+                            />
+                        <com.dhanuka.indhan.Fonts.BoldTextView
+                            android:id="@+id/txtDistrict"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="A-26, Sector-63"
+                            android:textColor="@color/colorButton"
+                            android:textSize="@dimen/_15sp"
+                            />
+
+                        <com.dhanuka.indhan.Fonts.BoldTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tahsil"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sp"
+                            />
+                        <com.dhanuka.indhan.Fonts.BoldTextView
+                            android:id="@+id/tehsil"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="A-26, Sector-63"
+                            android:textColor="@color/colorButton"
+                            android:textSize="@dimen/_15sp" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

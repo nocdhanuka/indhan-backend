@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/llayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivFarmerImage"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/input_border_green"
+            android:scaleType="center"
+            android:src="@drawable/name" />
+
+        <ImageView
+            android:id="@+id/imgCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/_5dp"
+            android:padding="@dimen/_5dp"
+            app:srcCompat="@drawable/call" />
+
+        <ImageView
+            android:id="@+id/imgSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgCall"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/_5dp"
+            android:padding="@dimen/_5dp"
+            app:srcCompat="@drawable/call" />
+
+        <TextView
+            android:id="@+id/txtVillageName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_toEndOf="@+id/ivFarmerImage"
+            android:layout_toRightOf="@+id/ivFarmerImage"
+            android:padding="@dimen/_5sdp"
+            android:text="Village name"
+            android:textColor="@color/colorButton"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginLeft="@dimen/_4sdp" />
+
+        <TextView
+            android:id="@+id/txtNoOfFarmers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_below="@+id/txtVillageName"
+            android:layout_marginTop="@dimen/_5dp"
+            android:layout_toEndOf="@+id/ivFarmerImage"
+            android:layout_toRightOf="@+id/ivFarmerImage"
+            android:padding="@dimen/_5sdp"
+            android:text="No of farmers"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_4sdp" />
+
+
+    </RelativeLayout>
+</layout>

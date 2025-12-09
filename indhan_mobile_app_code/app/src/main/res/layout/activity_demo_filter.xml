@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorButton"
+        android:layout_height="@dimen/_40sdp">
+
+        <com.dhanuka.indhan.Fonts.Medium
+            android:id="@+id/pd_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/demo_filter"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_15sdp" />
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/llCrop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_border"
+                android:orientation="horizontal">
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/txtCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:hint="@string/crop"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_20dp"
+                    android:src="@drawable/downarrow" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20dp"
+                android:background="@drawable/input_border"
+                android:orientation="horizontal">
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/txtProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textColorHint="@color/black"
+                    android:hint="@string/product"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_20dp"
+                    android:src="@drawable/downarrow" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/llVillage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20dp"
+                android:background="@drawable/input_border"
+                android:orientation="horizontal">
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/txtVillageName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:hint="@string/village"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_20dp"
+                    android:src="@drawable/downarrow" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/llStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20dp"
+                android:background="@drawable/input_border"
+                android:orientation="horizontal">
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/txtStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:hint="@string/status"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_20dp"
+                    android:src="@drawable/downarrow" />
+
+
+            </LinearLayout>
+
+            <com.dhanuka.indhan.Fonts.Medium
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15dp"
+                android:text="Date Range"
+                android:textColor="@color/black"/>
+            <LinearLayout
+                android:id="@+id/llFromDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15dp"
+                android:background="@drawable/input_border"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtFromDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_10dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="@string/from"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_20dp"
+                    android:src="@drawable/downarrow"
+                    android:visibility="invisible" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/llToDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20dp"
+                android:background="@drawable/input_border"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtToDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_10dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="@string/to"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_20dp"
+                    android:src="@drawable/downarrow"
+                    android:visibility="invisible" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.dhanuka.indhan.Fonts.RegularButton
+            android:id="@+id/btnDmSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:layout_marginRight="@dimen/_60sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/login_button_selector"
+            android:elevation="15dp"
+            android:layout_alignParentBottom="true"
+            android:text="@string/btn_submit"
+            android:textAllCaps="false"
+            android:textColor="@color/White"
+            android:textSize="@dimen/_13sdp" />
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

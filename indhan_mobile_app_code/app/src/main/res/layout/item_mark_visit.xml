@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgVisit"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_margin="@dimen/_5dp"
+        android:background="@drawable/def_user"
+        android:scaleType="center" />
+
+    <TextView
+        android:id="@+id/txtVillageName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/imgVisit"
+        android:layout_toRightOf="@+id/imgVisit"
+        android:padding="@dimen/_2sdp"
+        android:text="Village name"
+        android:textColor="@color/colorButton"
+        android:textSize="@dimen/_15sdp" />
+
+
+    <TextView
+        android:id="@+id/txtVisitDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtVillageName"
+        android:layout_toEndOf="@+id/imgVisit"
+        android:layout_toRightOf="@+id/imgVisit"
+        android:padding="@dimen/_2sdp"
+        android:text="41 visit/month/farmer"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp" />
+
+    <TextView
+        android:id="@+id/txtRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtVisitDescription"
+        android:layout_toEndOf="@+id/imgVisit"
+        android:layout_toRightOf="@+id/imgVisit"
+        android:padding="@dimen/_2sdp"
+        android:text="No of farmers"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp" />
+
+</RelativeLayout>

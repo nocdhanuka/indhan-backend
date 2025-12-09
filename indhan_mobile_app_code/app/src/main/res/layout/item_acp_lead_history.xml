@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:orientation="horizontal">
+
+    <com.dhanuka.indhan.Fonts.Medium
+        android:id="@+id/txtLeadId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:maxLines="1"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:layout_marginLeft="5dp"
+        android:text="1233"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sp" />
+
+    <com.dhanuka.indhan.Fonts.Medium
+        android:id="@+id/txtCreatedAt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:text="2-7-2019"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sp" />
+
+    <com.dhanuka.indhan.Fonts.Medium
+        android:id="@+id/txtToDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:text="status"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sp" />
+</LinearLayout>

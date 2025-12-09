@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/_50sdp"
+    android:orientation="vertical"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:background="@color/white">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:elevation="@dimen/_15sdp"
+        android:minHeight="@dimen/_50sdp"
+        card_view:cardElevation="2sp"
+        card_view:cardUseCompatPadding="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/productlayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/bdo_name_tv"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:focusable="true"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="BDo Name"
+                    android:textColor="@color/colorPrimary" />
+
+                <!-- <com.dhanuka.indhan.Fonts.Regular
+                     android:id="@+id/no_of_days_tv"
+                     android:layout_below="@+id/bdo_name_tv"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="@dimen/_30sdp"
+                     android:layout_marginTop="@dimen/_5sdp"
+                     android:text="BDO Name"
+                     android:textColor="@color/darkgray" />-->
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:src="@drawable/rightarrow_grey"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

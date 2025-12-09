@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/White"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/tick"/>
+
+    <com.dhanuka.indhan.Fonts.Medium
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tic_banner"
+        android:text="@string/ticket_no"/>
+
+    <com.dhanuka.indhan.Fonts.Medium
+        android:id="@+id/tvMeTicketNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="28sp" />
+
+    <com.dhanuka.indhan.Fonts.Medium
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/msg"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        android:text="@string/your_ticket_is_successfully_generated"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/darkgray" />
+
+    <com.dhanuka.indhan.Fonts.Medium
+        android:id="@+id/tvMeOkay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/okay"
+        android:padding="@dimen/_10sdp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp" />
+
+</LinearLayout>

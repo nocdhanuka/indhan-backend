@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/activity_main_layout"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@color/colorPrimary"
+        android:elevation="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/title_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="@dimen/_6sdp"
+                android:singleLine="true"
+                android:text="@string/home"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+            <com.dhanuka.indhan.Fonts.Medium
+                android:id="@+id/txtTeamSummary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/team_summary"
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/llLogout"
+        android:layout_below="@+id/view" />
+
+
+    <LinearLayout
+        android:id="@+id/llLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#c2c2c2" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.dhanuka.indhan.Fonts.Medium
+                android:id="@+id/tvMeForgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_16sdp"
+                android:drawableLeft="@drawable/log_out"
+                android:drawablePadding="@dimen/_10sdp"
+                android:text="@string/btn_logout"
+                android:textColor="@color/darkgray"
+                android:textSize="@dimen/_16sdp" />
+
+            <com.dhanuka.indhan.Fonts.Medium
+                android:id="@+id/profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_16sdp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:text="@string/btn_logout"
+                android:textColor="@color/darkgray"
+                android:textSize="@dimen/_16sdp" />
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginRight="@dimen/_16sdp"
+                android:gravity="center"
+                android:text="@string/home"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_10sdp" />
+
+            <ImageView
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_toLeftOf="@+id/profile"
+                android:src="@drawable/bdo_wise_grey" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

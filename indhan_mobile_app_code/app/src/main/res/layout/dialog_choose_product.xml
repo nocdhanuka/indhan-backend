@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_30sdp"
+    android:layout_marginEnd="@dimen/_30sdp"
+
+    android:background="@color/White"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_margin="@dimen/_30sdp"
+        android:layout_height="wrap_content">
+
+        <com.dhanuka.indhan.Fonts.Medium
+            android:id="@+id/txtProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:drawableRight="@drawable/downarrow"
+            android:text="Product"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/bg_edit"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <com.dhanuka.indhan.Fonts.Medium
+            android:id="@+id/txtDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/txtProduct"
+            android:padding="@dimen/_5sdp"
+            android:gravity="center"
+            android:text="Expected purchase date"
+            android:background="@drawable/bg_edit"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/darkgray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <com.dhanuka.indhan.Fonts.Medium
+            android:id="@+id/tvMeSubmit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:text="Submit"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_16sp" />
+
+
+        <View
+            android:layout_width="@dimen/_1dp"
+            android:layout_height="match_parent"
+            android:background="@color/darkgray" />
+
+        <com.dhanuka.indhan.Fonts.Medium
+            android:id="@+id/tvMeCancel"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:text="Cancel"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_16sp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

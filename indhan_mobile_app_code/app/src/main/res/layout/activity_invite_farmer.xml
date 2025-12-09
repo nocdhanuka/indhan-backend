@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@color/colorPrimary"
+        android:elevation="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:id="@+id/title_demo_request"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="@dimen/_6sdp"
+                android:singleLine="true"
+                android:text="@string/invite_farmer"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_16sdp" />
+
+            <ImageView
+                android:id="@+id/imgAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/_10dp"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/_10dp"
+                android:layout_centerVertical="true"
+
+                />
+
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_15dp"
+            android:layout_marginRight="@dimen/_15dp"
+            android:background="@color/white"
+            android:elevation="@dimen/_2dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:background="@drawable/input_border"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edtFullName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/_10dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:textSize="@dimen/_14sp"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:maxLength="65"
+                        android:inputType="textCapWords"
+                        android:hint="@string/full_name"
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_20dp"
+                        android:src="@drawable/downarrow"
+                        android:visibility="invisible" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:background="@drawable/input_border"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edtContactsNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/_10dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:textSize="@dimen/_14sp"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:maxLength="10"
+                        android:textColorHint="@color/black"
+                        android:inputType="number"
+                        android:gravity="center_vertical"
+                        android:hint="@string/contact_no"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_20dp"
+                        android:src="@drawable/downarrow"
+                        android:visibility="invisible" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/recyclerViewInvite"
+                android:layout_height="wrap_content"/>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/llSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginLeft="@dimen/_30dp"
+        android:layout_marginTop="@dimen/_50dp"
+        android:layout_marginRight="@dimen/_30dp"
+        android:layout_marginBottom="@dimen/_50dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center">
+
+        <com.dhanuka.indhan.Fonts.Regular
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="@string/submit"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_16sdp" />
+
+
+    </LinearLayout>
+</LinearLayout>

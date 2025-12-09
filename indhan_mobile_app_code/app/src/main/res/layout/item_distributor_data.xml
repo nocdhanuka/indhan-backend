@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="130dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        card_view:cardBackgroundColor="#f0f2f5"
+        card_view:cardCornerRadius="@dimen/_10sdp"
+        card_view:cardElevation="16dp"
+        android:padding="@dimen/_8dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:id="@+id/rlBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_10sdp"
+            android:background="@color/White">
+
+            <LinearLayout
+                android:id="@+id/llParentLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2sdp"
+                android:orientation="vertical">
+
+                <com.dhanuka.indhan.Fonts.Medium
+                    android:id="@+id/tvDistributorName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_20sp"
+                    android:textColor="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:id="@+id/lltype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:weightSum="2">
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Type"
+                        android:textSize="@dimen/_12sp"
+                        android:textColor="@color/charcoalGrey" />
+
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:id="@+id/tvType"
+                        android:layout_width="0dp"
+                        android:textSize="@dimen/_12sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llCompany"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:weightSum="2">
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Company"
+                        android:textSize="@dimen/_12sp"
+                        android:textColor="@color/charcoalGrey" />
+
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:id="@+id/tvCompanyName"
+                        android:layout_width="0dp"
+                        android:textSize="@dimen/_12sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llDistrict"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:weightSum="2">
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/_12sp"
+                        android:text="District Name"
+                        android:textColor="@color/charcoalGrey" />
+
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:id="@+id/tvDistrictName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/_12sp"
+                        android:text="-"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llTerritory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:weightSum="2">
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/_12sp"
+                        android:text="Territory Name"
+                        android:textColor="@color/charcoalGrey" />
+
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:id="@+id/tvTerritoryData"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/_12sp"
+                        android:text="-"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llMarket"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:weightSum="2">
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Market"
+                        android:textSize="@dimen/_12sp"
+                        android:textColor="@color/charcoalGrey" />
+
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:id="@+id/tvMarket"
+                        android:layout_width="0dp"
+                        android:textSize="@dimen/_12sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:weightSum="2">
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="WhatsApp Number"
+                        android:textSize="@dimen/_12sp"
+                        android:textColor="@color/charcoalGrey" />
+
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:id="@+id/tvPhoneData"
+                        android:layout_width="0dp"
+                        android:textSize="@dimen/_12sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llPhone2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:weightSum="2">
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Phone Number"
+                        android:textSize="@dimen/_12sp"
+                        android:textColor="@color/charcoalGrey" />
+
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:id="@+id/tvPhoneData2"
+                        android:layout_width="0dp"
+                        android:textSize="@dimen/_12sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:weightSum="2">
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Address"
+                        android:textSize="@dimen/_12sp"
+                        android:textColor="@color/charcoalGrey" />
+
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:id="@+id/tvAddress"
+                        android:layout_width="0dp"
+                        android:textSize="@dimen/_12sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:orientation="horizontal">
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:id="@+id/txtViewVisit"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.9"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:background="@color/colorPrimary"
+                        android:paddingLeft="@dimen/_4sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_4sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:text="View Visit"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12sp"
+                        android:gravity="center_horizontal" />
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:id="@+id/txtArrivalVisit"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:background="@color/colorPrimary"
+                        android:paddingLeft="@dimen/_4sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_4sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:text="Mark Arrival"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12sp"
+                        android:gravity="center_horizontal" />
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:id="@+id/txtDepartureVisit"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.2"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:background="@color/colorPrimary"
+                        android:textAlignment="center"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:text="Mark Departure"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12sp"
+                        android:gravity="center_horizontal" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

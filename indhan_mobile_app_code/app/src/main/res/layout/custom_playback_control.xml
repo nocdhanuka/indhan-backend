@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="4dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="@color/charcoalGrey">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <com.google.android.exoplayer2.ui.DefaultTimeBar
+                android:id="@id/exo_progress"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="26dp"/>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView android:id="@id/exo_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:includeFontPadding="false"
+                android:textColor="#FFBEBEBE"/>
+
+            <TextView android:id="@id/exo_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:layout_alignParentEnd="true"
+                android:includeFontPadding="false"
+                android:textColor="#FFBEBEBE"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:background="@color/charcoalGrey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/exo_rew"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/video_back_ic"/>
+                <TextView
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/video_forward_ic"
+                    android:text="15"
+                    android:textSize="@dimen/_10sp"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:tint="@color/white"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+
+            <ImageButton android:id="@id/exo_play"
+
+                style="@style/ExoMediaButton.Play"/>
+
+            <ImageButton android:id="@id/exo_pause"
+                style="@style/ExoMediaButton.Pause"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:visibility="visible"
+                    android:layout_width="22dp"
+                    android:src="@drawable/video_forward_ic"
+                    android:id="@+id/exo_ffwd"
+                    android:layout_height="22dp"/>
+                <TextView
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/video_forward_ic"
+                    android:text="15"
+                    android:textSize="@dimen/_10sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:tint="@color/white"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

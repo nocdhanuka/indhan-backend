@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10dp"
+    android:background="@color/white"
+    android:elevation="2dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llDemoDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10dp"
+                android:orientation="horizontal">
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/txtDdnameLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/ddname"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sp" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/txtFarmerNameLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/farmer_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10dp"
+                android:orientation="horizontal">
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/txtDdname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Alaistar smith"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_14sp" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/txtFarmerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Johnathan Doe"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15dp"
+                android:orientation="horizontal">
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/txtCropLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/crop"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sp" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/txtSuggestedDateLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/suggested_day_date"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10dp"
+                android:orientation="horizontal">
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/txtCropName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Banana"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_14sp" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/txtSuggestedDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10dp"
+                android:orientation="vertical">
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/txtProductLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/product"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sp" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/txtProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Fertilizer"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10dp"
+                android:orientation="horizontal">
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/txtCreatedOn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_12sp" />
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/txtDemoNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_10dp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Demo no:1124"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_12sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFeedbackImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

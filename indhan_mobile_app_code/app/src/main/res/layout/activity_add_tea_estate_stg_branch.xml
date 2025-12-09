@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/White"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@color/colorPrimary">
+
+            <LinearLayout
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:paddingEnd="@dimen/_4sdp"
+                android:paddingRight="@dimen/_4sdp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_action_back"
+                    android:contentDescription="@string/add_image"
+                    android:padding="@dimen/_10sdp"/>
+            </LinearLayout>
+
+
+            <com.dhanuka.indhan.Fonts.Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/ivBack"
+                android:layout_toRightOf="@+id/ivBack"
+                android:padding="@dimen/_6sdp"
+                android:text="Add New Tea Estate"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp" >
+
+                <RelativeLayout
+                    android:id="@+id/relLabelTeaEstateType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_border_green"
+                    android:padding="@dimen/_8sdp">
+
+                    <com.dhanuka.indhan.Fonts.BoldTextView
+                        android:id="@+id/tvLabelTeaEstateType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="I am Adding"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16sp" />
+
+                       <RadioGroup
+                           android:id="@+id/rgbType"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:orientation="horizontal"
+                           android:layout_below="@+id/tvLabelTeaEstateType"
+                           android:weightSum="2">
+
+                           <RadioButton
+                               android:id="@+id/rbTeaEstate"
+                               android:layout_width="@dimen/_0dp"
+                               android:layout_height="wrap_content"
+                               android:text="Tea Estate"
+                               android:layout_weight="1"/>
+
+                           <RadioButton
+                               android:id="@+id/rbStg"
+                               android:layout_width="@dimen/_0dp"
+                               android:layout_height="wrap_content"
+                               android:text="STG"
+                               android:layout_weight="1"/>
+                       </RadioGroup>
+
+                    <com.dhanuka.indhan.Fonts.BoldTextView
+                        android:id="@+id/tvHeadBranch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rgbType"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="What is this?"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16sp" />
+
+                        <RadioGroup
+                            android:id="@+id/rgbWhat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_below="@+id/tvHeadBranch"
+                            android:weightSum="2">
+
+                            <RadioButton
+                                android:id="@+id/rbHeadOffice"
+                                android:layout_width="@dimen/_0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Head Office"
+                                android:layout_weight="1"/>
+
+                            <RadioButton
+                                android:id="@+id/rbBranch"
+                                android:layout_width="@dimen/_0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Branch"
+                                android:layout_weight="1"/>
+                        </RadioGroup>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlPicture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgPicture"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_150sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@color/bg_gray"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/imgCamera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        app:srcCompat="@drawable/camera_white" />
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/imgCross"
+                        android:layout_width="@dimen/_30dp"
+                        android:layout_height="@dimen/_30dp"
+                        android:padding="@dimen/_5dp"
+                        android:src="@drawable/cross"
+                        android:background="@drawable/bg_circle"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/txtFilterTeaEstate"
+                    style="?android:listSeparatorTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@drawable/input_border_green"
+                    android:drawableRight="@drawable/downarrow"
+                    android:drawablePadding="@dimen/_5dp"
+                    android:hint="Select Tea Estate/STG"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:padding="@dimen/_5sdp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/darkgray"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal"
+                    android:drawableEnd="@drawable/downarrow" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_border_green"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:padding="@dimen/_8sdp">
+
+                    <com.dhanuka.indhan.Fonts.BoldTextView
+                        android:id="@+id/tvLabelAddNew"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Add New Tea Estate / STG"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16sp" />
+
+                    <com.dhanuka.indhan.Fonts.RegularEditText
+                        android:id="@+id/etCompanyName"
+                        style="?android:listSeparatorTextViewStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvLabelAddNew"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:background="@drawable/input_border"
+                        android:hint="Company Name"
+                        android:maxLines="1"
+                        android:minLines="1"
+                        android:padding="@dimen/_5sdp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/darkgray"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal" />
+
+                    <com.dhanuka.indhan.Fonts.RegularEditText
+                        android:id="@+id/etTurnOVer"
+                        style="?android:listSeparatorTextViewStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/etCompanyName"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:background="@drawable/input_border"
+                        android:hint="Turn Over"
+                        android:inputType="numberDecimal"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:minLines="1"
+                        android:padding="@dimen/_5sdp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/darkgray"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal" />
+
+                    <com.dhanuka.indhan.Fonts.Regular
+                        android:id="@+id/txtTurnOver"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/etTurnOVer"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical|start"
+                        android:maxLines="2"
+                        android:minLines="1"
+                        android:padding="@dimen/_5sdp"
+                        android:text="In Words -"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <com.dhanuka.indhan.Fonts.RegularEditText
+                        android:id="@+id/etLandArea"
+                        style="?android:listSeparatorTextViewStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtTurnOver"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:background="@drawable/input_border"
+                        android:hint="Land Area (in acers)"
+                        android:inputType="numberDecimal"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:minLines="1"
+                        android:padding="@dimen/_5sdp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/darkgray"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal" />
+
+                    <com.dhanuka.indhan.Fonts.Regular
+                        android:id="@+id/txtCompanyType"
+                        style="?android:listSeparatorTextViewStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/etLandArea"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:background="@drawable/input_border"
+                        android:drawableEnd="@drawable/downarrow"
+                        android:drawableRight="@drawable/downarrow"
+                        android:drawablePadding="@dimen/_5dp"
+                        android:hint="Select Company Type"
+                        android:maxLines="1"
+                        android:minLines="1"
+                        android:padding="@dimen/_5sdp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/darkgray"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal" />
+
+
+                    <com.dhanuka.indhan.Fonts.RegularEditText
+                        android:id="@+id/etAddress"
+                        style="?android:listSeparatorTextViewStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtCompanyType"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:background="@drawable/input_border"
+                        android:hint="Address"
+                        android:maxLines="1"
+                        android:minLines="1"
+                        android:inputType="textPostalAddress"
+                        android:padding="@dimen/_5sdp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/darkgray"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal" />
+
+                    <com.dhanuka.indhan.Fonts.Regular
+                        android:id="@+id/txtState"
+                        style="?android:listSeparatorTextViewStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/etAddress"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:background="@drawable/input_border"
+                        android:drawableEnd="@drawable/downarrow"
+                        android:drawableRight="@drawable/downarrow"
+                        android:drawablePadding="@dimen/_5dp"
+                        android:hint="Select State"
+                        android:maxLines="1"
+                        android:minLines="1"
+                        android:padding="@dimen/_5sdp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/darkgray"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal" />
+
+
+                    <com.dhanuka.indhan.Fonts.Regular
+                        android:id="@+id/txtDistrict"
+                        style="?android:listSeparatorTextViewStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtState"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:background="@drawable/input_border"
+                        android:drawableEnd="@drawable/downarrow"
+                        android:drawableRight="@drawable/downarrow"
+                        android:drawablePadding="@dimen/_5dp"
+                        android:hint="Select District"
+                        android:maxLines="1"
+                        android:minLines="1"
+                        android:padding="@dimen/_5sdp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/darkgray"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_border_green"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:padding="@dimen/_8sdp">
+
+                    <com.dhanuka.indhan.Fonts.BoldTextView
+                        android:id="@+id/tvLabelContactDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Contact Details"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16sp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rcvContact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvLabelContactDetail"
+                        android:nestedScrollingEnabled="false"
+                        android:scrollbars="none"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                    <com.dhanuka.indhan.Fonts.Medium
+                        android:id="@+id/txtAddMore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:text="Add More Contact"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_16sdp"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sp"
+                        android:paddingLeft="@dimen/_8sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:paddingEnd="@dimen/_8sdp"
+                        android:paddingStart="@dimen/_8sdp" />
+
+                </LinearLayout>
+
+                <com.dhanuka.indhan.Fonts.Regular
+                    android:id="@+id/txtSelectFl"
+                    style="?android:listSeparatorTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@drawable/input_border_green"
+                    android:drawableRight="@drawable/downarrow"
+                    android:drawablePadding="@dimen/_5dp"
+                    android:hint="Assign FL"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:padding="@dimen/_5sdp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/darkgray"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal"
+                    android:drawableEnd="@drawable/downarrow" />
+
+                <com.dhanuka.indhan.Fonts.RegularButton
+                    android:id="@+id/btnRbSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_60sdp"
+                    android:layout_marginTop="@dimen/_32sdp"
+                    android:layout_marginRight="@dimen/_60sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:background="@drawable/login_button_selector"
+                    android:elevation="15dp"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/_13sdp" />
+
+            </LinearLayout >
+
+</androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

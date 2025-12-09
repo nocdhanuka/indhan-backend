@@ -1,0 +1,246 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="google_app_key" tools:ignore="DuplicateDefinition">AIzaSyC5hiLmnKij6pGj4hm98TqPT5qeShBy_mE</string>
+    <!--<string name="web_google_client_id">623625967192-6js2n6dptof05ge8pponfe82dn8skrlt.apps.googleusercontent.com-->
+    <!--</string>-->
+
+
+    <string name="app_name">InDhan</string>
+    <string name="please_wait__">Please wait...</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_logout">Logout</string>
+    <string name="btn_submit">Submit</string>
+    <string name="btn_end_ticket">End Ticket</string>
+    <string name="add_image">Add Image</string>
+    <string name="loading">loading</string>
+    <string name="txt_forgot_password">Forgot Password?</string>
+    <string name="hint_email">Employee Id</string>
+    <string name="hint_password">Password</string>
+    <string name="invalid_response_from_server">Not able to connect</string>
+    <string name="err_msg_email">Enter valid Email Address</string>
+    <string name="err_msg_password">Enter the Password</string>
+    <string name="err_msg_emp">Enter the Employee Id</string>
+    <string name="no_internet_connection">Internet connection not available.</string>
+    <string name="upload_succesfully">Upload Successfully.</string>
+    <string name="home">Home</string>
+    <string name="support_title">Support</string>
+    <string name="new_ticket">New Ticket</string>
+    <string name="location">Location</string>
+    <string name="product_details">Product Details</string>
+    <string name="missed_calls">Calls</string>
+    <string name="nav_item_delete">Delete</string>
+    <string name="nav_item_revoke">Revoke</string>
+    <string name="txt_delete_comment">Are you sure you want to delete?</string>
+    <string name="txt_revoke_comment">Are you sure you want to revoke this contact?</string>
+    <string name="farmer_details">Farmer Details</string>
+    <string name="manually_added">Manually Added Numbers</string>
+    <string name="manually_added_hint">Tap on + icon to add numbers manually</string>
+    <string name="missed_hint">No Missed Calls Yet</string>
+    <string name="special_participants">Special Participants</string>
+    <string name="reports">Reports</string>
+    <string name="village">Village</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="expected_farmer">Expected Farmers</string>
+    <string name="expected_pda">Expected Acerage (in Acres)</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="name">Name</string>
+    <string name="ticket_history">Ticket History</string>
+    <string name="register_farmers">Register Farmers</string>
+    <string name="register_ifc_farmers">Register IFC Farmers</string>
+    <string name="add_numbers">Add Numbers</string>
+    <string name="plan_syllabus">PLAN SYLLABUS</string>
+    <string name="syllabus_history">SYLLABUS HISTORY</string>
+    <string name="Home">Home</string>
+    <string name="txt_logout_comment">Are you sure you want to logout?</string>
+    <string name="txt_end_ticket_comment">Are you sure you want to close this ticket?</string>
+
+    <string name="txt_data_source">Please Select Data Source</string>
+    <string name="txt_state_source">Please Select State</string>
+    <string name="txt_product_source">Please Select atleast 1 Product</string>
+    <string name="txt_crop_source">Please Select atleast 1 Crop</string>
+    <string name="txt_district_source">Please Select District</string>
+    <string name="txt_tehsil_source">Please Select Tehsil</string>
+    <string name="txt_village">Please Select Village</string>
+
+    <string name="ticket_no">Ticket No.</string>
+    <string name="your_ticket_is_successfully_generated">Your ticket is successfully generated</string>
+    <string name="okay">Okay</string>
+    <string name="total_activity">Total Activities</string>
+    <string name="total_farmers">Total Farmers</string>
+    <string name="average_farmers_activity">Average Farmers/Activities</string>
+
+    <string name="gpvch_header">New Indhan version is available!</string>
+    <string name="gpvch_button_positive">Update current version</string>
+    <string name="gpvch_button_negative">Remind me later</string>
+    <string name="gpvch_new_version_info_title">Whats new: Self participation added for managers, bug fixing, efficiency in reports.</string>
+    <string name="crash_toast_text">Not Working</string>
+    <string name="txt_language">Please Select Language</string>
+    <string name="select_product_two">Select Product Two</string>
+    <string name="product_two">Product Two</string>
+    <string name="product_three">Product Three</string>
+    <string name="profile_summary">Profile Summary</string>
+    //********Create demo request screen********//
+    <string name="demo_requests">Demo Requests</string>
+    <string name="create_new_demo_request">Create new demo request</string>
+    //********request detail screen********//
+    <string name="request_details">Requests Details</string>
+    <string name="crop">Crop</string>
+    <string name="product">Product</string>
+    <string name="farmer">Farmer</string>
+    <string name="state">State</string>
+    <string name="district_name">District name</string>
+    <string name="tahsil">Tehsil</string>
+    <string name="current_status">Current status</string>
+    //********select farmer dialog screen********//
+    <string name="select_from_existing_farmer">ACP FARMER</string>
+    <string name="create_new">NOT ACP FARMER</string>
+    <string name="cancel">Cancel</string>
+    //********Create request screen********//
+    <string name="create_request">Create Request</string>
+    <string name="farmer_name">Farmer Name</string>
+    <string name="pincode">Pincode</string>
+    <string name="contact_no">Contact no.</string>
+    <string name="showing_date">Sowing date</string>
+    <string name="spray">Spray</string>
+    <string name="submit">Submit</string>
+
+    <string name="err_farmer_name">Please enter farmer name</string>
+    <string name="err_full_name">Please enter full name</string>
+    <string name="err_reason">Please enter reason</string>
+
+    <string name="err_pinconde">Please enter pincode</string>
+    <string name="err_village">Please enter village</string>
+    <string name="err_contact_no">Please enter contact no</string>
+    <string name="err_contact_valid">Please enter valid no</string>
+
+    <string name="err_showing_date">Please select date</string>
+    <string name="err_spray">Please select atleast one spray </string>
+    //********My Lead screen********//
+    <string name="my_leads">My Leads</string>
+    <string name="open_leads">Open Leads</string>
+    <string name="closed_leads">Closed Leads</string>
+    <string name="call_now">Call now</string>
+    //********Lead Details screen********//
+    <string name="lead_details">Lead Details</string>
+    <string name="quantity_to_be_purchased">Quantity to be purchased</string>
+    <string name="expected_date_of_purchase">Expected date of purchase</string>
+    <string name="current_status_of_lead">Current status of lead</string>
+    <string name="change_status">Change Status</string>
+    //********Lead Details Dialog screen********//
+    <string name="purchased_from">Purchased from</string>
+    <string name="purchased_area">Purchased area</string>
+    <string name="lead_sold">Lead Sold</string>
+
+    //********ATP screen********//
+    <string name="atp">ATP</string>
+    <string name="active">Active</string>
+    <string name="close_activate">Please close the activated</string>
+    <string name="new_activate">ATP First to activate new</string>
+    <string name="enter_reasons">Enter Reason</string>
+    <string name="close_atp">Close ATP</string>
+    //********Active ATP screen********//
+    <string name="choose_demo">Choose Demo no</string>
+    <string name="add_invited_farmers">Add Invited Farmers</string>
+    <string name="empty_screen">No entries yet!</string>
+    <string name="no_lead_found">No Lead yet!</string>
+    <string name="lead_id">Lead ID</string>
+    <string name="purchased_acr">Purchase Acres</string>
+    <string name="lead_hot">Lead Hot</string>
+
+    //********Invite farmer screen********//
+    <string name="invite_farmer">Invite Farmer</string>
+    <string name="full_name">Full Name</string>
+
+    //********Register farmer screen********//
+    <string name="register_farmer">Register Farmer</string>
+    <string name="active_atp">Active ATP</string>
+    <string name="not_intrested">Not intrested</string>
+    <string name="no_product_found">No Product found yet.</string>
+    <string name="select_activate">Select and Activate</string>
+    <string name="close_ticket">Close Ticket</string>
+    <string name="not_atp_yet">No Atp yet!</string>
+    <string name="evaluated">Evaluated</string>
+    <string name="awaited">Awaited</string>
+    <string name="overdue">Overdue</string>
+    <string name="review_date">Review Date</string>
+    <string name="recommended_date">Recommended date</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="please_rate_experience">Please rate your experience</string>
+    <string name="excellent">Excellent</string>
+    <string name="average">Average</string>
+    <string name="poor">Poor</string>
+    <string name="description">Description</string>
+    <string name="demo_filter">Demo Filter</string>
+    <string name="select_dd">Select DD</string>
+    <string name="clear">Clear</string>
+    <string name="apply">Apply</string>
+
+
+    <string name="team_summary">Team Summary</string>
+    <string name="txt_dhanuka_doctor">Dhanuka Doctors</string>
+    <string name="villages">Villages</string>
+    <string name="acp_farmer">ACP Farmers</string>
+    <string name="average_visit">Average Visits</string>
+    <string name="upcoming_atp">Upcoming ATP</string>
+    <string name="dd_involved">DD Involved</string>
+    <string name="dd">DD</string>
+    <string name="select_dd_village">Select village</string>
+    <string name="select_image">Please select image</string>
+    <string name="err_villages">Please select village</string>
+    <string name="select_distributor">Select channel</string>
+    <string name="created_date">Created Date</string>
+    <string name="status">Status</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="farmer_type">Farmer Type</string>
+    <string name="distributor_name">Channel name</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="data_not_fund">Data not found!</string>
+    <string name="select_month">Select Month</string>
+    <string name="or">or</string>
+    <string name="please_select_either_month_date">Please Either select month or date range</string>
+    <string name="please_select_range">Please select range date</string>
+    <string name="filter_leads">Filter Leads</string>
+    <string name="select_crop">Select Crop</string>
+    <string name="select_product">Select Product</string>
+    <string name="filter_upcoming_atp">Filter Upcoming ATP</string>
+    <string name="select_date">Select Date</string>
+    <string name="data_not_found">Data not found</string>
+    <string name="ddname">DD Name</string>
+    <string name="suggested_day_date">Suggested Field Day Date</string>
+    <string name="view_associate_tickets">View Associate Tickets</string>
+    <string name="evaluation_status">Evaluation Status</string>
+    <string name="navigate_to_location">Navigate to location</string>
+    <string name="acerage">Acerage</string>
+    <string name="front_liner">Front Liner</string>
+    <string name="filter_acp_farmer">Filter ACP Farmers</string>
+    <string name="leads_history">Leads History</string>
+    <string name="created_at">Created Date</string>
+    <string name="compressing_vedio">vedio Compressing</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_this_area"><u>Search this Area</u></string>
+    <string name="click_here_to_capture_image"><u>Click here to capture image</u></string>
+    <string name="click_here_to_capture_video"><u>Click here to capture video</u></string>
+    <string name="fl_close_previous_ticket">Please ask your FL to close previous unattended ATP’s.</string>
+    <string name="sure_rate">Are you sure you want to rate </string>
+    <string name="startest"> star(s) to this testimonial.</string>
+    <string name="offline_self_participation">Offline Self Participation</string>
+    <string name="offline_farmer_data">Offline IFC Farmer</string>
+    <string name="no_self_participation">No Self Participation</string>
+    <string name="please_close_the_activated_atp_first_to_activate_new">Please Close the activated ATP First to activate new</string>
+    <string name="please_share_the_reason_for_not_attending_the_activity">Please share the reason for not attending the activity</string>
+    <string name="upload_photo">Upload photo</string>
+    <string name="capture_photo">Capture photo</string>
+    <string name="open_offline_ticket">open offline ticket</string>
+    <string name="confirm_ticket_no">Confirm Ticket No.</string>
+    <string name="request_data_uploaded_msg">Requested material data saved, Please check after some time data will upload in background.</string>
+    <string name="no_tea_estate_found">No Tea Estate found.</string>
+    <string name="view_visit_history">Visit History</string>
+    <string name="no_visit_history_found">No Visit History Found</string>
+    <string name="are_you_doing_this_activity_alone">Are you doing this activity alone.</string>
+
+
+</resources>
